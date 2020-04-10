@@ -34,7 +34,7 @@ extension View {
 }
 
 extension View {
-   func `if`<Content: View>(_ conditional: Bool,
+   public func `if`<Content: View>(_ conditional: Bool,
                             then: (Self) -> Content) -> some View {
         if conditional {
             return AnyView(then(self))
@@ -43,7 +43,7 @@ extension View {
         }
     }
 
-    func `if`<ThenView: View, ElseView: View>(
+    public func `if`<ThenView: View, ElseView: View>(
         _ conditional: Bool,
         then: (Self) -> ThenView,
         `else`: (Self) -> ElseView) -> some View {
