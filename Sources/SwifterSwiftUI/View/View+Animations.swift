@@ -8,8 +8,9 @@
 import SwiftUI
 
 extension View {
+
     public func animate(using animation: Animation = Animation.easeInOut(duration: 1),
-                 _ action: @escaping () -> Void) -> some View {
+                        _ action: @escaping () -> Void) -> some View {
         return onAppear {
             withAnimation(animation) {
                 action()
@@ -20,7 +21,7 @@ extension View {
 
 extension View {
     public func animateForever(using animation: Animation = Animation.easeInOut(duration: 1),
-                        autoreverses: Bool = false, _ action: @escaping () -> Void) -> some View {
+                               autoreverses: Bool = false, _ action: @escaping () -> Void) -> some View {
         let repeated = animation.repeatForever(autoreverses: autoreverses)
         return onAppear {
             withAnimation(repeated) {

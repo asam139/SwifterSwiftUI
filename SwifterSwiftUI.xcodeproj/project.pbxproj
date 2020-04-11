@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"SwifterSwiftUI::SwifterSwiftUIPackageTests::ProductTarget" /* SwifterSwiftUIPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_41 /* Build configuration list for PBXAggregateTarget "SwifterSwiftUIPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_44 /* PBXTargetDependency */,
+			);
+			name = SwifterSwiftUIPackageTests;
+			productName = SwifterSwiftUIPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_29 /* IfLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* IfLet.swift */; };
+		OBJ_30 /* View+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* View+Animations.swift */; };
+		OBJ_31 /* View+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* View+Build.swift */; };
+		OBJ_32 /* View+General.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* View+General.swift */; };
+		OBJ_39 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_50 /* SwifterSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* SwifterSwiftUITests.swift */; };
+		OBJ_51 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* XCTestManifests.swift */; };
+		OBJ_53 /* SwifterSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwifterSwiftUI::SwifterSwiftUI::Product" /* SwifterSwiftUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C7062CA244230260061E8D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwifterSwiftUI::SwifterSwiftUITests";
+			remoteInfo = SwifterSwiftUITests;
+		};
+		9C7062CB244230260061E8D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwifterSwiftUI::SwifterSwiftUI";
+			remoteInfo = SwifterSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		OBJ_10 /* IfLet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLet.swift; sourceTree = "<group>"; };
+		OBJ_12 /* View+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Animations.swift"; sourceTree = "<group>"; };
+		OBJ_13 /* View+Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Build.swift"; sourceTree = "<group>"; };
+		OBJ_14 /* View+General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+General.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* SwifterSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterSwiftUITests.swift; sourceTree = "<group>"; };
+		OBJ_18 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_22 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_23 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		"SwifterSwiftUI::SwifterSwiftUI::Product" /* SwifterSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwifterSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwifterSwiftUI::SwifterSwiftUITests::Product" /* SwifterSwiftUITests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwifterSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_53 /* SwifterSwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* View+Animations.swift */,
+				OBJ_13 /* View+Build.swift */,
+				OBJ_14 /* View+General.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		OBJ_15 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* SwifterSwiftUITests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_16 /* SwifterSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* SwifterSwiftUITests.swift */,
+				OBJ_18 /* XCTestManifests.swift */,
+			);
+			name = SwifterSwiftUITests;
+			path = Tests/SwifterSwiftUITests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"SwifterSwiftUI::SwifterSwiftUI::Product" /* SwifterSwiftUI.framework */,
+				"SwifterSwiftUI::SwifterSwiftUITests::Product" /* SwifterSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_15 /* Tests */,
+				OBJ_19 /* Products */,
+				OBJ_22 /* LICENSE */,
+				OBJ_23 /* README.md */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* SwifterSwiftUI */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* SwifterSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Utils */,
+				OBJ_11 /* View */,
+			);
+			name = SwifterSwiftUI;
+			path = Sources/SwifterSwiftUI;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* IfLet.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"SwifterSwiftUI::SwiftPMPackageDescription" /* SwifterSwiftUIPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_35 /* Build configuration list for PBXNativeTarget "SwifterSwiftUIPackageDescription" */;
+			buildPhases = (
+				OBJ_38 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwifterSwiftUIPackageDescription;
+			productName = SwifterSwiftUIPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwifterSwiftUI::SwifterSwiftUI" /* SwifterSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_25 /* Build configuration list for PBXNativeTarget "SwifterSwiftUI" */;
+			buildPhases = (
+				OBJ_28 /* Sources */,
+				OBJ_33 /* Frameworks */,
+				9C7062CC2442302F0061E8D8 /* Lint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwifterSwiftUI;
+			productName = SwifterSwiftUI;
+			productReference = "SwifterSwiftUI::SwifterSwiftUI::Product" /* SwifterSwiftUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwifterSwiftUI::SwifterSwiftUITests" /* SwifterSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_46 /* Build configuration list for PBXNativeTarget "SwifterSwiftUITests" */;
+			buildPhases = (
+				OBJ_49 /* Sources */,
+				OBJ_52 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_54 /* PBXTargetDependency */,
+			);
+			name = SwifterSwiftUITests;
+			productName = SwifterSwiftUITests;
+			productReference = "SwifterSwiftUI::SwifterSwiftUITests::Product" /* SwifterSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SwifterSwiftUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"SwifterSwiftUI::SwifterSwiftUI" /* SwifterSwiftUI */,
+				"SwifterSwiftUI::SwiftPMPackageDescription" /* SwifterSwiftUIPackageDescription */,
+				"SwifterSwiftUI::SwifterSwiftUIPackageTests::ProductTarget" /* SwifterSwiftUIPackageTests */,
+				"SwifterSwiftUI::SwifterSwiftUITests" /* SwifterSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C7062CC2442302F0061E8D8 /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which mint >/dev/null; then\n  mint run realm/SwiftLint@0.39.0 swiftlint autocorrect --format\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/mint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_29 /* IfLet.swift in Sources */,
+				OBJ_30 /* View+Animations.swift in Sources */,
+				OBJ_31 /* View+Build.swift in Sources */,
+				OBJ_32 /* View+General.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_39 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_50 /* SwifterSwiftUITests.swift in Sources */,
+				OBJ_51 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwifterSwiftUI::SwifterSwiftUITests" /* SwifterSwiftUITests */;
+			targetProxy = 9C7062CA244230260061E8D8 /* PBXContainerItemProxy */;
+		};
+		OBJ_54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwifterSwiftUI::SwifterSwiftUI" /* SwifterSwiftUI */;
+			targetProxy = 9C7062CB244230260061E8D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwifterSwiftUI.xcodeproj/SwifterSwiftUI_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwifterSwiftUI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = SwifterSwiftUI;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwifterSwiftUI.xcodeproj/SwifterSwiftUI_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwifterSwiftUI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = SwifterSwiftUI;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		OBJ_37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwifterSwiftUI.xcodeproj/SwifterSwiftUITests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwifterSwiftUITests;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwifterSwiftUI.xcodeproj/SwifterSwiftUITests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwifterSwiftUITests;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "SwifterSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_25 /* Build configuration list for PBXNativeTarget "SwifterSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_26 /* Debug */,
+				OBJ_27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_35 /* Build configuration list for PBXNativeTarget "SwifterSwiftUIPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_36 /* Debug */,
+				OBJ_37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_41 /* Build configuration list for PBXAggregateTarget "SwifterSwiftUIPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_42 /* Debug */,
+				OBJ_43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_46 /* Build configuration list for PBXNativeTarget "SwifterSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_47 /* Debug */,
+				OBJ_48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
