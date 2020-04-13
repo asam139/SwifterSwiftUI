@@ -1,0 +1,58 @@
+name: Steps
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Tests
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        xcode: ['/Applications/Xcode_11.3.app/Contents/Developer']
+    env:
+      PROJECT: SwifterSwiftUI.xcodeproj
+    steps:
+    - uses: actions/checkout@v2
+    - name: Swift Build
+      run: swift build
+    - name: Bundle Install
+      run: bundle install
+    - name: Brew Upgrade
+      run: |
+        brew update
+        brew outdated xctool || brew upgrade xctool
+    - name: Test iOS
+      run: |
+        xcodebuild clean build test -project $PROJECT -scheme $SCHEME -destination "$DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="xcodebuild-ios.json" xcpretty -f `xcpretty-json-formatter`
+        bash <(curl -s https://codecov.io/bash) -cF ios -J 'SwifterSwiftUI'
+      env:
+          DEVELOPER_DIR: ${{ matrix.xcode }}
+          SCHEME: SwifterSwiftUI-Package
+          DESTINATION: platform=iOS Simulator,name=iPhone 11
+    - name: Test macOS
+      run: |
+        xcodebuild clean build test -project $PROJECT -scheme $SCHEME -destination "$DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="xcodebuild-macos.json" xcpretty -f `xcpretty-json-formatter`
+        bash <(curl -s https://codecov.io/bash) -cF macos -J 'SwifterSwiftUI'
+      env:
+          DEVELOPER_DIR: ${{ matrix.xcode }}
+          SCHEME: SwifterSwiftUI-Package
+          DESTINATION: platform=OS X
+    - name: Test TVOS
+      run: |
+        xcodebuild clean build test -project $PROJECT -scheme $SCHEME -destination "$DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="xcodebuild-tvos.json" xcpretty -f `xcpretty-json-formatter`
+        bash <(curl -s https://codecov.io/bash) -cF tvos -J 'SwifterSwiftUI'
+      env:
+          DEVELOPER_DIR: ${{ matrix.xcode }}
+          SCHEME: SwifterSwiftUI-Package
+          DESTINATION: platform=tvOS Simulator,name=Apple TV 4K (at 1080p)
+    - name: Build WatchOS
+      run: xcodebuild clean build -project $PROJECT -scheme $SCHEME -destination "$DESTINATION"
+      env:
+          DEVELOPER_DIR: ${{ matrix.xcode }}
+          SCHEME: SwifterSwiftUI-Package
+          DESTINATION: name=Apple Watch Series 5 - 40mm
+
