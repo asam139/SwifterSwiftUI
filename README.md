@@ -15,7 +15,7 @@ SwifterSwiftUI is a collection of native SwiftUI extensions, with handy methods,
 
 ## Requirements
 
-- **iOS** 10.0+ / **tvOS** 9.0+ / **macOS** 10.10+ / **Ubuntu** 14.04+
+- **iOS** 13.0+ / **tvOS** 13.0+ / **watchOS** 13.0+ / **macOS** 10.10+ / **Ubuntu** 14.04+
 - Swift 5.0+
 
 ## Installation
@@ -75,6 +75,10 @@ Please refer to [contributing guidelines](https://github.com/asam139/SwifterSwif
 Special thanks to:
 
 - Hoping new contributors
+
+### Inspired by
+
+[SwifterSwift](https://github.com/SwifterSwift/SwifterSwift)
 
 ## License
 
