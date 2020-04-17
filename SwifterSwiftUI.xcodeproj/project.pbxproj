@@ -23,8 +23,6 @@
 /* Begin PBXBuildFile section */
 		OBJ_29 /* IfLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* IfLet.swift */; };
 		OBJ_30 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* View+Extensions.swift */; };
-		OBJ_31 /* View+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* View+Build.swift */; };
-		OBJ_32 /* View+General.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* View+General.swift */; };
 		OBJ_39 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_50 /* SwifterSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* SwifterSwiftUITests.swift */; };
 		OBJ_51 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* XCTestManifests.swift */; };
@@ -51,8 +49,6 @@
 /* Begin PBXFileReference section */
 		OBJ_10 /* IfLet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLet.swift; sourceTree = "<group>"; };
 		OBJ_12 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_13 /* View+Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Build.swift"; sourceTree = "<group>"; };
-		OBJ_14 /* View+General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+General.swift"; sourceTree = "<group>"; };
 		OBJ_17 /* SwifterSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterSwiftUITests.swift; sourceTree = "<group>"; };
 		OBJ_18 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_22 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -81,16 +77,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_11 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_12 /* View+Extensions.swift */,
-				OBJ_13 /* View+Build.swift */,
-				OBJ_14 /* View+General.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		OBJ_15 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,8 +127,8 @@
 		OBJ_8 /* SwifterSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				OBJ_12 /* View+Extensions.swift */,
 				OBJ_9 /* Utils */,
-				OBJ_11 /* View */,
 			);
 			name = SwifterSwiftUI;
 			path = Sources/SwifterSwiftUI;
@@ -264,8 +250,6 @@
 			files = (
 				OBJ_29 /* IfLet.swift in Sources */,
 				OBJ_30 /* View+Extensions.swift in Sources */,
-				OBJ_31 /* View+Build.swift in Sources */,
-				OBJ_32 /* View+General.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
