@@ -22,7 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		OBJ_29 /* IfLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* IfLet.swift */; };
-		OBJ_30 /* View+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* View+Animations.swift */; };
+		OBJ_30 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* View+Extensions.swift */; };
 		OBJ_31 /* View+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* View+Build.swift */; };
 		OBJ_32 /* View+General.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* View+General.swift */; };
 		OBJ_39 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
@@ -50,7 +50,7 @@
 
 /* Begin PBXFileReference section */
 		OBJ_10 /* IfLet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLet.swift; sourceTree = "<group>"; };
-		OBJ_12 /* View+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Animations.swift"; sourceTree = "<group>"; };
+		OBJ_12 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* View+Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Build.swift"; sourceTree = "<group>"; };
 		OBJ_14 /* View+General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+General.swift"; sourceTree = "<group>"; };
 		OBJ_17 /* SwifterSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterSwiftUITests.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		OBJ_23 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"SwifterSwiftUI::SwifterSwiftUI::Product" /* SwifterSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwifterSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"SwifterSwiftUI::SwifterSwiftUITests::Product" /* SwifterSwiftUITests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwifterSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwifterSwiftUI::SwifterSwiftUITests::Product" /* SwifterSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SwifterSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 		OBJ_11 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* View+Animations.swift */,
+				OBJ_12 /* View+Extensions.swift */,
 				OBJ_13 /* View+Build.swift */,
 				OBJ_14 /* View+General.swift */,
 			);
@@ -263,7 +263,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_29 /* IfLet.swift in Sources */,
-				OBJ_30 /* View+Animations.swift in Sources */,
+				OBJ_30 /* View+Extensions.swift in Sources */,
 				OBJ_31 /* View+Build.swift in Sources */,
 				OBJ_32 /* View+General.swift in Sources */,
 			);
@@ -466,7 +466,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = SwifterSwiftUITests;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -491,7 +490,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = SwifterSwiftUITests;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
