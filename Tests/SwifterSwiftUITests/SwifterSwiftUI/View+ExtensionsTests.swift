@@ -38,9 +38,9 @@ final class ViewExtensionsTests: XCTestCase {
 
     func testConditionalModifier() {
         let testView = Text("Text")
+        var modifier = InspectableTestModifier()
 
         // Test true condition
-        var modifier = InspectableTestModifier()
         let firstExp = XCTestExpectation()
         modifier.onAppear = { body in
             ViewHosting.expel()
@@ -51,29 +51,28 @@ final class ViewExtensionsTests: XCTestCase {
         wait(for: [firstExp], timeout: 0.1)
 
         // Test false condition
-        var secondModifier = InspectableTestModifier()
         let secondExp = XCTestExpectation()
         secondExp.isInverted = true
-        secondModifier.onAppear = { body in
+        modifier.onAppear = { body in
             ViewHosting.expel()
             secondExp.fulfill()
         }
-        let secondView = testView.conditionalModifier(false, secondModifier)
+        let secondView = testView.conditionalModifier(false, modifier)
         ViewHosting.host(view: secondView)
         wait(for: [secondExp], timeout: 0.1)
     }
 
     func testConditionalModifierOr() {
         let testView = Text("Text")
+        var thenModifier = InspectableTestModifier()
+        var elseModifier = InspectableTestModifier()
 
         // Test true condition
-        var thenModifier = InspectableTestModifier()
         let firstExp = XCTestExpectation()
         thenModifier.onAppear = { body in
             ViewHosting.expel()
             firstExp.fulfill()
         }
-        var elseModifier = InspectableTestModifier()
         let firstView = testView.conditionalModifier(true, thenModifier, elseModifier)
         ViewHosting.host(view: firstView)
         wait(for: [firstExp], timeout: 0.1)
@@ -93,7 +92,9 @@ final class ViewExtensionsTests: XCTestCase {
     static var allTests = [
         ("testEraseToAnyView", testEraseToAnyView),
         ("testIfThen", testIfThen),
-        ("testIfThenElse", testIfThenElse)
+        ("testIfThenElse", testIfThenElse),
+        ("testConditionalModifier", testConditionalModifier),
+        ("testConditionalModifierOr", testConditionalModifierOr)
     ]
 }
 
