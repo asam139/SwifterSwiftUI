@@ -123,7 +123,7 @@ extension View {
     ///   - animation: animation to be applied
     ///   - action: action to be animated
     /// - Returns: some View
-    public func animate(using animation: Animation = Animation.easeInOut(duration: 1),
+    public func animate(using animation: Animation = .easeInOut,
                         _ action: @escaping () -> Void) -> some View {
         return onAppear {
             withAnimation(animation) {
@@ -141,7 +141,7 @@ extension View {
     ///   - autoreverses: it will do the initial animation but in reverse
     ///   - action: action to be animated
     /// - Returns: some View
-    public func animateForever(using animation: Animation = Animation.easeInOut(duration: 1),
+    public func animateForever(using animation: Animation = .easeInOut,
                                autoreverses: Bool = false, _ action: @escaping () -> Void) -> some View {
         let repeated = animation.repeatForever(autoreverses: autoreverses)
         return onAppear {
