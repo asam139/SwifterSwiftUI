@@ -117,14 +117,14 @@ extension View {
 
     /// SwifterSwiftUI: Animate an action with an animation on appear.
     ///
-    ///    myView.animate(using: .easeInOut) { self.scale = 0.5 }
+    ///    myView.animateOnAppear(using: .easeInOut) { self.scale = 0.5 }
     ///
     /// - Parameters:
     ///   - animation: animation to be applied
     ///   - action: action to be animated
     /// - Returns: some View
-    public func animate(using animation: Animation = .easeInOut,
-                        _ action: @escaping () -> Void) -> some View {
+    public func animateOnAppear(using animation: Animation = .easeInOut,
+                                _ action: @escaping () -> Void) -> some View {
         return onAppear {
             withAnimation(animation) {
                 action()
@@ -132,20 +132,18 @@ extension View {
         }
     }
 
-    /// SwifterSwiftUI: Animate an action with an inifinite animation on appear.
+    /// SwifterSwiftUI: Animate an action with an animation on disappear.
     ///
-    ///    myView.animateForever(autoreverses: true) { self.scale = 0.5 }
+    ///    myView.animateOnDisappear(using: .easeInOut) { self.scale = 0.5 }
     ///
     /// - Parameters:
     ///   - animation: animation to be applied
-    ///   - autoreverses: it will do the initial animation but in reverse
     ///   - action: action to be animated
     /// - Returns: some View
-    public func animateForever(using animation: Animation = .easeInOut,
-                               autoreverses: Bool = false, _ action: @escaping () -> Void) -> some View {
-        let repeated = animation.repeatForever(autoreverses: autoreverses)
-        return onAppear {
-            withAnimation(repeated) {
+    public func animateOnDisappear(using animation: Animation = .easeInOut,
+                                   _ action: @escaping () -> Void) -> some View {
+        return onDisappear {
+            withAnimation(animation) {
                 action()
             }
         }

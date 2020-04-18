@@ -37,7 +37,7 @@ final class ViewExtensionsTests: XCTestCase {
     }
 
     func testConditionalModifier() {
-        let testView = Text("Text")
+        let testView = Text("Hello")
         var modifier = InspectableTestModifier()
 
         // Test true condition
@@ -51,7 +51,7 @@ final class ViewExtensionsTests: XCTestCase {
         wait(for: [firstExp], timeout: 0.1)
 
         // Test false condition
-        let secondExp = XCTestExpectation()
+        let secondExp = XCTestExpectation(description: #function)
         secondExp.isInverted = true
         modifier.onAppear = { body in
             ViewHosting.expel()
@@ -63,12 +63,12 @@ final class ViewExtensionsTests: XCTestCase {
     }
 
     func testConditionalModifierOr() {
-        let testView = Text("Text")
+        let testView = Text("Hello")
         var thenModifier = InspectableTestModifier()
         var elseModifier = InspectableTestModifier()
 
         // Test true condition
-        let firstExp = XCTestExpectation()
+        let firstExp = XCTestExpectation(description: #function)
         thenModifier.onAppear = { body in
             ViewHosting.expel()
             firstExp.fulfill()
@@ -78,7 +78,7 @@ final class ViewExtensionsTests: XCTestCase {
         wait(for: [firstExp], timeout: 0.1)
 
         // Test false condition
-        let secondExp = XCTestExpectation()
+        let secondExp = XCTestExpectation(description: #function)
         thenModifier.onAppear = nil
         elseModifier.onAppear = { body in
             ViewHosting.expel()
@@ -89,12 +89,46 @@ final class ViewExtensionsTests: XCTestCase {
         wait(for: [secondExp], timeout: 0.1)
     }
 
+    func testAnimateOnAppear() {
+        let testView = Text("Hello")
+
+        let exp = XCTestExpectation(description: #function)
+        let view = testView.animateOnAppear {
+            ViewHosting.expel()
+            exp.fulfill()
+        }
+        ViewHosting.host(view: view)
+        wait(for: [exp], timeout: 0.1)
+
+        // Check onAppear modifier
+        XCTAssertNoThrow(try view.inspect().callOnAppear())
+    }
+
+    func testAnimateOnDisappear() {
+        let testView = Text("Hello")
+
+        let exp = XCTestExpectation(description: #function)
+        let view = testView.onAppear {
+            ViewHosting.expel()
+        }.animateOnDisappear {
+            exp.fulfill()
+        }
+        ViewHosting.host(view: view)
+        // Check onAppear modifier
+        // OnDisappear does not work in macOS
+        // so it's called manually before the checking
+        XCTAssertNoThrow(try view.inspect().callOnDisappear())
+        wait(for: [exp], timeout: 0.1)
+    }
+
     static var allTests = [
         ("testEraseToAnyView", testEraseToAnyView),
         ("testIfThen", testIfThen),
         ("testIfThenElse", testIfThenElse),
         ("testConditionalModifier", testConditionalModifier),
-        ("testConditionalModifierOr", testConditionalModifierOr)
+        ("testConditionalModifierOr", testConditionalModifierOr),
+        ("testAnimateOnAppear", testAnimateOnAppear),
+        ("testAnimateOnDisappear", testAnimateOnDisappear)
     ]
 }
 
@@ -109,7 +143,6 @@ private struct InspectableTestModifier: ViewModifier {
 
     func body(content: Self.Content) -> some View {
         content
-            .padding(.top, 15)
             .onAppear { self.onAppear?(self.body(content: content)) }
     }
 }
