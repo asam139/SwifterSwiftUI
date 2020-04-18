@@ -34,13 +34,11 @@ extension View {
     ///   - condition: an boolean to control the condition
     ///   - then: callback to apply the changes when the condition is true
     /// - Returns: some View
-    public func `if`<Content: View>(_ conditional: Bool,
-                                    then: (Self) -> Content) -> some View {
+    public func `if`<Content: View>(_ conditional: Bool, then: (Self) -> Content) -> some View {
         if conditional {
             return then(self).eraseToAnyView()
-        } else {
-            return self.eraseToAnyView()
         }
+        return self.eraseToAnyView()
     }
 
     /// SwifterSwiftUI: Apply some changes to the view in place of the condition
@@ -57,15 +55,11 @@ extension View {
     ///   - then: callback to apply the changes when the condition is true
     ///   - else: callback to apply the changes when the condition is false
     /// - Returns: some View
-    public func `if`<ThenView: View, ElseView: View>(
-        _ conditional: Bool,
-        then: (Self) -> ThenView,
-        `else`: (Self) -> ElseView) -> some View {
+    public func `if`<ThenView: View, ElseView: View>(_ conditional: Bool, then: (Self) -> ThenView, `else`: (Self) -> ElseView) -> some View {
         if conditional {
             return then(self).eraseToAnyView()
-        } else {
-            return `else`(self).eraseToAnyView()
         }
+        return `else`(self).eraseToAnyView()
     }
 }
 
