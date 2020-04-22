@@ -22,6 +22,8 @@
 
 /* Begin PBXBuildFile section */
 		9C7F441D244B6916005DC0C8 /* IfLetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F441B244B6900005DC0C8 /* IfLetTests.swift */; };
+		9C7F448C2450CE3F005DC0C8 /* LinearGradient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F448B2450CE3F005DC0C8 /* LinearGradient+Extensions.swift */; };
+		9C7F448E2450CF99005DC0C8 /* LinearGradient+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F448D2450CF99005DC0C8 /* LinearGradient+ExtensionsTests.swift */; };
 		OBJ_106 /* IfLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* IfLet.swift */; };
 		OBJ_107 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* View+Extensions.swift */; };
 		OBJ_114 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
@@ -121,6 +123,8 @@
 
 /* Begin PBXFileReference section */
 		9C7F441B244B6900005DC0C8 /* IfLetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLetTests.swift; sourceTree = "<group>"; };
+		9C7F448B2450CE3F005DC0C8 /* LinearGradient+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+Extensions.swift"; sourceTree = "<group>"; };
+		9C7F448D2450CF99005DC0C8 /* LinearGradient+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		OBJ_10 /* IfLet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLet.swift; sourceTree = "<group>"; };
 		OBJ_100 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
 		OBJ_11 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
@@ -241,6 +245,13 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		9C7F448A2450CCF6005DC0C8 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
 		OBJ_12 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +275,7 @@
 			children = (
 				9C7F441A244B68F0005DC0C8 /* Utils */,
 				OBJ_15 /* View+ExtensionsTests.swift */,
+				9C7F448D2450CF99005DC0C8 /* LinearGradient+ExtensionsTests.swift */,
 			);
 			path = SwifterSwiftUI;
 			sourceTree = "<group>";
@@ -372,7 +384,7 @@
 			path = SwiftUI;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -392,12 +404,12 @@
 				OBJ_99 /* Gemfile */,
 				OBJ_100 /* Gemfile.lock */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9C7F448A2450CCF6005DC0C8 /* Combine */,
 				OBJ_8 /* SwifterSwiftUI */,
 			);
 			name = Sources;
@@ -408,6 +420,7 @@
 			children = (
 				OBJ_9 /* Utils */,
 				OBJ_11 /* View+Extensions.swift */,
+				9C7F448B2450CE3F005DC0C8 /* LinearGradient+Extensions.swift */,
 			);
 			name = SwifterSwiftUI;
 			path = Sources/SwifterSwiftUI;
@@ -529,7 +542,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -571,6 +584,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_106 /* IfLet.swift in Sources */,
+				9C7F448C2450CE3F005DC0C8 /* LinearGradient+Extensions.swift in Sources */,
 				OBJ_107 /* View+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,6 +603,7 @@
 			files = (
 				OBJ_125 /* View+ExtensionsTests.swift in Sources */,
 				OBJ_126 /* XCTestManifests.swift in Sources */,
+				9C7F448E2450CF99005DC0C8 /* LinearGradient+ExtensionsTests.swift in Sources */,
 				9C7F441D244B6916005DC0C8 /* IfLetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

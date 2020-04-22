@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-// MARK: General
 extension View {
 
     /// SwifterSwiftUI: Type casting to AnyView
