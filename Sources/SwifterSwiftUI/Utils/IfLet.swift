@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// SwifterSwiftUI: it is an utility that adds back a way to use the if let.
+/// It is an utility that adds back a way to use the if let.
 ///
 ///    ifLet(myImage, then: {
 ///       $0.resizable()
@@ -21,7 +21,7 @@ public func ifLet<T, ThenOut: View>(_ value: T?, then: (T) -> ThenOut) -> some V
     ViewBuilder.buildIf(value.map { then($0) })
 }
 
-/// SwifterSwiftUI: it is an utility that adds back a way to use the if let with an else option
+/// It is an utility that adds back a way to use the if let with an else option
 ///
 ///    ifLet(myImage, then: {
 ///       $0.resizable()

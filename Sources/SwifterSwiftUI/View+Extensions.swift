@@ -9,7 +9,7 @@ import SwiftUI
 
 extension View {
 
-    /// SwifterSwiftUI: Type casting to AnyView
+    /// Type casting to AnyView
     ///
     ///    myView.eraseToAnyView()
     ///
@@ -17,12 +17,13 @@ extension View {
     public func eraseToAnyView() -> AnyView {
         AnyView(self)
     }
+
 }
 
 // MARK: Building
 extension View {
 
-    /// SwifterSwiftUI: Apply changes to the view if the condition is true
+    /// Apply changes to the view if the condition is true
     ///
     ///    myView
     ///    .if(index == state.currentIndex, then: {
@@ -40,7 +41,7 @@ extension View {
         return self.eraseToAnyView()
     }
 
-    /// SwifterSwiftUI: Apply some changes to the view in place of the condition
+    /// Apply some changes to the view in place of the condition
     ///
     ///    myView
     ///    .if(index == state.currentIndex, then: {
@@ -65,7 +66,7 @@ extension View {
 // MARK: Modifiers
 extension View {
 
-    /// SwifterSwiftUI: Set one modifier conditionally.
+    /// Set one modifier conditionally.
     ///
     ///    myView.conditionalModifier(myCondition, myViewModifier)
     ///
@@ -83,7 +84,7 @@ extension View {
         }
     }
 
-    /// SwifterSwiftUI: Set one modifier or another conditionally.
+    /// Set one modifier or another conditionally.
     ///
     ///    myView.conditionalModifier(myCondition, firstViewModifier, secondViewModifier)
     ///
@@ -108,7 +109,7 @@ extension View {
 // MARK: Animations
 extension View {
 
-    /// SwifterSwiftUI: Animate an action with an animation on appear.
+    /// Animate an action with an animation on appear.
     ///
     ///    myView.animateOnAppear(using: .easeInOut) { self.scale = 0.5 }
     ///
@@ -125,7 +126,7 @@ extension View {
         }
     }
 
-    /// SwifterSwiftUI: Animate an action with an animation on disappear.
+    /// Animate an action with an animation on disappear.
     ///
     ///    myView.animateOnDisappear(using: .easeInOut) { self.scale = 0.5 }
     ///

@@ -9,7 +9,7 @@ import SwiftUI
 
 extension LinearGradient {
 
-    /// SwifterSwiftUI: Create a gradient directly from colors
+    /// Create a gradient directly from colors
     ///
     ///    let myGradient = LinearGradient(Color.red, Color.blue)
     ///
