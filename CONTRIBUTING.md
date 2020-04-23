@@ -17,7 +17,7 @@ This document contains information and guidelines about contributing to this pro
 ## Asking Questions
 
 We don't use GitHub as a support forum.
-For any usage questions that are not specific to the project itself, please ask on [Stack Overflow](https://stackoverflow.com) instead with the tag Steps.
+For any usage questions that are not specific to the project itself, please ask on [Stack Overflow](https://stackoverflow.com) instead with the tag SwifterSwiftUI.
 By doing so, you'll be more likely to quickly solve your problem, and you'll allow anyone else with the same question to find the answer.
 This also allows us to focus on improving the project for others.
 
@@ -32,7 +32,7 @@ You can contribute to the project in a variety of ways:
 - Add missing unit tests 😅
 - Fixing or reporting bugs 😱
 
-If you're new to Open Source or Swift the Steps community is a great place to get involved.
+If you're new to Open Source or Swift the SwifterSwiftUI community is a great place to get involved.
 
 **Your contribution is always welcomed, no contribution is too small.**
 
@@ -42,8 +42,8 @@ If you're new to Open Source or Swift the Steps community is a great place to ge
 
 Please refer to the following rules before submitting a pull request with your new extensions:
 
-- Make sure no similar extension already exist in Steps.
-- Add your contributions to [**master branch**](https://github.com/asam139/Steps/tree/master):
+- Make sure no similar extension already exist in SwifterSwiftUI.
+- Add your contributions to [**master branch**](https://github.com/asam139/SwifterSwiftUI/tree/master):
   - by doing this we can merge new pull-requests into **master** branch as soon as they are accepted, and add them to the next releases once they are fully tested.
 - Mention the original source of extension source (if possible) as a comment inside extension:
 
@@ -84,12 +84,12 @@ public extension SomeType {}
 
 Please follow these guidelines before submitting a pull request with new tests:
 
-- Every extended Steps type should have one specific subclass of XCTestCase.
+- Every extended SwifterSwiftUI type should have one specific subclass of XCTestCase.
 - There should be a one to one relationship between methods/properties and their backing tests.
 - The subclass should be marked as final.
 - All extensions files and test files have a one to one relationship.
   - (example: all tests for "**StringExtensions.swift**" are found in the "**StringExtensionsTests.swift**" file)
-- Steps source files should not be added to the test target directly, but you should rather import Steps into the test target by using: @testable import Steps
+- SwifterSwiftUI source files should not be added to the test target directly, but you should rather import SwifterSwiftUI into the test target by using: @testable import SwifterSwiftUI
 - Tests are ordered inside files in the same order as classes.
 
 ---
@@ -104,7 +104,7 @@ Use the following template to add documentation for extensions
 ### Documentation template for units with single parameter
 
 ```swift
-/// Steps: <Description>.
+/// <Description>.
 ///
 ///    <Example Code>
 ///
@@ -116,7 +116,7 @@ Use the following template to add documentation for extensions
 ### Documentation template for units with multiple parameters
 
 ```swift
-/// Steps: <Description>.
+/// <Description>.
 ///
 ///    <Example Code>
 ///
@@ -130,7 +130,7 @@ Use the following template to add documentation for extensions
 ### Documentation template for enums
 
 ```swift
-/// Steps: <Description>.
+/// <Description>.
 ///
 /// - <Case1>: <Description>
 /// - <Case2>: <Description>
@@ -142,7 +142,7 @@ Use the following template to add documentation for extensions
 
 ```swift
 
-/// Steps: Sum of all elements in array.
+/// Sum of all elements in array.
 ///
 ///    [1, 2, 3, 4, 5].sum() -> 15
 ///
@@ -151,7 +151,7 @@ func sum() -> Element {
     // ...
 }
 
-/// Steps: Date by changing value of calendar component.
+/// Date by changing value of calendar component.
 ///
 /// - Parameters:
 ///   - component: component type.
@@ -171,9 +171,9 @@ In Xcode select a method and press `command` + `alt` + `/` to create a documenta
 
 ## Adding changelog entries
 
-The [Changelog](https://github.com/asam139/Steps/blob/master/CHANGELOG.md) is a file which contains a curated, chronologically ordered list of notable changes for each version of a project. Please make sure to add a changelog entry describing your contribution to it every time there is a notable change.
+The [Changelog](https://github.com/asam139/SwifterSwiftUI/blob/master/CHANGELOG.md) is a file which contains a curated, chronologically ordered list of notable changes for each version of a project. Please make sure to add a changelog entry describing your contribution to it every time there is a notable change.
 
-The [Changelog Guidelines](https://github.com/asam139/Steps/blob/master/CHANGELOG_GUIDELINES.md) contains instructions for maintaining (or adding new entries) to the Changelog.
+The [Changelog Guidelines](https://github.com/asam139/SwifterSwiftUI/blob/master/CHANGELOG_GUIDELINES.md) contains instructions for maintaining (or adding new entries) to the Changelog.
 
 ---
 
@@ -182,7 +182,7 @@ The [Changelog Guidelines](https://github.com/asam139/Steps/blob/master/CHANGELO
 A great way to contribute to the project is to send a detailed issue when you encounter a problem.
 We always appreciate a well-written, thorough bug report.
 
-Check that the project [issues page](https://github.com/asam139/Steps/issues) doesn't already include that problem or suggestion before submitting an issue.
+Check that the project [issues page](https://github.com/asam139/SwifterSwiftUI/issues) doesn't already include that problem or suggestion before submitting an issue.
 If you find a match, add a quick "**+1**" or "**I have this problem too**".
 Doing this helps prioritize the most common problems and requests.
 
@@ -191,11 +191,11 @@ Doing this helps prioritize the most common problems and requests.
 - What did you do?
 - What did you expect to happen?
 - What happened instead?
-- Steps version
+- SwifterSwiftUI version
 - Xcode version
 - macOS version running Xcode
 - Swift version
-- Platform(s) running Steps
+- Platform(s) running SwifterSwiftUI
 - Demo Project (if available)
 
 This information will help us review and fix your issue faster.
