@@ -63,9 +63,7 @@ extension View {
     ///   - then: callback to apply the changes when the condition is true
     ///   - else: callback to apply the changes when the condition is false
     /// - Returns: some View
-    public func `if`<ThenView: View, ElseView: View>(_ conditional: Bool,
-                                                     then: (Self) -> ThenView,
-                                                     `else`: (Self) -> ElseView) -> some View {
+    public func `if`<A: View, B: View>(_ conditional: Bool, then: (Self) -> A, `else`: (Self) -> B) -> some View {
         if conditional {
             return then(self).eraseToAnyView()
         }
