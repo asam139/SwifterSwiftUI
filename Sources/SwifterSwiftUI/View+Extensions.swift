@@ -18,6 +18,14 @@ extension View {
         AnyView(self)
     }
 
+    /// Encapsulate view in navigation view
+    ///
+    ///    myView.embedInNavigation()
+    ///
+    /// - Returns: view encapsulate in navigation view
+    func embedInNavigation() -> some View {
+        NavigationView { self }
+    }
 }
 
 // MARK: Building

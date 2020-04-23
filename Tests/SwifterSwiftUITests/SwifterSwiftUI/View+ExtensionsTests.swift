@@ -10,6 +10,11 @@ final class ViewExtensionsTests: XCTestCase {
         XCTAssertNoThrow(try anyView.inspect().anyView().emptyView())
     }
 
+    func testEmbedInNavigation() {
+        let anyView = EmptyView().embedInNavigation()
+        XCTAssertNoThrow(try anyView.inspect().navigationView())
+    }
+
     // MARK: Building
     func testIfThen() {
         let withZIndex = EmptyView().if(true, then: { $0.zIndex(13) })

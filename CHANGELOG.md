@@ -22,7 +22,7 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 
 ### Added
 - **View**:
-    - `embedInNavigation()`,
+    - `embedInNavigation()`.  [#2](https://github.com/asam139/Steps/pull/2) by [asam139](https://github.com/asam139) 
 
 ---
 
