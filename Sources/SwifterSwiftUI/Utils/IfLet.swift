@@ -33,7 +33,9 @@ public func ifLet<T, ThenOut: View>(_ value: T?, then: (T) -> ThenOut) -> some V
 ///   - value: optional value to verify
 ///   - then: callback to create a view with the value is not nil
 /// - Returns: The built view
-public func ifLet<T, ThenOut: View, ElseOut: View>(_ value: T?, then: (T) -> ThenOut, `else`: () -> ElseOut) -> some View {
+public func ifLet<T, ThenOut: View, ElseOut: View>(_ value: T?,
+                                                   then: (T) -> ThenOut,
+                                                   `else`: () -> ElseOut) -> some View {
     value.map { ViewBuilder.buildEither(first: then($0)) } ??
         ViewBuilder.buildEither(second: `else`())
 }

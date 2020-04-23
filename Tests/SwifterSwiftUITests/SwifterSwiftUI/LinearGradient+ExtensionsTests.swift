@@ -10,11 +10,15 @@ import SwiftUI
 
 final class LinearGradientExtensionsTests: XCTestCase {
     func testInitWithColors() {
-        let gradient = LinearGradient(Color.red, Color.blue, startPoint: .topLeading, endPoint: .bottomTrailing)
-        let inspGradient = try! gradient.inspect().linearGradient()
-        XCTAssertTrue(try inspGradient.gradient().stops[0].color == Color.red)
-        XCTAssertTrue(try inspGradient.gradient().stops[1].color == Color.blue)
-        XCTAssertTrue(try inspGradient.startPoint() == .topLeading)
-        XCTAssertTrue(try inspGradient.endPoint() == .bottomTrailing)
+        let firstColor = Color.red
+        let secondColor = Color.blue
+        let gradient = LinearGradient(firstColor, secondColor, startPoint: .topLeading, endPoint: .bottomTrailing)
+        XCTAssertNoThrow({
+            let inspGradient = try gradient.inspect().linearGradient()
+            XCTAssertTrue(try inspGradient.gradient().stops[0].color == firstColor)
+            XCTAssertTrue(try inspGradient.gradient().stops[1].color == secondColor)
+            XCTAssertTrue(try inspGradient.startPoint() == .topLeading)
+            XCTAssertTrue(try inspGradient.endPoint() == .bottomTrailing)
+        })
     }
 }

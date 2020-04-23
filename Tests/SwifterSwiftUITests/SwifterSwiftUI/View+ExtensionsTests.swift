@@ -36,6 +36,7 @@ final class ViewExtensionsTests: XCTestCase {
         }
     }
 
+    // MARK: Modifiers
     func testConditionalModifier() {
         let testView = Text("Hello")
         var modifier = InspectableTestModifier()
@@ -89,6 +90,7 @@ final class ViewExtensionsTests: XCTestCase {
         wait(for: [secondExp], timeout: 0.1)
     }
 
+    // MARK: Animations
     func testAnimateOnAppear() {
         let testView = Text("Hello")
 

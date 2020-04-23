@@ -55,7 +55,9 @@ extension View {
     ///   - then: callback to apply the changes when the condition is true
     ///   - else: callback to apply the changes when the condition is false
     /// - Returns: some View
-    public func `if`<ThenView: View, ElseView: View>(_ conditional: Bool, then: (Self) -> ThenView, `else`: (Self) -> ElseView) -> some View {
+    public func `if`<ThenView: View, ElseView: View>(_ conditional: Bool,
+                                                     then: (Self) -> ThenView,
+                                                     `else`: (Self) -> ElseView) -> some View {
         if conditional {
             return then(self).eraseToAnyView()
         }
@@ -74,10 +76,10 @@ extension View {
     ///   - condition: an boolean to control the condition
     ///   - modifier: modifier to apply
     /// - Returns: some View
-    public func conditionalModifier<T>(_ condition: Bool, _ modifier: T) -> some View where T: ViewModifier {
+    public func conditionalModifier<M>(_ condition: Bool, _ modifier: M) -> some View where M: ViewModifier {
         Group {
             if condition {
-                self.modifier(modifier)
+                self.modifier(modifier).eraseToAnyView()
             } else {
                 self
             }
@@ -93,14 +95,13 @@ extension View {
     ///   - trueModifier: modifier to apply when the condition is true
     ///   - falseModifier: modifier to apply when the condition is false
     /// - Returns: some View
-    public func conditionalModifier<M1, M2>(
-        _ condition: Bool, _ trueModifier: M1, _ falseModifier: M2
-    ) -> some View where M1: ViewModifier, M2: ViewModifier {
+    public func conditionalModifier<M>(
+        _ condition: Bool, _ trueModifier: M, _ falseModifier: M) -> some View where M: ViewModifier {
         Group {
             if condition {
-                self.modifier(trueModifier)
+                self.modifier(trueModifier).eraseToAnyView()
             } else {
-                self.modifier(falseModifier)
+                self.modifier(falseModifier).eraseToAnyView()
             }
         }
     }
