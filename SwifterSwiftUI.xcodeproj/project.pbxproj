@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		9C06EE6724548BDB009E2D91 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06EE6624548BDB009E2D91 /* Color+Extensions.swift */; };
+		9C06EE6924548C74009E2D91 /* Color+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06EE6824548C74009E2D91 /* Color+ExtensionsTests.swift */; };
 		OBJ_111 /* LinearGradient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* LinearGradient+Extensions.swift */; };
 		OBJ_112 /* IfLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* IfLet.swift */; };
 		OBJ_113 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* View+Extensions.swift */; };
@@ -122,6 +124,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C06EE6624548BDB009E2D91 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		9C06EE6824548C74009E2D91 /* Color+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		OBJ_100 /* CHANGELOG_GUIDELINES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG_GUIDELINES.md; sourceTree = "<group>"; };
 		OBJ_101 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_102 /* SwifterSwiftUI.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwifterSwiftUI.podspec; sourceTree = "<group>"; };
@@ -270,6 +274,7 @@
 				OBJ_17 /* Utils */,
 				OBJ_16 /* LinearGradient+ExtensionsTests.swift */,
 				OBJ_19 /* View+ExtensionsTests.swift */,
+				9C06EE6824548C74009E2D91 /* Color+ExtensionsTests.swift */,
 			);
 			path = SwifterSwiftUI;
 			sourceTree = "<group>";
@@ -386,7 +391,7 @@
 			path = SwiftUI;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -407,7 +412,6 @@
 				OBJ_104 /* Gemfile */,
 				OBJ_105 /* Gemfile.lock */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -424,6 +428,7 @@
 				OBJ_9 /* LinearGradient+Extensions.swift */,
 				OBJ_10 /* Utils */,
 				OBJ_12 /* View+Extensions.swift */,
+				9C06EE6624548BDB009E2D91 /* Color+Extensions.swift */,
 			);
 			name = SwifterSwiftUI;
 			path = Sources/SwifterSwiftUI;
@@ -537,7 +542,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_90 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -580,6 +585,7 @@
 				OBJ_111 /* LinearGradient+Extensions.swift in Sources */,
 				OBJ_112 /* IfLet.swift in Sources */,
 				OBJ_113 /* View+Extensions.swift in Sources */,
+				9C06EE6724548BDB009E2D91 /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +602,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_131 /* LinearGradient+ExtensionsTests.swift in Sources */,
+				9C06EE6924548C74009E2D91 /* Color+ExtensionsTests.swift in Sources */,
 				OBJ_132 /* IfLetTests.swift in Sources */,
 				OBJ_133 /* View+ExtensionsTests.swift in Sources */,
 				OBJ_134 /* XCTestManifests.swift in Sources */,
