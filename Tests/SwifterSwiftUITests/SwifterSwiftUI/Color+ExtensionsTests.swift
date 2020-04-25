@@ -11,12 +11,14 @@ import SwiftUI
 
 final class ColorExtensionsTests: XCTestCase {
     func testInitWithHex() {
+        // Invalid strings
         XCTAssertNil(Color(hex: ""))
         XCTAssertNil(Color(hex: "---"))
         XCTAssertNil(Color(hex: "111"))
         XCTAssertNil(Color(hex: "#111"))
         XCTAssertNil(Color(hex: "#11111111111"))
 
+        // Valid strings
         let colorValue: Double = 17.0 / 255
         let rgbHexString = "111111" // (17,17,17, 255)
         let rgbHexStringWithPrefix = "#" + rgbHexString
