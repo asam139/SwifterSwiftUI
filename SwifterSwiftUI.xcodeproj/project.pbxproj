@@ -23,6 +23,8 @@
 /* Begin PBXBuildFile section */
 		9C06EE6724548BDB009E2D91 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06EE6624548BDB009E2D91 /* Color+Extensions.swift */; };
 		9C06EE6924548C74009E2D91 /* Color+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06EE6824548C74009E2D91 /* Color+ExtensionsTests.swift */; };
+		9C06EE6B2455E3AD009E2D91 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06EE6A2455E3AD009E2D91 /* Image+Extensions.swift */; };
+		9C06EE6D2455E98D009E2D91 /* Image+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06EE6C2455E98D009E2D91 /* Image+ExtensionsTests.swift */; };
 		OBJ_111 /* LinearGradient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* LinearGradient+Extensions.swift */; };
 		OBJ_112 /* IfLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* IfLet.swift */; };
 		OBJ_113 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* View+Extensions.swift */; };
@@ -126,6 +128,8 @@
 /* Begin PBXFileReference section */
 		9C06EE6624548BDB009E2D91 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		9C06EE6824548C74009E2D91 /* Color+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		9C06EE6A2455E3AD009E2D91 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
+		9C06EE6C2455E98D009E2D91 /* Image+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		OBJ_100 /* CHANGELOG_GUIDELINES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG_GUIDELINES.md; sourceTree = "<group>"; };
 		OBJ_101 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_102 /* SwifterSwiftUI.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwifterSwiftUI.podspec; sourceTree = "<group>"; };
@@ -275,6 +279,7 @@
 				OBJ_16 /* LinearGradient+ExtensionsTests.swift */,
 				OBJ_19 /* View+ExtensionsTests.swift */,
 				9C06EE6824548C74009E2D91 /* Color+ExtensionsTests.swift */,
+				9C06EE6C2455E98D009E2D91 /* Image+ExtensionsTests.swift */,
 			);
 			path = SwifterSwiftUI;
 			sourceTree = "<group>";
@@ -429,6 +434,7 @@
 				OBJ_10 /* Utils */,
 				OBJ_12 /* View+Extensions.swift */,
 				9C06EE6624548BDB009E2D91 /* Color+Extensions.swift */,
+				9C06EE6A2455E3AD009E2D91 /* Image+Extensions.swift */,
 			);
 			name = SwifterSwiftUI;
 			path = Sources/SwifterSwiftUI;
@@ -583,6 +589,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_111 /* LinearGradient+Extensions.swift in Sources */,
+				9C06EE6B2455E3AD009E2D91 /* Image+Extensions.swift in Sources */,
 				OBJ_112 /* IfLet.swift in Sources */,
 				OBJ_113 /* View+Extensions.swift in Sources */,
 				9C06EE6724548BDB009E2D91 /* Color+Extensions.swift in Sources */,
@@ -602,6 +609,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_131 /* LinearGradient+ExtensionsTests.swift in Sources */,
+				9C06EE6D2455E98D009E2D91 /* Image+ExtensionsTests.swift in Sources */,
 				9C06EE6924548C74009E2D91 /* Color+ExtensionsTests.swift in Sources */,
 				OBJ_132 /* IfLetTests.swift in Sources */,
 				OBJ_133 /* View+ExtensionsTests.swift in Sources */,
