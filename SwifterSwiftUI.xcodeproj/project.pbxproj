@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"SwifterSwiftUI::SwifterSwiftUIPackageTests::ProductTarget" /* SwifterSwiftUIPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_122 /* Build configuration list for PBXAggregateTarget "SwifterSwiftUIPackageTests" */;
+			buildConfigurationList = OBJ_128 /* Build configuration list for PBXAggregateTarget "SwifterSwiftUIPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_125 /* PBXTargetDependency */,
+				OBJ_131 /* PBXTargetDependency */,
 			);
 			name = SwifterSwiftUIPackageTests;
 			productName = SwifterSwiftUIPackageTests;
@@ -21,102 +21,102 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		9C06EE6724548BDB009E2D91 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06EE6624548BDB009E2D91 /* Color+Extensions.swift */; };
-		9C06EE6924548C74009E2D91 /* Color+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06EE6824548C74009E2D91 /* Color+ExtensionsTests.swift */; };
-		9C06EE6B2455E3AD009E2D91 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06EE6A2455E3AD009E2D91 /* Image+Extensions.swift */; };
-		9C06EE6D2455E98D009E2D91 /* Image+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06EE6C2455E98D009E2D91 /* Image+ExtensionsTests.swift */; };
-		OBJ_111 /* LinearGradient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* LinearGradient+Extensions.swift */; };
-		OBJ_112 /* IfLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* IfLet.swift */; };
-		OBJ_113 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* View+Extensions.swift */; };
-		OBJ_120 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_131 /* LinearGradient+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* LinearGradient+ExtensionsTests.swift */; };
-		OBJ_132 /* IfLetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* IfLetTests.swift */; };
-		OBJ_133 /* View+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* View+ExtensionsTests.swift */; };
-		OBJ_134 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* XCTestManifests.swift */; };
-		OBJ_136 /* ViewInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ViewInspector::ViewInspector::Product" /* ViewInspector.framework */; };
-		OBJ_137 /* SwifterSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwifterSwiftUI::SwifterSwiftUI::Product" /* SwifterSwiftUI.framework */; };
-		OBJ_145 /* BaseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* BaseTypes.swift */; };
-		OBJ_146 /* InspectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* InspectableView.swift */; };
-		OBJ_147 /* InspectionEmissary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* InspectionEmissary.swift */; };
-		OBJ_148 /* Inspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Inspector.swift */; };
-		OBJ_149 /* AccessibilityModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* AccessibilityModifiers.swift */; };
-		OBJ_150 /* AnimationModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* AnimationModifiers.swift */; };
-		OBJ_151 /* EventsModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* EventsModifiers.swift */; };
-		OBJ_152 /* GestureModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* GestureModifiers.swift */; };
-		OBJ_153 /* InteractionModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* InteractionModifiers.swift */; };
-		OBJ_154 /* PositioningModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* PositioningModifiers.swift */; };
-		OBJ_155 /* PreviewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* PreviewModifiers.swift */; };
-		OBJ_156 /* SizingModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* SizingModifiers.swift */; };
-		OBJ_157 /* VisualEffectModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* VisualEffectModifiers.swift */; };
-		OBJ_158 /* AngularGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* AngularGradient.swift */; };
-		OBJ_159 /* AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* AnyView.swift */; };
-		OBJ_160 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Button.swift */; };
-		OBJ_161 /* ClassifiedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* ClassifiedView.swift */; };
-		OBJ_162 /* ConditionalContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* ConditionalContent.swift */; };
-		OBJ_163 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* CustomView.swift */; };
-		OBJ_164 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* DatePicker.swift */; };
-		OBJ_165 /* DelayedPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* DelayedPreferenceView.swift */; };
-		OBJ_166 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Divider.swift */; };
-		OBJ_167 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* EditButton.swift */; };
-		OBJ_168 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* EmptyView.swift */; };
-		OBJ_169 /* EnvironmentReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* EnvironmentReaderView.swift */; };
-		OBJ_170 /* EquatableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* EquatableView.swift */; };
-		OBJ_171 /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* ForEach.swift */; };
-		OBJ_172 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Form.swift */; };
-		OBJ_173 /* GeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* GeometryReader.swift */; };
-		OBJ_174 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Group.swift */; };
-		OBJ_175 /* GroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* GroupBox.swift */; };
-		OBJ_176 /* HSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* HSplitView.swift */; };
-		OBJ_177 /* HStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* HStack.swift */; };
-		OBJ_178 /* IDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* IDView.swift */; };
-		OBJ_179 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Image.swift */; };
-		OBJ_180 /* LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* LinearGradient.swift */; };
-		OBJ_181 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* List.swift */; };
-		OBJ_182 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* MenuButton.swift */; };
-		OBJ_183 /* ModifiedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* ModifiedContent.swift */; };
-		OBJ_184 /* NavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* NavigationLink.swift */; };
-		OBJ_185 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* NavigationView.swift */; };
-		OBJ_186 /* OptionalContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* OptionalContent.swift */; };
-		OBJ_187 /* PasteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* PasteButton.swift */; };
-		OBJ_188 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* Picker.swift */; };
-		OBJ_189 /* RadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* RadialGradient.swift */; };
-		OBJ_190 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* ScrollView.swift */; };
-		OBJ_191 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* Section.swift */; };
-		OBJ_192 /* SecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* SecureField.swift */; };
-		OBJ_193 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* Shape.swift */; };
-		OBJ_194 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* Slider.swift */; };
-		OBJ_195 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* Spacer.swift */; };
-		OBJ_196 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* Stepper.swift */; };
-		OBJ_197 /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* SubscriptionView.swift */; };
-		OBJ_198 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* TabView.swift */; };
-		OBJ_199 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* Text.swift */; };
-		OBJ_200 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* TextField.swift */; };
-		OBJ_201 /* Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* Toggle.swift */; };
-		OBJ_202 /* TouchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* TouchBar.swift */; };
-		OBJ_203 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* TreeView.swift */; };
-		OBJ_204 /* VSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* VSplitView.swift */; };
-		OBJ_205 /* VStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* VStack.swift */; };
-		OBJ_206 /* ZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* ZStack.swift */; };
-		OBJ_207 /* ViewHosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* ViewHosting.swift */; };
-		OBJ_214 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* Package.swift */; };
+		OBJ_115 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Color+Extensions.swift */; };
+		OBJ_116 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Image+Extensions.swift */; };
+		OBJ_117 /* LinearGradient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* LinearGradient+Extensions.swift */; };
+		OBJ_118 /* IfLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* IfLet.swift */; };
+		OBJ_119 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* View+Extensions.swift */; };
+		OBJ_126 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_137 /* Color+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Color+ExtensionsTests.swift */; };
+		OBJ_138 /* Image+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Image+ExtensionsTests.swift */; };
+		OBJ_139 /* LinearGradient+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* LinearGradient+ExtensionsTests.swift */; };
+		OBJ_140 /* IfLetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* IfLetTests.swift */; };
+		OBJ_141 /* View+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* View+ExtensionsTests.swift */; };
+		OBJ_142 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* XCTestManifests.swift */; };
+		OBJ_144 /* ViewInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ViewInspector::ViewInspector::Product" /* ViewInspector.framework */; };
+		OBJ_145 /* SwifterSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwifterSwiftUI::SwifterSwiftUI::Product" /* SwifterSwiftUI.framework */; };
+		OBJ_153 /* BaseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* BaseTypes.swift */; };
+		OBJ_154 /* InspectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* InspectableView.swift */; };
+		OBJ_155 /* InspectionEmissary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* InspectionEmissary.swift */; };
+		OBJ_156 /* Inspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Inspector.swift */; };
+		OBJ_157 /* AccessibilityModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* AccessibilityModifiers.swift */; };
+		OBJ_158 /* AnimationModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* AnimationModifiers.swift */; };
+		OBJ_159 /* EventsModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* EventsModifiers.swift */; };
+		OBJ_160 /* GestureModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* GestureModifiers.swift */; };
+		OBJ_161 /* InteractionModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* InteractionModifiers.swift */; };
+		OBJ_162 /* PositioningModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* PositioningModifiers.swift */; };
+		OBJ_163 /* PreviewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* PreviewModifiers.swift */; };
+		OBJ_164 /* SizingModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* SizingModifiers.swift */; };
+		OBJ_165 /* VisualEffectModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* VisualEffectModifiers.swift */; };
+		OBJ_166 /* AngularGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* AngularGradient.swift */; };
+		OBJ_167 /* AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* AnyView.swift */; };
+		OBJ_168 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Button.swift */; };
+		OBJ_169 /* ClassifiedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* ClassifiedView.swift */; };
+		OBJ_170 /* ConditionalContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* ConditionalContent.swift */; };
+		OBJ_171 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* CustomView.swift */; };
+		OBJ_172 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* DatePicker.swift */; };
+		OBJ_173 /* DelayedPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* DelayedPreferenceView.swift */; };
+		OBJ_174 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Divider.swift */; };
+		OBJ_175 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* EditButton.swift */; };
+		OBJ_176 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* EmptyView.swift */; };
+		OBJ_177 /* EnvironmentReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* EnvironmentReaderView.swift */; };
+		OBJ_178 /* EquatableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* EquatableView.swift */; };
+		OBJ_179 /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* ForEach.swift */; };
+		OBJ_180 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* Form.swift */; };
+		OBJ_181 /* GeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* GeometryReader.swift */; };
+		OBJ_182 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* Group.swift */; };
+		OBJ_183 /* GroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* GroupBox.swift */; };
+		OBJ_184 /* HSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* HSplitView.swift */; };
+		OBJ_185 /* HStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* HStack.swift */; };
+		OBJ_186 /* IDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* IDView.swift */; };
+		OBJ_187 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* Image.swift */; };
+		OBJ_188 /* LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* LinearGradient.swift */; };
+		OBJ_189 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* List.swift */; };
+		OBJ_190 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* MenuButton.swift */; };
+		OBJ_191 /* ModifiedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* ModifiedContent.swift */; };
+		OBJ_192 /* NavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* NavigationLink.swift */; };
+		OBJ_193 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* NavigationView.swift */; };
+		OBJ_194 /* OptionalContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* OptionalContent.swift */; };
+		OBJ_195 /* PasteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* PasteButton.swift */; };
+		OBJ_196 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* Picker.swift */; };
+		OBJ_197 /* RadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* RadialGradient.swift */; };
+		OBJ_198 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* ScrollView.swift */; };
+		OBJ_199 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* Section.swift */; };
+		OBJ_200 /* SecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* SecureField.swift */; };
+		OBJ_201 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* Shape.swift */; };
+		OBJ_202 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* Slider.swift */; };
+		OBJ_203 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* Spacer.swift */; };
+		OBJ_204 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* Stepper.swift */; };
+		OBJ_205 /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* SubscriptionView.swift */; };
+		OBJ_206 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* TabView.swift */; };
+		OBJ_207 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* Text.swift */; };
+		OBJ_208 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* TextField.swift */; };
+		OBJ_209 /* Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* Toggle.swift */; };
+		OBJ_210 /* TouchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* TouchBar.swift */; };
+		OBJ_211 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* TreeView.swift */; };
+		OBJ_212 /* VSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* VSplitView.swift */; };
+		OBJ_213 /* VStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* VStack.swift */; };
+		OBJ_214 /* ZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* ZStack.swift */; };
+		OBJ_215 /* ViewHosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* ViewHosting.swift */; };
+		OBJ_222 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9C06EE5E245223C1009E2D91 /* PBXContainerItemProxy */ = {
+		9C75D05F2455F550009BB447 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "ViewInspector::ViewInspector";
 			remoteInfo = ViewInspector;
 		};
-		9C06EE5F245223C1009E2D91 /* PBXContainerItemProxy */ = {
+		9C75D0602455F550009BB447 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwifterSwiftUI::SwifterSwiftUI";
 			remoteInfo = SwifterSwiftUI;
 		};
-		9C06EE60245223C1009E2D91 /* PBXContainerItemProxy */ = {
+		9C75D0612455F552009BB447 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -126,117 +126,117 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9C06EE6624548BDB009E2D91 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
-		9C06EE6824548C74009E2D91 /* Color+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ExtensionsTests.swift"; sourceTree = "<group>"; };
-		9C06EE6A2455E3AD009E2D91 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
-		9C06EE6C2455E98D009E2D91 /* Image+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+ExtensionsTests.swift"; sourceTree = "<group>"; };
-		OBJ_100 /* CHANGELOG_GUIDELINES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG_GUIDELINES.md; sourceTree = "<group>"; };
-		OBJ_101 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		OBJ_102 /* SwifterSwiftUI.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwifterSwiftUI.podspec; sourceTree = "<group>"; };
-		OBJ_103 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
-		OBJ_104 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
-		OBJ_105 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
-		OBJ_11 /* IfLet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLet.swift; sourceTree = "<group>"; };
-		OBJ_12 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_16 /* LinearGradient+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+ExtensionsTests.swift"; sourceTree = "<group>"; };
-		OBJ_18 /* IfLetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLetTests.swift; sourceTree = "<group>"; };
-		OBJ_19 /* View+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ExtensionsTests.swift"; sourceTree = "<group>"; };
-		OBJ_20 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_24 /* BaseTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTypes.swift; sourceTree = "<group>"; };
-		OBJ_25 /* InspectableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectableView.swift; sourceTree = "<group>"; };
-		OBJ_26 /* InspectionEmissary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionEmissary.swift; sourceTree = "<group>"; };
-		OBJ_27 /* Inspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspector.swift; sourceTree = "<group>"; };
-		OBJ_29 /* AccessibilityModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityModifiers.swift; sourceTree = "<group>"; };
-		OBJ_30 /* AnimationModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModifiers.swift; sourceTree = "<group>"; };
-		OBJ_31 /* EventsModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModifiers.swift; sourceTree = "<group>"; };
-		OBJ_32 /* GestureModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureModifiers.swift; sourceTree = "<group>"; };
-		OBJ_33 /* InteractionModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionModifiers.swift; sourceTree = "<group>"; };
-		OBJ_34 /* PositioningModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositioningModifiers.swift; sourceTree = "<group>"; };
-		OBJ_35 /* PreviewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModifiers.swift; sourceTree = "<group>"; };
-		OBJ_36 /* SizingModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizingModifiers.swift; sourceTree = "<group>"; };
-		OBJ_37 /* VisualEffectModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectModifiers.swift; sourceTree = "<group>"; };
-		OBJ_39 /* AngularGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularGradient.swift; sourceTree = "<group>"; };
-		OBJ_40 /* AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyView.swift; sourceTree = "<group>"; };
-		OBJ_41 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		OBJ_42 /* ClassifiedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedView.swift; sourceTree = "<group>"; };
-		OBJ_43 /* ConditionalContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalContent.swift; sourceTree = "<group>"; };
-		OBJ_44 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
-		OBJ_45 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
-		OBJ_46 /* DelayedPreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayedPreferenceView.swift; sourceTree = "<group>"; };
-		OBJ_47 /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
-		OBJ_48 /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
-		OBJ_49 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
-		OBJ_50 /* EnvironmentReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentReaderView.swift; sourceTree = "<group>"; };
-		OBJ_51 /* EquatableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableView.swift; sourceTree = "<group>"; };
-		OBJ_52 /* ForEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
-		OBJ_53 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
-		OBJ_54 /* GeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader.swift; sourceTree = "<group>"; };
-		OBJ_55 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
-		OBJ_56 /* GroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBox.swift; sourceTree = "<group>"; };
-		OBJ_57 /* HSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSplitView.swift; sourceTree = "<group>"; };
-		OBJ_58 /* HStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack.swift; sourceTree = "<group>"; };
-		OBJ_59 /* IDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDView.swift; sourceTree = "<group>"; };
+		OBJ_10 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_100 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = SOURCE_ROOT; };
+		OBJ_101 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = SOURCE_ROOT; };
+		OBJ_102 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_103 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		OBJ_104 /* CHANGELOG_GUIDELINES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG_GUIDELINES.md; sourceTree = "<group>"; };
+		OBJ_105 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_106 /* SwifterSwiftUI.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwifterSwiftUI.podspec; sourceTree = "<group>"; };
+		OBJ_107 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		OBJ_108 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		OBJ_109 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
+		OBJ_11 /* LinearGradient+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_13 /* IfLet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLet.swift; sourceTree = "<group>"; };
+		OBJ_14 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_18 /* Color+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		OBJ_19 /* Image+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		OBJ_20 /* LinearGradient+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		OBJ_22 /* IfLetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLetTests.swift; sourceTree = "<group>"; };
+		OBJ_23 /* View+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		OBJ_24 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_28 /* BaseTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTypes.swift; sourceTree = "<group>"; };
+		OBJ_29 /* InspectableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectableView.swift; sourceTree = "<group>"; };
+		OBJ_30 /* InspectionEmissary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionEmissary.swift; sourceTree = "<group>"; };
+		OBJ_31 /* Inspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspector.swift; sourceTree = "<group>"; };
+		OBJ_33 /* AccessibilityModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityModifiers.swift; sourceTree = "<group>"; };
+		OBJ_34 /* AnimationModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModifiers.swift; sourceTree = "<group>"; };
+		OBJ_35 /* EventsModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModifiers.swift; sourceTree = "<group>"; };
+		OBJ_36 /* GestureModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureModifiers.swift; sourceTree = "<group>"; };
+		OBJ_37 /* InteractionModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionModifiers.swift; sourceTree = "<group>"; };
+		OBJ_38 /* PositioningModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositioningModifiers.swift; sourceTree = "<group>"; };
+		OBJ_39 /* PreviewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModifiers.swift; sourceTree = "<group>"; };
+		OBJ_40 /* SizingModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizingModifiers.swift; sourceTree = "<group>"; };
+		OBJ_41 /* VisualEffectModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectModifiers.swift; sourceTree = "<group>"; };
+		OBJ_43 /* AngularGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularGradient.swift; sourceTree = "<group>"; };
+		OBJ_44 /* AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyView.swift; sourceTree = "<group>"; };
+		OBJ_45 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		OBJ_46 /* ClassifiedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedView.swift; sourceTree = "<group>"; };
+		OBJ_47 /* ConditionalContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalContent.swift; sourceTree = "<group>"; };
+		OBJ_48 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		OBJ_49 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		OBJ_50 /* DelayedPreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayedPreferenceView.swift; sourceTree = "<group>"; };
+		OBJ_51 /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
+		OBJ_52 /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
+		OBJ_53 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		OBJ_54 /* EnvironmentReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentReaderView.swift; sourceTree = "<group>"; };
+		OBJ_55 /* EquatableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableView.swift; sourceTree = "<group>"; };
+		OBJ_56 /* ForEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
+		OBJ_57 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		OBJ_58 /* GeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader.swift; sourceTree = "<group>"; };
+		OBJ_59 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		OBJ_61 /* LinearGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradient.swift; sourceTree = "<group>"; };
-		OBJ_62 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
-		OBJ_63 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
-		OBJ_64 /* ModifiedContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiedContent.swift; sourceTree = "<group>"; };
-		OBJ_65 /* NavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLink.swift; sourceTree = "<group>"; };
-		OBJ_66 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
-		OBJ_67 /* OptionalContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalContent.swift; sourceTree = "<group>"; };
-		OBJ_68 /* PasteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteButton.swift; sourceTree = "<group>"; };
-		OBJ_69 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
-		OBJ_70 /* RadialGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradient.swift; sourceTree = "<group>"; };
-		OBJ_71 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
-		OBJ_72 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
-		OBJ_73 /* SecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureField.swift; sourceTree = "<group>"; };
-		OBJ_74 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
-		OBJ_75 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
-		OBJ_76 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
-		OBJ_77 /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
-		OBJ_78 /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
-		OBJ_79 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
-		OBJ_80 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
-		OBJ_81 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
-		OBJ_82 /* Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggle.swift; sourceTree = "<group>"; };
-		OBJ_83 /* TouchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBar.swift; sourceTree = "<group>"; };
-		OBJ_84 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
-		OBJ_85 /* VSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSplitView.swift; sourceTree = "<group>"; };
-		OBJ_86 /* VStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack.swift; sourceTree = "<group>"; };
-		OBJ_87 /* ZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStack.swift; sourceTree = "<group>"; };
-		OBJ_88 /* ViewHosting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHosting.swift; sourceTree = "<group>"; };
-		OBJ_89 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/93sauu/repositories/SwifterSwiftUI/.build/checkouts/ViewInspector/Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* LinearGradient+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_94 /* Combine */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Combine; sourceTree = SOURCE_ROOT; };
-		OBJ_95 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
-		OBJ_96 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = SOURCE_ROOT; };
-		OBJ_97 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = SOURCE_ROOT; };
-		OBJ_98 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		OBJ_99 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		OBJ_60 /* GroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBox.swift; sourceTree = "<group>"; };
+		OBJ_61 /* HSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSplitView.swift; sourceTree = "<group>"; };
+		OBJ_62 /* HStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack.swift; sourceTree = "<group>"; };
+		OBJ_63 /* IDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDView.swift; sourceTree = "<group>"; };
+		OBJ_64 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		OBJ_65 /* LinearGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradient.swift; sourceTree = "<group>"; };
+		OBJ_66 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		OBJ_67 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		OBJ_68 /* ModifiedContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiedContent.swift; sourceTree = "<group>"; };
+		OBJ_69 /* NavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLink.swift; sourceTree = "<group>"; };
+		OBJ_70 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		OBJ_71 /* OptionalContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalContent.swift; sourceTree = "<group>"; };
+		OBJ_72 /* PasteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteButton.swift; sourceTree = "<group>"; };
+		OBJ_73 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		OBJ_74 /* RadialGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradient.swift; sourceTree = "<group>"; };
+		OBJ_75 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		OBJ_76 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		OBJ_77 /* SecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureField.swift; sourceTree = "<group>"; };
+		OBJ_78 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		OBJ_79 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		OBJ_80 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
+		OBJ_81 /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
+		OBJ_82 /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
+		OBJ_83 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		OBJ_84 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		OBJ_85 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		OBJ_86 /* Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggle.swift; sourceTree = "<group>"; };
+		OBJ_87 /* TouchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBar.swift; sourceTree = "<group>"; };
+		OBJ_88 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
+		OBJ_89 /* VSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSplitView.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_90 /* VStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack.swift; sourceTree = "<group>"; };
+		OBJ_91 /* ZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStack.swift; sourceTree = "<group>"; };
+		OBJ_92 /* ViewHosting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHosting.swift; sourceTree = "<group>"; };
+		OBJ_93 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/93sauu/repositories/SwifterSwiftUI/.build/checkouts/ViewInspector/Package.swift; sourceTree = "<group>"; };
+		OBJ_98 /* Combine */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Combine; sourceTree = SOURCE_ROOT; };
+		OBJ_99 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
 		"SwifterSwiftUI::SwifterSwiftUI::Product" /* SwifterSwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwifterSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwifterSwiftUI::SwifterSwiftUITests::Product" /* SwifterSwiftUITests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwifterSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"ViewInspector::ViewInspector::Product" /* ViewInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ViewInspector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_114 /* Frameworks */ = {
+		OBJ_120 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_135 /* Frameworks */ = {
+		OBJ_143 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_136 /* ViewInspector.framework in Frameworks */,
-				OBJ_137 /* SwifterSwiftUI.framework in Frameworks */,
+				OBJ_144 /* ViewInspector.framework in Frameworks */,
+				OBJ_145 /* SwifterSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_208 /* Frameworks */ = {
+		OBJ_216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
@@ -246,177 +246,178 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_10 /* Utils */ = {
+		OBJ_12 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_11 /* IfLet.swift */,
+				OBJ_13 /* IfLet.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		OBJ_13 /* Tests */ = {
+		OBJ_15 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_14 /* SwifterSwiftUITests */,
+				OBJ_16 /* SwifterSwiftUITests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_14 /* SwifterSwiftUITests */ = {
+		OBJ_16 /* SwifterSwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_15 /* SwifterSwiftUI */,
-				OBJ_20 /* XCTestManifests.swift */,
+				OBJ_17 /* SwifterSwiftUI */,
+				OBJ_24 /* XCTestManifests.swift */,
 			);
 			name = SwifterSwiftUITests;
 			path = Tests/SwifterSwiftUITests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_15 /* SwifterSwiftUI */ = {
+		OBJ_17 /* SwifterSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_17 /* Utils */,
-				OBJ_16 /* LinearGradient+ExtensionsTests.swift */,
-				OBJ_19 /* View+ExtensionsTests.swift */,
-				9C06EE6824548C74009E2D91 /* Color+ExtensionsTests.swift */,
-				9C06EE6C2455E98D009E2D91 /* Image+ExtensionsTests.swift */,
+				OBJ_18 /* Color+ExtensionsTests.swift */,
+				OBJ_19 /* Image+ExtensionsTests.swift */,
+				OBJ_20 /* LinearGradient+ExtensionsTests.swift */,
+				OBJ_21 /* Utils */,
+				OBJ_23 /* View+ExtensionsTests.swift */,
 			);
 			path = SwifterSwiftUI;
 			sourceTree = "<group>";
 		};
-		OBJ_17 /* Utils */ = {
+		OBJ_21 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_18 /* IfLetTests.swift */,
+				OBJ_22 /* IfLetTests.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		OBJ_21 /* Dependencies */ = {
+		OBJ_25 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_22 /* ViewInspector 0.3.11 */,
+				OBJ_26 /* ViewInspector 0.3.11 */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_22 /* ViewInspector 0.3.11 */ = {
+		OBJ_26 /* ViewInspector 0.3.11 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_23 /* ViewInspector */,
-				OBJ_89 /* Package.swift */,
+				OBJ_27 /* ViewInspector */,
+				OBJ_93 /* Package.swift */,
 			);
 			name = "ViewInspector 0.3.11";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_23 /* ViewInspector */ = {
+		OBJ_27 /* ViewInspector */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_24 /* BaseTypes.swift */,
-				OBJ_25 /* InspectableView.swift */,
-				OBJ_26 /* InspectionEmissary.swift */,
-				OBJ_27 /* Inspector.swift */,
-				OBJ_28 /* Modifiers */,
-				OBJ_38 /* SwiftUI */,
-				OBJ_88 /* ViewHosting.swift */,
+				OBJ_28 /* BaseTypes.swift */,
+				OBJ_29 /* InspectableView.swift */,
+				OBJ_30 /* InspectionEmissary.swift */,
+				OBJ_31 /* Inspector.swift */,
+				OBJ_32 /* Modifiers */,
+				OBJ_42 /* SwiftUI */,
+				OBJ_92 /* ViewHosting.swift */,
 			);
 			name = ViewInspector;
 			path = .build/checkouts/ViewInspector/Sources/ViewInspector;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_28 /* Modifiers */ = {
+		OBJ_32 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_29 /* AccessibilityModifiers.swift */,
-				OBJ_30 /* AnimationModifiers.swift */,
-				OBJ_31 /* EventsModifiers.swift */,
-				OBJ_32 /* GestureModifiers.swift */,
-				OBJ_33 /* InteractionModifiers.swift */,
-				OBJ_34 /* PositioningModifiers.swift */,
-				OBJ_35 /* PreviewModifiers.swift */,
-				OBJ_36 /* SizingModifiers.swift */,
-				OBJ_37 /* VisualEffectModifiers.swift */,
+				OBJ_33 /* AccessibilityModifiers.swift */,
+				OBJ_34 /* AnimationModifiers.swift */,
+				OBJ_35 /* EventsModifiers.swift */,
+				OBJ_36 /* GestureModifiers.swift */,
+				OBJ_37 /* InteractionModifiers.swift */,
+				OBJ_38 /* PositioningModifiers.swift */,
+				OBJ_39 /* PreviewModifiers.swift */,
+				OBJ_40 /* SizingModifiers.swift */,
+				OBJ_41 /* VisualEffectModifiers.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
-		OBJ_38 /* SwiftUI */ = {
+		OBJ_42 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_39 /* AngularGradient.swift */,
-				OBJ_40 /* AnyView.swift */,
-				OBJ_41 /* Button.swift */,
-				OBJ_42 /* ClassifiedView.swift */,
-				OBJ_43 /* ConditionalContent.swift */,
-				OBJ_44 /* CustomView.swift */,
-				OBJ_45 /* DatePicker.swift */,
-				OBJ_46 /* DelayedPreferenceView.swift */,
-				OBJ_47 /* Divider.swift */,
-				OBJ_48 /* EditButton.swift */,
-				OBJ_49 /* EmptyView.swift */,
-				OBJ_50 /* EnvironmentReaderView.swift */,
-				OBJ_51 /* EquatableView.swift */,
-				OBJ_52 /* ForEach.swift */,
-				OBJ_53 /* Form.swift */,
-				OBJ_54 /* GeometryReader.swift */,
-				OBJ_55 /* Group.swift */,
-				OBJ_56 /* GroupBox.swift */,
-				OBJ_57 /* HSplitView.swift */,
-				OBJ_58 /* HStack.swift */,
-				OBJ_59 /* IDView.swift */,
-				OBJ_60 /* Image.swift */,
-				OBJ_61 /* LinearGradient.swift */,
-				OBJ_62 /* List.swift */,
-				OBJ_63 /* MenuButton.swift */,
-				OBJ_64 /* ModifiedContent.swift */,
-				OBJ_65 /* NavigationLink.swift */,
-				OBJ_66 /* NavigationView.swift */,
-				OBJ_67 /* OptionalContent.swift */,
-				OBJ_68 /* PasteButton.swift */,
-				OBJ_69 /* Picker.swift */,
-				OBJ_70 /* RadialGradient.swift */,
-				OBJ_71 /* ScrollView.swift */,
-				OBJ_72 /* Section.swift */,
-				OBJ_73 /* SecureField.swift */,
-				OBJ_74 /* Shape.swift */,
-				OBJ_75 /* Slider.swift */,
-				OBJ_76 /* Spacer.swift */,
-				OBJ_77 /* Stepper.swift */,
-				OBJ_78 /* SubscriptionView.swift */,
-				OBJ_79 /* TabView.swift */,
-				OBJ_80 /* Text.swift */,
-				OBJ_81 /* TextField.swift */,
-				OBJ_82 /* Toggle.swift */,
-				OBJ_83 /* TouchBar.swift */,
-				OBJ_84 /* TreeView.swift */,
-				OBJ_85 /* VSplitView.swift */,
-				OBJ_86 /* VStack.swift */,
-				OBJ_87 /* ZStack.swift */,
+				OBJ_43 /* AngularGradient.swift */,
+				OBJ_44 /* AnyView.swift */,
+				OBJ_45 /* Button.swift */,
+				OBJ_46 /* ClassifiedView.swift */,
+				OBJ_47 /* ConditionalContent.swift */,
+				OBJ_48 /* CustomView.swift */,
+				OBJ_49 /* DatePicker.swift */,
+				OBJ_50 /* DelayedPreferenceView.swift */,
+				OBJ_51 /* Divider.swift */,
+				OBJ_52 /* EditButton.swift */,
+				OBJ_53 /* EmptyView.swift */,
+				OBJ_54 /* EnvironmentReaderView.swift */,
+				OBJ_55 /* EquatableView.swift */,
+				OBJ_56 /* ForEach.swift */,
+				OBJ_57 /* Form.swift */,
+				OBJ_58 /* GeometryReader.swift */,
+				OBJ_59 /* Group.swift */,
+				OBJ_60 /* GroupBox.swift */,
+				OBJ_61 /* HSplitView.swift */,
+				OBJ_62 /* HStack.swift */,
+				OBJ_63 /* IDView.swift */,
+				OBJ_64 /* Image.swift */,
+				OBJ_65 /* LinearGradient.swift */,
+				OBJ_66 /* List.swift */,
+				OBJ_67 /* MenuButton.swift */,
+				OBJ_68 /* ModifiedContent.swift */,
+				OBJ_69 /* NavigationLink.swift */,
+				OBJ_70 /* NavigationView.swift */,
+				OBJ_71 /* OptionalContent.swift */,
+				OBJ_72 /* PasteButton.swift */,
+				OBJ_73 /* Picker.swift */,
+				OBJ_74 /* RadialGradient.swift */,
+				OBJ_75 /* ScrollView.swift */,
+				OBJ_76 /* Section.swift */,
+				OBJ_77 /* SecureField.swift */,
+				OBJ_78 /* Shape.swift */,
+				OBJ_79 /* Slider.swift */,
+				OBJ_80 /* Spacer.swift */,
+				OBJ_81 /* Stepper.swift */,
+				OBJ_82 /* SubscriptionView.swift */,
+				OBJ_83 /* TabView.swift */,
+				OBJ_84 /* Text.swift */,
+				OBJ_85 /* TextField.swift */,
+				OBJ_86 /* Toggle.swift */,
+				OBJ_87 /* TouchBar.swift */,
+				OBJ_88 /* TreeView.swift */,
+				OBJ_89 /* VSplitView.swift */,
+				OBJ_90 /* VStack.swift */,
+				OBJ_91 /* ZStack.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
 		};
-		OBJ_5 = {
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_13 /* Tests */,
-				OBJ_21 /* Dependencies */,
-				OBJ_90 /* Products */,
-				OBJ_94 /* Combine */,
-				OBJ_95 /* Example */,
-				OBJ_96 /* fastlane */,
-				OBJ_97 /* Assets */,
-				OBJ_98 /* LICENSE */,
-				OBJ_99 /* CHANGELOG.md */,
-				OBJ_100 /* CHANGELOG_GUIDELINES.md */,
-				OBJ_101 /* README.md */,
-				OBJ_102 /* SwifterSwiftUI.podspec */,
-				OBJ_103 /* CONTRIBUTING.md */,
-				OBJ_104 /* Gemfile */,
-				OBJ_105 /* Gemfile.lock */,
+				OBJ_15 /* Tests */,
+				OBJ_25 /* Dependencies */,
+				OBJ_94 /* Products */,
+				OBJ_98 /* Combine */,
+				OBJ_99 /* Example */,
+				OBJ_100 /* fastlane */,
+				OBJ_101 /* Assets */,
+				OBJ_102 /* LICENSE */,
+				OBJ_103 /* CHANGELOG.md */,
+				OBJ_104 /* CHANGELOG_GUIDELINES.md */,
+				OBJ_105 /* README.md */,
+				OBJ_106 /* SwifterSwiftUI.podspec */,
+				OBJ_107 /* CONTRIBUTING.md */,
+				OBJ_108 /* Gemfile */,
+				OBJ_109 /* Gemfile.lock */,
 			);
+			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -430,17 +431,17 @@
 		OBJ_8 /* SwifterSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* LinearGradient+Extensions.swift */,
-				OBJ_10 /* Utils */,
-				OBJ_12 /* View+Extensions.swift */,
-				9C06EE6624548BDB009E2D91 /* Color+Extensions.swift */,
-				9C06EE6A2455E3AD009E2D91 /* Image+Extensions.swift */,
+				OBJ_9 /* Color+Extensions.swift */,
+				OBJ_10 /* Image+Extensions.swift */,
+				OBJ_11 /* LinearGradient+Extensions.swift */,
+				OBJ_12 /* Utils */,
+				OBJ_14 /* View+Extensions.swift */,
 			);
 			name = SwifterSwiftUI;
 			path = Sources/SwifterSwiftUI;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_90 /* Products */ = {
+		OBJ_94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"SwifterSwiftUI::SwifterSwiftUITests::Product" /* SwifterSwiftUITests.xctest */,
@@ -455,9 +456,9 @@
 /* Begin PBXNativeTarget section */
 		"SwifterSwiftUI::SwiftPMPackageDescription" /* SwifterSwiftUIPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_116 /* Build configuration list for PBXNativeTarget "SwifterSwiftUIPackageDescription" */;
+			buildConfigurationList = OBJ_122 /* Build configuration list for PBXNativeTarget "SwifterSwiftUIPackageDescription" */;
 			buildPhases = (
-				OBJ_119 /* Sources */,
+				OBJ_125 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -469,11 +470,11 @@
 		};
 		"SwifterSwiftUI::SwifterSwiftUI" /* SwifterSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_107 /* Build configuration list for PBXNativeTarget "SwifterSwiftUI" */;
+			buildConfigurationList = OBJ_111 /* Build configuration list for PBXNativeTarget "SwifterSwiftUI" */;
 			buildPhases = (
-				OBJ_110 /* Sources */,
-				OBJ_114 /* Frameworks */,
-				9C06EE6124522926009E2D91 /* ShellScript */,
+				OBJ_114 /* Sources */,
+				OBJ_120 /* Frameworks */,
+				9C75D0622455F569009BB447 /* Lint */,
 			);
 			buildRules = (
 			);
@@ -486,16 +487,16 @@
 		};
 		"SwifterSwiftUI::SwifterSwiftUITests" /* SwifterSwiftUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_127 /* Build configuration list for PBXNativeTarget "SwifterSwiftUITests" */;
+			buildConfigurationList = OBJ_133 /* Build configuration list for PBXNativeTarget "SwifterSwiftUITests" */;
 			buildPhases = (
-				OBJ_130 /* Sources */,
-				OBJ_135 /* Frameworks */,
+				OBJ_136 /* Sources */,
+				OBJ_143 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_138 /* PBXTargetDependency */,
-				OBJ_140 /* PBXTargetDependency */,
+				OBJ_146 /* PBXTargetDependency */,
+				OBJ_148 /* PBXTargetDependency */,
 			);
 			name = SwifterSwiftUITests;
 			productName = SwifterSwiftUITests;
@@ -504,9 +505,9 @@
 		};
 		"ViewInspector::SwiftPMPackageDescription" /* ViewInspectorPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_210 /* Build configuration list for PBXNativeTarget "ViewInspectorPackageDescription" */;
+			buildConfigurationList = OBJ_218 /* Build configuration list for PBXNativeTarget "ViewInspectorPackageDescription" */;
 			buildPhases = (
-				OBJ_213 /* Sources */,
+				OBJ_221 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -518,10 +519,10 @@
 		};
 		"ViewInspector::ViewInspector" /* ViewInspector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_141 /* Build configuration list for PBXNativeTarget "ViewInspector" */;
+			buildConfigurationList = OBJ_149 /* Build configuration list for PBXNativeTarget "ViewInspector" */;
 			buildPhases = (
-				OBJ_144 /* Sources */,
-				OBJ_208 /* Frameworks */,
+				OBJ_152 /* Sources */,
+				OBJ_216 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -548,8 +549,8 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5;
-			productRefGroup = OBJ_90 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -564,7 +565,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9C06EE6124522926009E2D91 /* ShellScript */ = {
+		9C75D0622455F569009BB447 /* Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -573,6 +574,7 @@
 			);
 			inputPaths = (
 			);
+			name = Lint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -584,139 +586,139 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_110 /* Sources */ = {
+		OBJ_114 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_111 /* LinearGradient+Extensions.swift in Sources */,
-				9C06EE6B2455E3AD009E2D91 /* Image+Extensions.swift in Sources */,
-				OBJ_112 /* IfLet.swift in Sources */,
-				OBJ_113 /* View+Extensions.swift in Sources */,
-				9C06EE6724548BDB009E2D91 /* Color+Extensions.swift in Sources */,
+				OBJ_115 /* Color+Extensions.swift in Sources */,
+				OBJ_116 /* Image+Extensions.swift in Sources */,
+				OBJ_117 /* LinearGradient+Extensions.swift in Sources */,
+				OBJ_118 /* IfLet.swift in Sources */,
+				OBJ_119 /* View+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_119 /* Sources */ = {
+		OBJ_125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_120 /* Package.swift in Sources */,
+				OBJ_126 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_130 /* Sources */ = {
+		OBJ_136 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_131 /* LinearGradient+ExtensionsTests.swift in Sources */,
-				9C06EE6D2455E98D009E2D91 /* Image+ExtensionsTests.swift in Sources */,
-				9C06EE6924548C74009E2D91 /* Color+ExtensionsTests.swift in Sources */,
-				OBJ_132 /* IfLetTests.swift in Sources */,
-				OBJ_133 /* View+ExtensionsTests.swift in Sources */,
-				OBJ_134 /* XCTestManifests.swift in Sources */,
+				OBJ_137 /* Color+ExtensionsTests.swift in Sources */,
+				OBJ_138 /* Image+ExtensionsTests.swift in Sources */,
+				OBJ_139 /* LinearGradient+ExtensionsTests.swift in Sources */,
+				OBJ_140 /* IfLetTests.swift in Sources */,
+				OBJ_141 /* View+ExtensionsTests.swift in Sources */,
+				OBJ_142 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_144 /* Sources */ = {
+		OBJ_152 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_145 /* BaseTypes.swift in Sources */,
-				OBJ_146 /* InspectableView.swift in Sources */,
-				OBJ_147 /* InspectionEmissary.swift in Sources */,
-				OBJ_148 /* Inspector.swift in Sources */,
-				OBJ_149 /* AccessibilityModifiers.swift in Sources */,
-				OBJ_150 /* AnimationModifiers.swift in Sources */,
-				OBJ_151 /* EventsModifiers.swift in Sources */,
-				OBJ_152 /* GestureModifiers.swift in Sources */,
-				OBJ_153 /* InteractionModifiers.swift in Sources */,
-				OBJ_154 /* PositioningModifiers.swift in Sources */,
-				OBJ_155 /* PreviewModifiers.swift in Sources */,
-				OBJ_156 /* SizingModifiers.swift in Sources */,
-				OBJ_157 /* VisualEffectModifiers.swift in Sources */,
-				OBJ_158 /* AngularGradient.swift in Sources */,
-				OBJ_159 /* AnyView.swift in Sources */,
-				OBJ_160 /* Button.swift in Sources */,
-				OBJ_161 /* ClassifiedView.swift in Sources */,
-				OBJ_162 /* ConditionalContent.swift in Sources */,
-				OBJ_163 /* CustomView.swift in Sources */,
-				OBJ_164 /* DatePicker.swift in Sources */,
-				OBJ_165 /* DelayedPreferenceView.swift in Sources */,
-				OBJ_166 /* Divider.swift in Sources */,
-				OBJ_167 /* EditButton.swift in Sources */,
-				OBJ_168 /* EmptyView.swift in Sources */,
-				OBJ_169 /* EnvironmentReaderView.swift in Sources */,
-				OBJ_170 /* EquatableView.swift in Sources */,
-				OBJ_171 /* ForEach.swift in Sources */,
-				OBJ_172 /* Form.swift in Sources */,
-				OBJ_173 /* GeometryReader.swift in Sources */,
-				OBJ_174 /* Group.swift in Sources */,
-				OBJ_175 /* GroupBox.swift in Sources */,
-				OBJ_176 /* HSplitView.swift in Sources */,
-				OBJ_177 /* HStack.swift in Sources */,
-				OBJ_178 /* IDView.swift in Sources */,
-				OBJ_179 /* Image.swift in Sources */,
-				OBJ_180 /* LinearGradient.swift in Sources */,
-				OBJ_181 /* List.swift in Sources */,
-				OBJ_182 /* MenuButton.swift in Sources */,
-				OBJ_183 /* ModifiedContent.swift in Sources */,
-				OBJ_184 /* NavigationLink.swift in Sources */,
-				OBJ_185 /* NavigationView.swift in Sources */,
-				OBJ_186 /* OptionalContent.swift in Sources */,
-				OBJ_187 /* PasteButton.swift in Sources */,
-				OBJ_188 /* Picker.swift in Sources */,
-				OBJ_189 /* RadialGradient.swift in Sources */,
-				OBJ_190 /* ScrollView.swift in Sources */,
-				OBJ_191 /* Section.swift in Sources */,
-				OBJ_192 /* SecureField.swift in Sources */,
-				OBJ_193 /* Shape.swift in Sources */,
-				OBJ_194 /* Slider.swift in Sources */,
-				OBJ_195 /* Spacer.swift in Sources */,
-				OBJ_196 /* Stepper.swift in Sources */,
-				OBJ_197 /* SubscriptionView.swift in Sources */,
-				OBJ_198 /* TabView.swift in Sources */,
-				OBJ_199 /* Text.swift in Sources */,
-				OBJ_200 /* TextField.swift in Sources */,
-				OBJ_201 /* Toggle.swift in Sources */,
-				OBJ_202 /* TouchBar.swift in Sources */,
-				OBJ_203 /* TreeView.swift in Sources */,
-				OBJ_204 /* VSplitView.swift in Sources */,
-				OBJ_205 /* VStack.swift in Sources */,
-				OBJ_206 /* ZStack.swift in Sources */,
-				OBJ_207 /* ViewHosting.swift in Sources */,
+				OBJ_153 /* BaseTypes.swift in Sources */,
+				OBJ_154 /* InspectableView.swift in Sources */,
+				OBJ_155 /* InspectionEmissary.swift in Sources */,
+				OBJ_156 /* Inspector.swift in Sources */,
+				OBJ_157 /* AccessibilityModifiers.swift in Sources */,
+				OBJ_158 /* AnimationModifiers.swift in Sources */,
+				OBJ_159 /* EventsModifiers.swift in Sources */,
+				OBJ_160 /* GestureModifiers.swift in Sources */,
+				OBJ_161 /* InteractionModifiers.swift in Sources */,
+				OBJ_162 /* PositioningModifiers.swift in Sources */,
+				OBJ_163 /* PreviewModifiers.swift in Sources */,
+				OBJ_164 /* SizingModifiers.swift in Sources */,
+				OBJ_165 /* VisualEffectModifiers.swift in Sources */,
+				OBJ_166 /* AngularGradient.swift in Sources */,
+				OBJ_167 /* AnyView.swift in Sources */,
+				OBJ_168 /* Button.swift in Sources */,
+				OBJ_169 /* ClassifiedView.swift in Sources */,
+				OBJ_170 /* ConditionalContent.swift in Sources */,
+				OBJ_171 /* CustomView.swift in Sources */,
+				OBJ_172 /* DatePicker.swift in Sources */,
+				OBJ_173 /* DelayedPreferenceView.swift in Sources */,
+				OBJ_174 /* Divider.swift in Sources */,
+				OBJ_175 /* EditButton.swift in Sources */,
+				OBJ_176 /* EmptyView.swift in Sources */,
+				OBJ_177 /* EnvironmentReaderView.swift in Sources */,
+				OBJ_178 /* EquatableView.swift in Sources */,
+				OBJ_179 /* ForEach.swift in Sources */,
+				OBJ_180 /* Form.swift in Sources */,
+				OBJ_181 /* GeometryReader.swift in Sources */,
+				OBJ_182 /* Group.swift in Sources */,
+				OBJ_183 /* GroupBox.swift in Sources */,
+				OBJ_184 /* HSplitView.swift in Sources */,
+				OBJ_185 /* HStack.swift in Sources */,
+				OBJ_186 /* IDView.swift in Sources */,
+				OBJ_187 /* Image.swift in Sources */,
+				OBJ_188 /* LinearGradient.swift in Sources */,
+				OBJ_189 /* List.swift in Sources */,
+				OBJ_190 /* MenuButton.swift in Sources */,
+				OBJ_191 /* ModifiedContent.swift in Sources */,
+				OBJ_192 /* NavigationLink.swift in Sources */,
+				OBJ_193 /* NavigationView.swift in Sources */,
+				OBJ_194 /* OptionalContent.swift in Sources */,
+				OBJ_195 /* PasteButton.swift in Sources */,
+				OBJ_196 /* Picker.swift in Sources */,
+				OBJ_197 /* RadialGradient.swift in Sources */,
+				OBJ_198 /* ScrollView.swift in Sources */,
+				OBJ_199 /* Section.swift in Sources */,
+				OBJ_200 /* SecureField.swift in Sources */,
+				OBJ_201 /* Shape.swift in Sources */,
+				OBJ_202 /* Slider.swift in Sources */,
+				OBJ_203 /* Spacer.swift in Sources */,
+				OBJ_204 /* Stepper.swift in Sources */,
+				OBJ_205 /* SubscriptionView.swift in Sources */,
+				OBJ_206 /* TabView.swift in Sources */,
+				OBJ_207 /* Text.swift in Sources */,
+				OBJ_208 /* TextField.swift in Sources */,
+				OBJ_209 /* Toggle.swift in Sources */,
+				OBJ_210 /* TouchBar.swift in Sources */,
+				OBJ_211 /* TreeView.swift in Sources */,
+				OBJ_212 /* VSplitView.swift in Sources */,
+				OBJ_213 /* VStack.swift in Sources */,
+				OBJ_214 /* ZStack.swift in Sources */,
+				OBJ_215 /* ViewHosting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_213 /* Sources */ = {
+		OBJ_221 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_214 /* Package.swift in Sources */,
+				OBJ_222 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_125 /* PBXTargetDependency */ = {
+		OBJ_131 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwifterSwiftUI::SwifterSwiftUITests" /* SwifterSwiftUITests */;
-			targetProxy = 9C06EE60245223C1009E2D91 /* PBXContainerItemProxy */;
+			targetProxy = 9C75D0612455F552009BB447 /* PBXContainerItemProxy */;
 		};
-		OBJ_138 /* PBXTargetDependency */ = {
+		OBJ_146 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ViewInspector::ViewInspector" /* ViewInspector */;
-			targetProxy = 9C06EE5E245223C1009E2D91 /* PBXContainerItemProxy */;
+			targetProxy = 9C75D05F2455F550009BB447 /* PBXContainerItemProxy */;
 		};
-		OBJ_140 /* PBXTargetDependency */ = {
+		OBJ_148 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwifterSwiftUI::SwifterSwiftUI" /* SwifterSwiftUI */;
-			targetProxy = 9C06EE5F245223C1009E2D91 /* PBXContainerItemProxy */;
+			targetProxy = 9C75D0602455F550009BB447 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_108 /* Debug */ = {
+		OBJ_112 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -744,7 +746,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_109 /* Release */ = {
+		OBJ_113 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -769,40 +771,40 @@
 				TARGET_NAME = SwifterSwiftUI;
 				TVOS_DEPLOYMENT_TARGET = 13.0;
 				WATCHOS_DEPLOYMENT_TARGET = 6.0;
-			};
-			name = Release;
-		};
-		OBJ_117 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_118 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1.0";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		OBJ_123 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1.0";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		OBJ_124 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1.0";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		OBJ_128 /* Debug */ = {
+		OBJ_129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_134 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -827,7 +829,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_129 /* Release */ = {
+		OBJ_135 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -852,7 +854,7 @@
 			};
 			name = Release;
 		};
-		OBJ_142 /* Debug */ = {
+		OBJ_150 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -880,7 +882,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_143 /* Release */ = {
+		OBJ_151 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -908,7 +910,7 @@
 			};
 			name = Release;
 		};
-		OBJ_211 /* Debug */ = {
+		OBJ_219 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -917,7 +919,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_212 /* Release */ = {
+		OBJ_220 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -980,25 +982,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_107 /* Build configuration list for PBXNativeTarget "SwifterSwiftUI" */ = {
+		OBJ_111 /* Build configuration list for PBXNativeTarget "SwifterSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_108 /* Debug */,
-				OBJ_109 /* Release */,
+				OBJ_112 /* Debug */,
+				OBJ_113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_116 /* Build configuration list for PBXNativeTarget "SwifterSwiftUIPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_117 /* Debug */,
-				OBJ_118 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_122 /* Build configuration list for PBXAggregateTarget "SwifterSwiftUIPackageTests" */ = {
+		OBJ_122 /* Build configuration list for PBXNativeTarget "SwifterSwiftUIPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_123 /* Debug */,
@@ -1007,20 +1000,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_127 /* Build configuration list for PBXNativeTarget "SwifterSwiftUITests" */ = {
+		OBJ_128 /* Build configuration list for PBXAggregateTarget "SwifterSwiftUIPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_128 /* Debug */,
-				OBJ_129 /* Release */,
+				OBJ_129 /* Debug */,
+				OBJ_130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_141 /* Build configuration list for PBXNativeTarget "ViewInspector" */ = {
+		OBJ_133 /* Build configuration list for PBXNativeTarget "SwifterSwiftUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_142 /* Debug */,
-				OBJ_143 /* Release */,
+				OBJ_134 /* Debug */,
+				OBJ_135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_149 /* Build configuration list for PBXNativeTarget "ViewInspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_150 /* Debug */,
+				OBJ_151 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1034,11 +1036,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_210 /* Build configuration list for PBXNativeTarget "ViewInspectorPackageDescription" */ = {
+		OBJ_218 /* Build configuration list for PBXNativeTarget "ViewInspectorPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_211 /* Debug */,
-				OBJ_212 /* Release */,
+				OBJ_219 /* Debug */,
+				OBJ_220 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

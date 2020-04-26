@@ -18,7 +18,7 @@ extension Color {
     ///   - hex: Hex color string
     /// - Returns: New color from the hex value
     init?(hex: String) {
-        let hexColor: String?
+        let hexColor: String
         if hex.hasPrefix("#") {
             let start = hex.index(hex.startIndex, offsetBy: 1)
             hexColor = String(hex[start...])
@@ -26,16 +26,12 @@ extension Color {
             hexColor = hex
         }
 
-        guard let validString = hexColor else {
-            return nil
-        }
-
-        let count = validString.count
+        let count = hexColor.count
         guard count == 6 || count == 8 else {
             return nil
         }
 
-        let scanner = Scanner(string: validString)
+        let scanner = Scanner(string: hexColor)
         var hexNumber: UInt64 = 0
         guard scanner.scanHexInt64(&hexNumber) else {
             return nil

@@ -14,6 +14,7 @@ final class ColorExtensionsTests: XCTestCase {
         // Invalid strings
         XCTAssertNil(Color(hex: ""))
         XCTAssertNil(Color(hex: "---"))
+        XCTAssertNil(Color(hex: "------"))
         XCTAssertNil(Color(hex: "111"))
         XCTAssertNil(Color(hex: "#111"))
         XCTAssertNil(Color(hex: "#11111111111"))
