@@ -16,7 +16,7 @@ extension Image {
     ///   - name: Image name
     ///   - defaultImage: Default image name
     /// - Returns: A new image
-    init(_ name: String, defaultImage: String, in bundle: Bundle? = Bundle.main) {
+    public init(_ name: String, defaultImage: String, in bundle: Bundle? = Bundle.main) {
         #if canImport(UIKit)
         if let img = UIImage(named: name, in: bundle, with: nil) {
             self.init(uiImage: img)
@@ -44,7 +44,7 @@ extension Image {
     ///   - defaultSystemImage: Default  system image name
     /// - Returns: A new image
     @available(OSX 10.15, *)
-    init(_ name: String, defaultSystemImage: String) {
+    public init(_ name: String, defaultSystemImage: String) {
         if let img = UIImage(named: name) {
             self.init(uiImage: img)
         } else {
