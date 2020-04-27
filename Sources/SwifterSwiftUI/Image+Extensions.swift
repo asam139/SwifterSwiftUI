@@ -16,15 +16,15 @@ extension Image {
     ///   - name: Image name
     ///   - defaultImage: Default image name
     /// - Returns: A new image
-    init(_ name: String, defaultImage: String) {
+    init(_ name: String, defaultImage: String, in bundle: Bundle? = Bundle.main) {
         #if canImport(UIKit)
-        if let img = UIImage(named: name) {
+        if let img = UIImage(named: name, in: bundle, with: nil) {
             self.init(uiImage: img)
         } else {
             self.init(defaultImage)
         }
         #else
-        if let img = NSImage(named: name) {
+        if let img = NSImage(named: name, in: bundle, with: nil) {
             self.init(nsImage: img)
         } else {
             self.init(defaultImage)

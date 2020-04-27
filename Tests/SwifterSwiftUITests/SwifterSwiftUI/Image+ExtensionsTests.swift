@@ -13,7 +13,10 @@ import ViewInspector
 final class ImageExtensionsTests: XCTestCase {
     func testInitWithNameAndDefaultImage() {
 
-        let image = Image("photo", defaultImage: "empty-photo")
+        let defaultImage = Image("no-example", defaultImage: "empty-photo")
+        XCTAssertNoThrow(try defaultImage.inspect().image())
+
+        let image = Image("example", defaultImage: "empty-photo")
         XCTAssertNoThrow(try image.inspect().image())
     }
 
