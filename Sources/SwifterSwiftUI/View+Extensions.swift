@@ -42,8 +42,10 @@ extension View {
     ///   - condition: an boolean to control the condition
     ///   - then: callback to apply the changes when the condition is true
     /// - Returns: some View
-    public func `if`<Content: View>(_ conditional: Bool,
-                                    then: (Self) -> Content) -> TupleView<(Self?, Content?)> {
+    public func `if`<Content: View>(
+        _ conditional: Bool,
+        then: (Self) -> Content
+    ) -> TupleView<(Self?, Content?)> {
         if conditional {
             return TupleView((nil, then(self)))
         }
@@ -64,9 +66,11 @@ extension View {
     ///   - then: callback to apply the changes when the condition is true
     ///   - else: callback to apply the changes when the condition is false
     /// - Returns: some View
-    public func `if`<A: View, B: View>(_ conditional: Bool,
-                                       then: (Self) -> A,
-                                       `else`: (Self) -> B) -> TupleView<(A?, B?)> {
+    public func `if`<A: View, B: View>(
+        _ conditional: Bool,
+        then: (Self) -> A,
+        `else`: (Self) -> B
+    ) -> TupleView<(A?, B?)> {
         if conditional {
             return TupleView((then(self), nil))
         }
@@ -85,7 +89,10 @@ extension View {
     ///   - condition: an boolean to control the condition
     ///   - modifier: modifier to apply
     /// - Returns: some View
-    public func conditionalModifier<M>(_ condition: Bool, _ modifier: M) -> some View where M: ViewModifier {
+    public func conditionalModifier<M: ViewModifier>(
+        _ condition: Bool,
+        _ modifier: M
+    ) -> some View {
         Group {
             if condition {
                 self.modifier(modifier).eraseToAnyView()
@@ -104,8 +111,11 @@ extension View {
     ///   - trueModifier: modifier to apply when the condition is true
     ///   - falseModifier: modifier to apply when the condition is false
     /// - Returns: some View
-    public func conditionalModifier<M>(
-        _ condition: Bool, _ trueModifier: M, _ falseModifier: M) -> some View where M: ViewModifier {
+    public func conditionalModifier<M: ViewModifier>(
+        _ condition: Bool,
+        _ trueModifier: M,
+        _ falseModifier: M
+    ) -> some View {
         Group {
             if condition {
                 self.modifier(trueModifier).eraseToAnyView()
