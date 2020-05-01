@@ -42,11 +42,12 @@ extension View {
     ///   - condition: an boolean to control the condition
     ///   - then: callback to apply the changes when the condition is true
     /// - Returns: some View
-    public func `if`<Content: View>(_ conditional: Bool, then: (Self) -> Content) -> some View {
+    public func `if`<Content: View>(_ conditional: Bool,
+                                    then: (Self) -> Content) -> TupleView<(Self?, Content?)> {
         if conditional {
-            return then(self).eraseToAnyView()
+            return TupleView((nil, then(self)))
         }
-        return self.eraseToAnyView()
+        return TupleView((self, nil))
     }
 
     /// Apply some changes to the view in place of the condition
@@ -63,11 +64,13 @@ extension View {
     ///   - then: callback to apply the changes when the condition is true
     ///   - else: callback to apply the changes when the condition is false
     /// - Returns: some View
-    public func `if`<A: View, B: View>(_ conditional: Bool, then: (Self) -> A, `else`: (Self) -> B) -> some View {
+    public func `if`<A: View, B: View>(_ conditional: Bool,
+                                       then: (Self) -> A,
+                                       `else`: (Self) -> B) -> TupleView<(A?, B?)> {
         if conditional {
-            return then(self).eraseToAnyView()
+            return TupleView((then(self), nil))
         }
-        return `else`(self).eraseToAnyView()
+        return TupleView((nil, `else`(self)))
     }
 }
 
