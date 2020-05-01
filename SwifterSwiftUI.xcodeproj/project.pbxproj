@@ -270,6 +270,20 @@
 			path = SwiftUI;
 			sourceTree = "<group>";
 		};
+		9C75D06D245C7BDA009BB447 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		9C75D06E245C7BF5009BB447 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
 		OBJ_12 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				9C75D06C245C7B6F009BB447 /* SwiftUI */,
+				9C75D06E245C7BF5009BB447 /* Combine */,
 			);
 			path = SwifterSwiftUI;
 			sourceTree = "<group>";
@@ -451,6 +466,7 @@
 			isa = PBXGroup;
 			children = (
 				9C75D06B245C7B64009BB447 /* SwiftUI */,
+				9C75D06D245C7BDA009BB447 /* Combine */,
 			);
 			name = SwifterSwiftUI;
 			path = Sources/SwifterSwiftUI;
