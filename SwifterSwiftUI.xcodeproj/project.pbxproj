@@ -246,6 +246,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C75D06B245C7B64009BB447 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Color+Extensions.swift */,
+				OBJ_10 /* Image+Extensions.swift */,
+				OBJ_11 /* LinearGradient+Extensions.swift */,
+				OBJ_12 /* Utils */,
+				OBJ_14 /* View+Extensions.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		9C75D06C245C7B6F009BB447 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* Color+ExtensionsTests.swift */,
+				OBJ_19 /* Image+ExtensionsTests.swift */,
+				OBJ_20 /* LinearGradient+ExtensionsTests.swift */,
+				OBJ_21 /* Utils */,
+				OBJ_23 /* View+ExtensionsTests.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		OBJ_12 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,11 +299,7 @@
 		OBJ_17 /* SwifterSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_18 /* Color+ExtensionsTests.swift */,
-				OBJ_19 /* Image+ExtensionsTests.swift */,
-				OBJ_20 /* LinearGradient+ExtensionsTests.swift */,
-				OBJ_21 /* Utils */,
-				OBJ_23 /* View+ExtensionsTests.swift */,
+				9C75D06C245C7B6F009BB447 /* SwiftUI */,
 			);
 			path = SwifterSwiftUI;
 			sourceTree = "<group>";
@@ -396,7 +416,7 @@
 			path = SwiftUI;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -417,7 +437,6 @@
 				OBJ_108 /* Gemfile */,
 				OBJ_109 /* Gemfile.lock */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -431,11 +450,7 @@
 		OBJ_8 /* SwifterSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* Color+Extensions.swift */,
-				OBJ_10 /* Image+Extensions.swift */,
-				OBJ_11 /* LinearGradient+Extensions.swift */,
-				OBJ_12 /* Utils */,
-				OBJ_14 /* View+Extensions.swift */,
+				9C75D06B245C7B64009BB447 /* SwiftUI */,
 			);
 			name = SwifterSwiftUI;
 			path = Sources/SwifterSwiftUI;
@@ -549,7 +564,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
