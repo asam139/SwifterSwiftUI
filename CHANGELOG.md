@@ -22,11 +22,11 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 
 ### Added
 - **Image**:
-    - `init(_:, defaultImage:)`,  `init(_:, defaultSystemImage:)`.  [#2](https://github.com/asam139/Steps/pull/2) by [asam139](https://github.com/asam139)
+    - `init(_:, defaultImage:)`,  `init(_:, defaultSystemImage:)`.  [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139)
 - **Color**: 
-    - `init?(hex:)`. [#2](https://github.com/asam139/Steps/pull/2) by [asam139](https://github.com/asam139)
+    - `init?(hex:)`. [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139)
 - **View**:
-    - `embedInNavigation()`.  [#2](https://github.com/asam139/Steps/pull/2) by [asam139](https://github.com/asam139) 
+    - `embedInNavigation()`.  [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139) 
 
 ---
 
@@ -37,9 +37,9 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
     - `eraseToAnyView()`, `if(_:, then:)`, `if(_:, then:, else:)`, `conditionalModifier(_:, modifier:)`, `conditionalModifier(_:, trueModifier:, falseModifier:)`, `animateOnAppear(using:, action:)`, `animateOnDisappear(using:, action:)`.  [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139)
 
 - **LinearGradient**:
-    - `init(_:, startPoint:, endPoint)`.  [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139)
+    - `init(_:, startPoint:, endPoint)`.  [#0](https://github.com/asam139/Steps/pull/0) by [asam139](https://github.com/asam139)
 
 - **Utils**:
-    - `ifLet(value:, then:)`, `ifLet(value:, then:, else:)`.  [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139)
+    - `ifLet(value:, then:)`, `ifLet(value:, then:, else:)`.  [#0](https://github.com/asam139/Steps/pull/0) by [asam139](https://github.com/asam139)
 
 ---
