@@ -149,12 +149,6 @@ final class ViewExtensionsTests: XCTestCase {
     ]
 }
 
-private struct TestModifier: ViewModifier {
-    func body(content: Self.Content) -> some View {
-        content.onAppear()
-    }
-}
-
 private struct InspectableTestModifier: ViewModifier {
     var onAppear: ((Self.Body) -> Void)?
 
