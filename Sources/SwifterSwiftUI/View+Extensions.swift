@@ -7,10 +7,9 @@
 
 import SwiftUI
 
-// MARK: General
 extension View {
 
-    /// SwifterSwiftUI: Type casting to AnyView
+    /// Type casting to AnyView
     ///
     ///    myView.eraseToAnyView()
     ///
@@ -18,12 +17,23 @@ extension View {
     public func eraseToAnyView() -> AnyView {
         AnyView(self)
     }
+
+    /// Encapsulate view in navigation view
+    ///
+    ///    myView.embedInNavigation()
+    ///
+    /// - Returns: view encapsulate in navigation view
+    @available(iOS 13.0, OSX 10.15, tvOS 13.0, *)
+    @available(watchOS, unavailable)
+    func embedInNavigation() -> some View {
+        NavigationView { self }
+    }
 }
 
 // MARK: Building
 extension View {
 
-    /// SwifterSwiftUI: Apply changes to the view if the condition is true
+    /// Apply changes to the view if the condition is true
     ///
     ///    myView
     ///    .if(index == state.currentIndex, then: {
@@ -34,14 +44,17 @@ extension View {
     ///   - condition: an boolean to control the condition
     ///   - then: callback to apply the changes when the condition is true
     /// - Returns: some View
-    public func `if`<Content: View>(_ conditional: Bool, then: (Self) -> Content) -> some View {
+    public func `if`<Content: View>(
+        _ conditional: Bool,
+        then: (Self) -> Content
+    ) -> TupleView<(Self?, Content?)> {
         if conditional {
-            return then(self).eraseToAnyView()
+            return TupleView((nil, then(self)))
         }
-        return self.eraseToAnyView()
+        return TupleView((self, nil))
     }
 
-    /// SwifterSwiftUI: Apply some changes to the view in place of the condition
+    /// Apply some changes to the view in place of the condition
     ///
     ///    myView
     ///    .if(index == state.currentIndex, then: {
@@ -55,18 +68,22 @@ extension View {
     ///   - then: callback to apply the changes when the condition is true
     ///   - else: callback to apply the changes when the condition is false
     /// - Returns: some View
-    public func `if`<ThenView: View, ElseView: View>(_ conditional: Bool, then: (Self) -> ThenView, `else`: (Self) -> ElseView) -> some View {
+    public func `if`<A: View, B: View>(
+        _ conditional: Bool,
+        then: (Self) -> A,
+        `else`: (Self) -> B
+    ) -> TupleView<(A?, B?)> {
         if conditional {
-            return then(self).eraseToAnyView()
+            return TupleView((then(self), nil))
         }
-        return `else`(self).eraseToAnyView()
+        return TupleView((nil, `else`(self)))
     }
 }
 
 // MARK: Modifiers
 extension View {
 
-    /// SwifterSwiftUI: Set one modifier conditionally.
+    /// Set one modifier conditionally.
     ///
     ///    myView.conditionalModifier(myCondition, myViewModifier)
     ///
@@ -74,17 +91,17 @@ extension View {
     ///   - condition: an boolean to control the condition
     ///   - modifier: modifier to apply
     /// - Returns: some View
-    public func conditionalModifier<T>(_ condition: Bool, _ modifier: T) -> some View where T: ViewModifier {
-        Group {
-            if condition {
-                self.modifier(modifier)
-            } else {
-                self
-            }
+    public func conditionalModifier<M: ViewModifier>(
+        _ condition: Bool,
+        _ modifier: M
+    ) -> TupleView<(Self?, ModifiedContent<Self, M>?)> {
+        if condition {
+            return TupleView((nil, self.modifier(modifier)))
         }
+        return TupleView((self, nil))
     }
 
-    /// SwifterSwiftUI: Set one modifier or another conditionally.
+    /// Set one modifier or another conditionally.
     ///
     ///    myView.conditionalModifier(myCondition, firstViewModifier, secondViewModifier)
     ///
@@ -93,23 +110,22 @@ extension View {
     ///   - trueModifier: modifier to apply when the condition is true
     ///   - falseModifier: modifier to apply when the condition is false
     /// - Returns: some View
-    public func conditionalModifier<M1, M2>(
-        _ condition: Bool, _ trueModifier: M1, _ falseModifier: M2
-    ) -> some View where M1: ViewModifier, M2: ViewModifier {
-        Group {
-            if condition {
-                self.modifier(trueModifier)
-            } else {
-                self.modifier(falseModifier)
-            }
+    public func conditionalModifier<M: ViewModifier>(
+        _ condition: Bool,
+        _ trueModifier: M,
+        _ falseModifier: M
+    ) -> TupleView<(ModifiedContent<Self, M>?, ModifiedContent<Self, M>?)> {
+        if condition {
+            return TupleView((self.modifier(trueModifier), nil))
         }
+        return TupleView((nil, self.modifier(falseModifier)))
     }
 }
 
 // MARK: Animations
 extension View {
 
-    /// SwifterSwiftUI: Animate an action with an animation on appear.
+    /// Animate an action with an animation on appear.
     ///
     ///    myView.animateOnAppear(using: .easeInOut) { self.scale = 0.5 }
     ///
@@ -126,7 +142,7 @@ extension View {
         }
     }
 
-    /// SwifterSwiftUI: Animate an action with an animation on disappear.
+    /// Animate an action with an animation on disappear.
     ///
     ///    myView.animateOnDisappear(using: .easeInOut) { self.scale = 0.5 }
     ///
