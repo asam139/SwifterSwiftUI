@@ -23,6 +23,8 @@ extension View {
     ///    myView.embedInNavigation()
     ///
     /// - Returns: view encapsulate in navigation view
+    @available(iOS 13.0, OSX 10.15, tvOS 13.0, *)
+    @available(watchOS, unavailable)
     func embedInNavigation() -> some View {
         NavigationView { self }
     }
