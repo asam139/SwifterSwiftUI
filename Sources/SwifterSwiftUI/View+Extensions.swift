@@ -92,14 +92,11 @@ extension View {
     public func conditionalModifier<M: ViewModifier>(
         _ condition: Bool,
         _ modifier: M
-    ) -> some View {
-        Group {
-            if condition {
-                self.modifier(modifier).eraseToAnyView()
-            } else {
-                self
-            }
+    ) -> TupleView<(Self?, ModifiedContent<Self, M>?)> {
+        if condition {
+            return TupleView((nil, self.modifier(modifier)))
         }
+        return TupleView((self, nil))
     }
 
     /// Set one modifier or another conditionally.
@@ -115,14 +112,11 @@ extension View {
         _ condition: Bool,
         _ trueModifier: M,
         _ falseModifier: M
-    ) -> some View {
-        Group {
-            if condition {
-                self.modifier(trueModifier).eraseToAnyView()
-            } else {
-                self.modifier(falseModifier).eraseToAnyView()
-            }
+    ) -> TupleView<(ModifiedContent<Self, M>?, ModifiedContent<Self, M>?)> {
+        if condition {
+            return TupleView((self.modifier(trueModifier), nil))
         }
+        return TupleView((nil, self.modifier(falseModifier)))
     }
 }
 

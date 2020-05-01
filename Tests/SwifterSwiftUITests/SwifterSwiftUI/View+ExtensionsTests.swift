@@ -55,6 +55,8 @@ final class ViewExtensionsTests: XCTestCase {
             firstExp.fulfill()
         }
         let view = testView.conditionalModifier(true, modifier)
+        XCTAssertNil(view.value.0)
+        XCTAssertNotNil(view.value.1)
         ViewHosting.host(view: view)
         wait(for: [firstExp], timeout: 0.1)
 
@@ -66,6 +68,8 @@ final class ViewExtensionsTests: XCTestCase {
             secondExp.fulfill()
         }
         let secondView = testView.conditionalModifier(false, modifier)
+        XCTAssertNotNil(secondView.value.0)
+        XCTAssertNil(secondView.value.1)
         ViewHosting.host(view: secondView)
         wait(for: [secondExp], timeout: 0.1)
     }
@@ -82,6 +86,8 @@ final class ViewExtensionsTests: XCTestCase {
             firstExp.fulfill()
         }
         let firstView = testView.conditionalModifier(true, thenModifier, elseModifier)
+        XCTAssertNotNil(firstView.value.0)
+        XCTAssertNil(firstView.value.1)
         ViewHosting.host(view: firstView)
         wait(for: [firstExp], timeout: 0.1)
 
@@ -93,6 +99,8 @@ final class ViewExtensionsTests: XCTestCase {
             secondExp.fulfill()
         }
         let secondView = testView.conditionalModifier(false, thenModifier, elseModifier)
+        XCTAssertNil(secondView.value.0)
+        XCTAssertNotNil(secondView.value.1)
         ViewHosting.host(view: secondView)
         wait(for: [secondExp], timeout: 0.1)
     }
