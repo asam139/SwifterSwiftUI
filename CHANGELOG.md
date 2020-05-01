@@ -21,6 +21,8 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 ## [v0.3.0](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.3.0)
 
 ### Added
+- **Publisher**:
+    - `sinkToResult(_:)`.  [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139) 
 - **Image**:
     - `init(_:, defaultImage:)`,  `init(_:, defaultSystemImage:)`.  [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139)
 - **Color**: 
