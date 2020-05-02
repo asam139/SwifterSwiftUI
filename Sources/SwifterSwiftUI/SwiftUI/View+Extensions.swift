@@ -197,7 +197,7 @@ extension View {
     ///   - publisher: publisher to observe when a value is received
     ///   - state: state to assign the new value
     /// - Returns: some View
-    func bind<P: Publisher, Value>(
+    public func bind<P: Publisher, Value>(
         _ publisher: P,
         to state: Binding<Value>
     ) -> some View where P.Failure == Never, P.Output == Value {
