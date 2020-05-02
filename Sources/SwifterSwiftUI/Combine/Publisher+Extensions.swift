@@ -9,11 +9,34 @@ import Foundation
 import Combine
 
 extension Publisher {
+    /// Attaches a subscriber with closure-based behavior only for the completion
+    ///
+    /// Example:
+    /// ```
+    /// let subscription = subject.sink { (completion) in
+    ///    XCTAssertEqual(completion, Subscribers.Completion.finished)
+    /// }
+    /// ```
+    /// - parameter receiveCompletion: The closure for completion.
+    /// - Returns: A subscriber that performs the provided closure upon receiving completion.
+    public func sink(receiveCompletion: @escaping ((Subscribers.Completion<Self.Failure>) -> Void)) -> AnyCancellable {
+        return sink(receiveCompletion: receiveCompletion, receiveValue: { _ in })
+    }
+
     /// Attaches a subscriber with closure-based behavior returning a result.
     ///
-    /// This method creates the subscriber and immediately requests an unlimited number of values, prior to returning the subscriber.
+    /// Example:
+    /// ```
+    /// let successSubscription = successSubject.sinkToResult { (result) in
+    ///    switch (result) {
+    ///    case .success(let text):
+    ///        print(text)
+    ///    default: break
+    ///    }
+    /// }
+    /// ```
     /// - parameter result: The closure to execute on completion receiving a result.
-    /// - Returns: A cancellable instance; used when you end assignment of the received value. Deallocation of the result will tear down the subscription stream.
+    /// - Returns: A subscriber that performs the provided closure upon receiving values or completion returning a result.
     public func sinkToResult(_ result: @escaping (Result<Output, Failure>) -> Void) -> AnyCancellable {
         return sink(receiveCompletion: { completion in
             switch completion {
@@ -36,7 +59,7 @@ extension Publisher {
     /// ```
     ///
     /// - parameter replace: The closure to replace the error.
-    /// - Returns: A new publisher without errors.
+    /// - Returns: A new publisher without error.
     public func replaceError(
         _ replace: @escaping (Failure) -> Self.Output
     ) -> Publishers.Catch<Self, Just<Self.Output>> {

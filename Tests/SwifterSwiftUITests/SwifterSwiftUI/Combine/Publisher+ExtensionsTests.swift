@@ -10,6 +10,17 @@ import Combine
 @testable import SwifterSwiftUI
 
 final class PublisherExtensionsTests: XCTestCase {
+    func testSinkReceiveCompletion() {
+        let value: String = "Hello"
+        let subject = PassthroughSubject<String, TestError>()
+        let subscription = subject.sink { (completion) in
+            XCTAssertEqual(completion, Subscribers.Completion.finished)
+        }
+        subject.send(value)
+        subject.send(completion: .finished)
+        subscription.cancel()
+    }
+
     func testSinkToResult() {
         // Success
         let value: String = "Hello"
