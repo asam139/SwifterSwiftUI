@@ -26,7 +26,7 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 - **Subscribers.Completion**:
     - `error`.  [#2](https://github.com/asam139/Steps/pull/2) by [asam139](https://github.com/asam139) 
 - **Publisher**:
-    - `sinkToResult(_:)`.  [#2](https://github.com/asam139/Steps/pull/2) by [asam139](https://github.com/asam139) 
+    - `sinkToResult(_:)`, `replaceError(_:)`, `ignoreError()`.  [#2](https://github.com/asam139/Steps/pull/2) by [asam139](https://github.com/asam139) 
 - **Image**:
     - `init(_:, defaultImage:)`,  `init(_:, defaultSystemImage:)`.  [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139)
 - **Color**: 

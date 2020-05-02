@@ -47,4 +47,25 @@ final class PublisherExtensionsTests: XCTestCase {
         wait(for: [failureExp], timeout: 0.1)
         failureSubscription.cancel()
     }
+
+    func testReplaceError() {
+        let defaultValue: String = "Hello"
+        let subject = PassthroughSubject<String, TestError>()
+        let subscription = subject.replaceError({ _ in
+            return defaultValue
+        }).sink { (value) in
+            XCTAssertEqual(value, defaultValue)
+        }
+        subject.send(completion: .failure(.test))
+        subscription.cancel()
+    }
+
+    func testIgnoreError() {
+        let subject = PassthroughSubject<String, TestError>()
+        let subscription = subject.ignoreError().sink(receiveCompletion: { (completion) in
+            XCTAssertEqual(completion, Subscribers.Completion.finished)
+        }) { (_) in }
+        subject.send(completion: .failure(.test))
+        subscription.cancel()
+    }
 }

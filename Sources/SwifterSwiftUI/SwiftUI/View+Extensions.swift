@@ -166,9 +166,7 @@ extension View {
 extension View {
     /// Bind publisher to state
     ///
-    ///
-    /// # Code
-    /// Example to implement an async Image view
+    /// The following example uses this method to implement an async image view.
     /// ```
     /// struct AsyncImage: View {
     ///    @State private var image: UIImage

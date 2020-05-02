@@ -25,4 +25,34 @@ extension Publisher {
             result(.success(value))
         })
     }
+
+    /// Handles errors from an upstream publisher by replacing it with another publisher without errors.
+    ///
+    /// The following example shows as using it.
+    /// ```
+    /// subject.replaceError({ error in
+    ///    return error.localizedDescription
+    /// })
+    /// ```
+    ///
+    /// - parameter replace: The closure to replace the error.
+    /// - Returns: A new publisher without errors.
+    public func replaceError(
+        _ replace: @escaping (Failure) -> Self.Output
+    ) -> Publishers.Catch<Self, Just<Self.Output>> {
+        return `catch` { error in
+            Just(replace(error))
+        }
+    }
+
+    /// Handles errors from an upstream publisher ignoring them.
+    ///
+    /// The following example shows as using it.
+    ///
+    /// - Returns: A new publisher which ignores any error.
+    public func ignoreError() -> Publishers.Catch<Self, Empty<Self.Output, Self.Failure>> {
+        return `catch` { _ in
+            Empty()
+        }
+    }
 }
