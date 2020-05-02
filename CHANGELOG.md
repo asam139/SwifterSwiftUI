@@ -30,7 +30,7 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 - **Color**: 
     - `init?(hex:)`. [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139)
 - **View**:
-    - `embedInNavigation()`.  [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139) 
+    - `embedInNavigation()`, `bind(_:, state:)`.  [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139) 
 
 ---
 
