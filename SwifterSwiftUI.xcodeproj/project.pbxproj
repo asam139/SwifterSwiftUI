@@ -23,6 +23,9 @@
 /* Begin PBXBuildFile section */
 		9C75D070245C7DE6009BB447 /* Publisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D06F245C7DE6009BB447 /* Publisher+Extensions.swift */; };
 		9C75D072245C88C4009BB447 /* Publisher+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D071245C88C4009BB447 /* Publisher+ExtensionsTests.swift */; };
+		9C75D074245D8304009BB447 /* Subscribers+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D073245D8304009BB447 /* Subscribers+Extensions.swift */; };
+		9C75D076245D83DD009BB447 /* Subscribers+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D075245D83DD009BB447 /* Subscribers+ExtensionsTests.swift */; };
+		9C75D078245D843B009BB447 /* BaseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D077245D843B009BB447 /* BaseTypes.swift */; };
 		OBJ_115 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Color+Extensions.swift */; };
 		OBJ_116 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Image+Extensions.swift */; };
 		OBJ_117 /* LinearGradient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* LinearGradient+Extensions.swift */; };
@@ -130,6 +133,9 @@
 /* Begin PBXFileReference section */
 		9C75D06F245C7DE6009BB447 /* Publisher+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extensions.swift"; sourceTree = "<group>"; };
 		9C75D071245C88C4009BB447 /* Publisher+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		9C75D073245D8304009BB447 /* Subscribers+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subscribers+Extensions.swift"; sourceTree = "<group>"; };
+		9C75D075245D83DD009BB447 /* Subscribers+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subscribers+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		9C75D077245D843B009BB447 /* BaseTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTypes.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_100 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = SOURCE_ROOT; };
 		OBJ_101 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = SOURCE_ROOT; };
@@ -278,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				9C75D06F245C7DE6009BB447 /* Publisher+Extensions.swift */,
+				9C75D073245D8304009BB447 /* Subscribers+Extensions.swift */,
 			);
 			path = Combine;
 			sourceTree = "<group>";
@@ -286,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				9C75D071245C88C4009BB447 /* Publisher+ExtensionsTests.swift */,
+				9C75D075245D83DD009BB447 /* Subscribers+ExtensionsTests.swift */,
 			);
 			path = Combine;
 			sourceTree = "<group>";
@@ -319,6 +327,7 @@
 		OBJ_17 /* SwifterSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				9C75D077245D843B009BB447 /* BaseTypes.swift */,
 				9C75D06C245C7B6F009BB447 /* SwiftUI */,
 				9C75D06E245C7BF5009BB447 /* Combine */,
 			);
@@ -632,6 +641,7 @@
 				OBJ_117 /* LinearGradient+Extensions.swift in Sources */,
 				OBJ_118 /* IfLet.swift in Sources */,
 				9C75D070245C7DE6009BB447 /* Publisher+Extensions.swift in Sources */,
+				9C75D074245D8304009BB447 /* Subscribers+Extensions.swift in Sources */,
 				OBJ_119 /* View+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,6 +661,8 @@
 				OBJ_137 /* Color+ExtensionsTests.swift in Sources */,
 				OBJ_138 /* Image+ExtensionsTests.swift in Sources */,
 				OBJ_139 /* LinearGradient+ExtensionsTests.swift in Sources */,
+				9C75D076245D83DD009BB447 /* Subscribers+ExtensionsTests.swift in Sources */,
+				9C75D078245D843B009BB447 /* BaseTypes.swift in Sources */,
 				OBJ_140 /* IfLetTests.swift in Sources */,
 				OBJ_141 /* View+ExtensionsTests.swift in Sources */,
 				OBJ_142 /* XCTestManifests.swift in Sources */,

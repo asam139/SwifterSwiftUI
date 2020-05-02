@@ -48,7 +48,3 @@ final class PublisherExtensionsTests: XCTestCase {
         failureSubscription.cancel()
     }
 }
-
-public enum TestError: Error {
-    case test
-}
