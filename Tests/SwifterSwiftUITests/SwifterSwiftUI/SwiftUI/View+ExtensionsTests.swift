@@ -1,5 +1,6 @@
 import XCTest
 import SwiftUI
+import Combine
 import ViewInspector
 @testable import SwifterSwiftUI
 
@@ -15,7 +16,20 @@ final class ViewExtensionsTests: XCTestCase {
         XCTAssertNoThrow(try anyView.inspect().navigationView())
     }
 
-    // MARK: Building
+    static var allTests = [
+        ("testEraseToAnyView", testEraseToAnyView),
+        ("testIfThen", testIfThen),
+        ("testIfThenElse", testIfThenElse),
+        ("testConditionalModifier", testConditionalModifier),
+        ("testConditionalModifierOr", testConditionalModifierOr),
+        ("testAnimateOnAppear", testAnimateOnAppear),
+        ("testAnimateOnDisappear", testAnimateOnDisappear),
+        ("testBindPublisherToState", testBindPublisherToState)
+    ]
+}
+
+// MARK: Building
+extension ViewExtensionsTests {
     func testIfThen() {
         let zIndex: Double = 13
 
@@ -42,8 +56,10 @@ final class ViewExtensionsTests: XCTestCase {
         XCTAssertNotNil(secondView.value.1)
         XCTAssertEqual(try secondView.value.1.inspect().emptyView().zIndex(), secondIndex)
     }
+}
 
-    // MARK: Modifiers
+// MARK: Modifiers
+extension ViewExtensionsTests {
     func testConditionalModifier() {
         let testView = Text("Hello")
         var modifier = InspectableTestModifier()
@@ -104,8 +120,10 @@ final class ViewExtensionsTests: XCTestCase {
         ViewHosting.host(view: secondView)
         wait(for: [secondExp], timeout: 0.1)
     }
+}
 
-    // MARK: Animations
+// MARK: Animations
+extension ViewExtensionsTests {
     func testAnimateOnAppear() {
         let testView = Text("Hello")
 
@@ -137,23 +155,25 @@ final class ViewExtensionsTests: XCTestCase {
         XCTAssertNoThrow(try view.inspect().callOnDisappear())
         wait(for: [exp], timeout: 0.1)
     }
-
-    static var allTests = [
-        ("testEraseToAnyView", testEraseToAnyView),
-        ("testIfThen", testIfThen),
-        ("testIfThenElse", testIfThenElse),
-        ("testConditionalModifier", testConditionalModifier),
-        ("testConditionalModifierOr", testConditionalModifierOr),
-        ("testAnimateOnAppear", testAnimateOnAppear),
-        ("testAnimateOnDisappear", testAnimateOnDisappear)
-    ]
 }
 
-private struct InspectableTestModifier: ViewModifier {
-    var onAppear: ((Self.Body) -> Void)?
+// MARK: Combine
+extension ViewExtensionsTests {
+    func testBindPublisherToState() {
+        let subject = PassthroughSubject<Int, Never>()
+        let placeholder = 0
+        let nextVale = 1
 
-    func body(content: Self.Content) -> some View {
-        content
-            .onAppear { self.onAppear?(self.body(content: content)) }
+        let view = SubscribedView(source: subject.eraseToAnyPublisher(), placeholder: placeholder, animation: nil)
+        XCTAssertEqual(view.$index.wrappedValue, placeholder)
+        let exp = view.inspection.inspect { view in
+            XCTAssertEqual(try view.actualView().index, placeholder)
+            subject.send(nextVale)
+        }
+        let exp2 = view.inspection.inspect(onReceive: subject) { view in
+            XCTAssertEqual(try view.actualView().index, nextVale)
+        }
+        ViewHosting.host(view: view)
+        wait(for: [exp, exp2], timeout: 0.1)
     }
 }

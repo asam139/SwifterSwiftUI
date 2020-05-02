@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 extension View {
 
@@ -156,6 +157,50 @@ extension View {
             withAnimation(animation) {
                 action()
             }
+        }
+    }
+}
+
+// MARK: Combine
+
+extension View {
+    /// Bind publisher to state
+    ///
+    /// The following example uses this method to implement an async image view.
+    /// ```
+    /// struct AsyncImage: View {
+    ///    @State private var image: UIImage
+    ///    private let source: AnyPublisher<UIImage, Never>
+    ///    private let animation: Animation?
+    ///
+    ///     init(
+    ///         source: AnyPublisher<UIImage, Never>,
+    ///         placeholder: UIImage,
+    ///         animation: Animation? = nil
+    ///     ) {
+    ///         self.source = source
+    ///         self.animation = animation
+    ///         self._image = State(initialValue:placeholder)
+    ///     }
+    ///
+    ///     var body: some View {
+    ///        return Image(uiImage: image)
+    ///             .resizable()
+    ///             .bind(source, to: $image.animation(animation))
+    ///     }
+    /// }
+    /// ```
+    ///
+    /// - Parameters:
+    ///   - publisher: publisher to observe when a value is received
+    ///   - state: state to assign the new value
+    /// - Returns: some View
+    public func bind<P: Publisher, Value>(
+        _ publisher: P,
+        to state: Binding<Value>
+    ) -> some View where P.Failure == Never, P.Output == Value {
+        return onReceive(publisher) { value in
+            state.wrappedValue = value
         }
     }
 }
