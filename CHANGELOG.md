@@ -21,10 +21,12 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 ## [v0.3.0](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.3.0)
 
 ### Added
+- **View**:
+    - `bind(_:, state:)`.  [#2](https://github.com/asam139/Steps/pull/2) by [asam139](https://github.com/asam139) 
 - **Subscribers.Completion**:
-    - `error`.  [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139) 
+    - `error`.  [#2](https://github.com/asam139/Steps/pull/2) by [asam139](https://github.com/asam139) 
 - **Publisher**:
-    - `sinkToResult(_:)`.  [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139) 
+    - `sinkToResult(_:)`.  [#2](https://github.com/asam139/Steps/pull/2) by [asam139](https://github.com/asam139) 
 - **Image**:
     - `init(_:, defaultImage:)`,  `init(_:, defaultSystemImage:)`.  [#1](https://github.com/asam139/Steps/pull/1) by [asam139](https://github.com/asam139)
 - **Color**: 
