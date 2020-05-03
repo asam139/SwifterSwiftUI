@@ -27,6 +27,8 @@
 		9C75D076245D83DD009BB447 /* Subscribers+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D075245D83DD009BB447 /* Subscribers+ExtensionsTests.swift */; };
 		9C75D078245D843B009BB447 /* BaseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D077245D843B009BB447 /* BaseTypes.swift */; };
 		9C75D07B245D96CD009BB447 /* SubscribedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D07A245D96CD009BB447 /* SubscribedView.swift */; };
+		9C75D07F245F448C009BB447 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D07E245F448C009BB447 /* Storage.swift */; };
+		9C75D082245F4923009BB447 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D081245F4923009BB447 /* StorageTests.swift */; };
 		OBJ_115 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Color+Extensions.swift */; };
 		OBJ_116 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Image+Extensions.swift */; };
 		OBJ_117 /* LinearGradient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* LinearGradient+Extensions.swift */; };
@@ -138,6 +140,8 @@
 		9C75D075245D83DD009BB447 /* Subscribers+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subscribers+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		9C75D077245D843B009BB447 /* BaseTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTypes.swift; sourceTree = "<group>"; };
 		9C75D07A245D96CD009BB447 /* SubscribedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribedView.swift; sourceTree = "<group>"; };
+		9C75D07E245F448C009BB447 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		9C75D081245F4923009BB447 /* StorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_100 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = SOURCE_ROOT; };
 		OBJ_101 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = SOURCE_ROOT; };
@@ -310,6 +314,30 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		9C75D07C245F440E009BB447 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9C75D07D245F447B009BB447 /* PropertyWrapper */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		9C75D07D245F447B009BB447 /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				9C75D07E245F448C009BB447 /* Storage.swift */,
+			);
+			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
+		9C75D080245F48F9009BB447 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9C75D081245F4923009BB447 /* StorageTests.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		OBJ_12 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +367,7 @@
 		OBJ_17 /* SwifterSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				9C75D080245F48F9009BB447 /* Foundation */,
 				9C75D06C245C7B6F009BB447 /* SwiftUI */,
 				9C75D06E245C7BF5009BB447 /* Combine */,
 			);
@@ -491,6 +520,7 @@
 		OBJ_8 /* SwifterSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				9C75D07C245F440E009BB447 /* Foundation */,
 				9C75D06B245C7B64009BB447 /* SwiftUI */,
 				9C75D06D245C7BDA009BB447 /* Combine */,
 			);
@@ -649,6 +679,7 @@
 			files = (
 				OBJ_115 /* Color+Extensions.swift in Sources */,
 				OBJ_116 /* Image+Extensions.swift in Sources */,
+				9C75D07F245F448C009BB447 /* Storage.swift in Sources */,
 				OBJ_117 /* LinearGradient+Extensions.swift in Sources */,
 				OBJ_118 /* IfLet.swift in Sources */,
 				9C75D070245C7DE6009BB447 /* Publisher+Extensions.swift in Sources */,
@@ -671,6 +702,7 @@
 			files = (
 				OBJ_137 /* Color+ExtensionsTests.swift in Sources */,
 				OBJ_138 /* Image+ExtensionsTests.swift in Sources */,
+				9C75D082245F4923009BB447 /* StorageTests.swift in Sources */,
 				OBJ_139 /* LinearGradient+ExtensionsTests.swift in Sources */,
 				9C75D076245D83DD009BB447 /* Subscribers+ExtensionsTests.swift in Sources */,
 				9C75D07B245D96CD009BB447 /* SubscribedView.swift in Sources */,
