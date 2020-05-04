@@ -333,9 +333,17 @@
 		9C75D080245F48F9009BB447 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				9C75D081245F4923009BB447 /* StorageTests.swift */,
+				9C75D083245F52F3009BB447 /* PropertyWrapper */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		9C75D083245F52F3009BB447 /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				9C75D081245F4923009BB447 /* StorageTests.swift */,
+			);
+			path = PropertyWrapper;
 			sourceTree = "<group>";
 		};
 		OBJ_12 /* Utils */ = {
