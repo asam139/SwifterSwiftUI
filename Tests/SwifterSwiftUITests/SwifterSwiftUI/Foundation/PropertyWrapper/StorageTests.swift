@@ -20,7 +20,7 @@ final class StorageTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        UserDefaults.standard.removeObject(forKey: defaultName)
+        UserDefaults.standard.removeObject(forKey: nameKey)
         user = User()
     }
 

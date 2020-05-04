@@ -9,10 +9,11 @@ import Foundation
 
 /// A type that adds an interface to use the user’s defaults.
 ///
+/// Example:
+/// ```
+/// @Storage(key: "nameKey", defaultValue: "Root") var name: String?
+/// ```
 /// Adding the attribute @Storage the property works reading and writing from user's defaults.
-///
-/// ```
-/// ```
 ///
 @propertyWrapper public struct Storage<T: Codable> {
     private let key: String

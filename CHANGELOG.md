@@ -18,13 +18,15 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 
 ---
 
-## [v0.4.0](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.4.0)
+## [v0.3.1](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.3.1)
 
 ### Added
 
+- **PublishedOnMain**
+    - A type that publishes a property marked with an attribute received on the main thread.
 - **Storage**
     - Property wrapper to use the user's defaults.
-
+    
 ## [v0.3.0](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.3.0)
 
 ### Added
