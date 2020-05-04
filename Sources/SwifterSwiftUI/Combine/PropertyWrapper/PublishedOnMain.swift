@@ -33,8 +33,8 @@ import Combine
 
   public var projectedValue: AnyPublisher<Value, Never> {
     return $value
-      .receive(on: DispatchQueue.main)
-      .eraseToAnyPublisher()
+        .receive(on: DispatchQueue.main)
+        .eraseToAnyPublisher()
   }
 
   public init(wrappedValue initialValue: Value) {
