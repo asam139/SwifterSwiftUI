@@ -24,20 +24,20 @@ import Combine
 /// Adding the attribute @PublishedOnMain the property can be assigned directly to UI components.
 ///
 @propertyWrapper public class PublishedOnMain<Value> {
-  @Published var value: Value
+    @Published var value: Value
 
-  public var wrappedValue: Value {
-    get { value }
-    set { value = newValue }
-  }
+    public var wrappedValue: Value {
+        get { value }
+        set { value = newValue }
+    }
 
-  public var projectedValue: AnyPublisher<Value, Never> {
-    return $value
-        .receive(on: DispatchQueue.main)
-        .eraseToAnyPublisher()
-  }
+    public var projectedValue: AnyPublisher<Value, Never> {
+        return $value
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
+    }
 
-  public init(wrappedValue initialValue: Value) {
-    value = initialValue
-  }
+    public init(wrappedValue initialValue: Value) {
+        value = initialValue
+    }
 }
