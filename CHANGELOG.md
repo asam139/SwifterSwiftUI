@@ -18,7 +18,7 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 
 ---
 
-## [v0.4.0](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.4.0)
+## [v0.3.1](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.3.1)
 
 ### Added
 
