@@ -27,8 +27,8 @@
 		9C75D076245D83DD009BB447 /* Subscribers+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D075245D83DD009BB447 /* Subscribers+ExtensionsTests.swift */; };
 		9C75D078245D843B009BB447 /* BaseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D077245D843B009BB447 /* BaseTypes.swift */; };
 		9C75D07B245D96CD009BB447 /* SubscribedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D07A245D96CD009BB447 /* SubscribedView.swift */; };
-		9C75D07F245F448C009BB447 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D07E245F448C009BB447 /* Storage.swift */; };
-		9C75D082245F4923009BB447 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D081245F4923009BB447 /* StorageTests.swift */; };
+		9C75D07F245F448C009BB447 /* UserDefaultCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D07E245F448C009BB447 /* UserDefaultCodable.swift */; };
+		9C75D082245F4923009BB447 /* UserDefaultCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D081245F4923009BB447 /* UserDefaultCodableTests.swift */; };
 		9C75D087245F5359009BB447 /* PublishedOnMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D086245F5359009BB447 /* PublishedOnMain.swift */; };
 		9C75D08C246077B0009BB447 /* PublishedOnMainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D08B246077B0009BB447 /* PublishedOnMainTests.swift */; };
 		OBJ_115 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Color+Extensions.swift */; };
@@ -142,8 +142,8 @@
 		9C75D075245D83DD009BB447 /* Subscribers+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subscribers+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		9C75D077245D843B009BB447 /* BaseTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTypes.swift; sourceTree = "<group>"; };
 		9C75D07A245D96CD009BB447 /* SubscribedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribedView.swift; sourceTree = "<group>"; };
-		9C75D07E245F448C009BB447 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		9C75D081245F4923009BB447 /* StorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
+		9C75D07E245F448C009BB447 /* UserDefaultCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultCodable.swift; sourceTree = "<group>"; };
+		9C75D081245F4923009BB447 /* UserDefaultCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultCodableTests.swift; sourceTree = "<group>"; };
 		9C75D086245F5359009BB447 /* PublishedOnMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedOnMain.swift; sourceTree = "<group>"; };
 		9C75D08B246077B0009BB447 /* PublishedOnMainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedOnMainTests.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
@@ -331,7 +331,7 @@
 		9C75D07D245F447B009BB447 /* PropertyWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				9C75D07E245F448C009BB447 /* Storage.swift */,
+				9C75D07E245F448C009BB447 /* UserDefaultCodable.swift */,
 			);
 			path = PropertyWrapper;
 			sourceTree = "<group>";
@@ -347,7 +347,7 @@
 		9C75D083245F52F3009BB447 /* PropertyWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				9C75D081245F4923009BB447 /* StorageTests.swift */,
+				9C75D081245F4923009BB447 /* UserDefaultCodableTests.swift */,
 			);
 			path = PropertyWrapper;
 			sourceTree = "<group>";
@@ -709,7 +709,7 @@
 			files = (
 				OBJ_115 /* Color+Extensions.swift in Sources */,
 				OBJ_116 /* Image+Extensions.swift in Sources */,
-				9C75D07F245F448C009BB447 /* Storage.swift in Sources */,
+				9C75D07F245F448C009BB447 /* UserDefaultCodable.swift in Sources */,
 				9C75D087245F5359009BB447 /* PublishedOnMain.swift in Sources */,
 				OBJ_117 /* LinearGradient+Extensions.swift in Sources */,
 				OBJ_118 /* IfLet.swift in Sources */,
@@ -733,7 +733,7 @@
 			files = (
 				OBJ_137 /* Color+ExtensionsTests.swift in Sources */,
 				OBJ_138 /* Image+ExtensionsTests.swift in Sources */,
-				9C75D082245F4923009BB447 /* StorageTests.swift in Sources */,
+				9C75D082245F4923009BB447 /* UserDefaultCodableTests.swift in Sources */,
 				OBJ_139 /* LinearGradient+ExtensionsTests.swift in Sources */,
 				9C75D076245D83DD009BB447 /* Subscribers+ExtensionsTests.swift in Sources */,
 				9C75D07B245D96CD009BB447 /* SubscribedView.swift in Sources */,
