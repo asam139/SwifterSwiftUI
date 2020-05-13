@@ -1,8 +1,8 @@
 //
-//  UserDefaultCodableTests.swift
+//  UserDefaultTests.swift
 //  SwifterSwiftUITests
 //
-//  Created by Saul Moreno Abril on 03/05/2020.
+//  Created by Saul Moreno Abril on 12/05/2020.
 //
 
 import XCTest
@@ -12,9 +12,9 @@ import SwiftUI
 private let nameKey = "nameKey"
 private let defaultName = "Root"
 
-final class UserDefaultCodableTests: XCTestCase {
+final class UserDefaultTests: XCTestCase {
     private struct User {
-        @UserDefaultCodable(key: nameKey, defaultValue: defaultName) var name: String
+        @UserDefault(key: nameKey, defaultValue: defaultName) var name: String
     }
     private var user: User!
 

@@ -11,7 +11,7 @@ import Foundation
 ///
 /// Example:
 /// ```
-/// @UserDefaultCodable(key: "nameKey", defaultValue: "Root") var name: String?
+/// @UserDefaultCodable(key: "nameKey", defaultValue: "Root") var name: String
 /// ```
 /// Adding the attribute @UserDefaultCodable the property works reading and writing from user's defaults
 /// with any codable type
