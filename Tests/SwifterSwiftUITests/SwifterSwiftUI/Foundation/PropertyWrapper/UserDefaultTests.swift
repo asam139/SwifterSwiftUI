@@ -32,10 +32,5 @@ final class UserDefaultTests: XCTestCase {
         let newName = "Admin"
         user.name = newName
         XCTAssertEqual(user.name, newName)
-
-        // Force invalid object for the key
-        let arrayData = try? JSONEncoder().encode([String]())
-        UserDefaults.standard.set(arrayData, forKey: nameKey)
-        XCTAssertEqual(user.name, defaultName)
     }
 }
