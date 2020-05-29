@@ -18,27 +18,27 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 
 ---
 
-## [v0.3.2](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.3.2)
+## [v0.4.0](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.4.0)
 
 ### Added
 - **Result**
-    - Result extensions to simplify access to success and failure values.
+    -  `isSuccess`,  `isFailure`,  `success`,  `failure`,   `init(value:, error:)`,  `tryMap(_:)`,  `tryMapError(_:)`. [#4](https://github.com/asam139/Steps/pull/4) by [asam139](https://github.com/asam139) 
 - **UserDefaultEnum**
-    - Property wrapper to use the user's defaults with enum type with string raw value.
+    - Property wrapper to use the user's defaults with enum type with string raw value. [#4](https://github.com/asam139/Steps/pull/4) by [asam139](https://github.com/asam139) 
 - **UserDefault**
-    - Property wrapper to use the user's defaults with default types.
+    - Property wrapper to use the user's defaults with default types. [#4](https://github.com/asam139/Steps/pull/4) by [asam139](https://github.com/asam139) 
 
 ### Changed
-- Rename **Storage** property wrapper to **UserDefault**.
+- Rename **Storage** property wrapper to **UserDefault**. [#4](https://github.com/asam139/Steps/pull/4) by [asam139](https://github.com/asam139) 
 
 ## [v0.3.1](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.3.1)
 
 ### Added
 
 - **PublishedOnMain**
-    - A type that publishes a property marked with an attribute received on the main thread.
+    - A type that publishes a property marked with an attribute received on the main thread.  [#3](https://github.com/asam139/Steps/pull/3) by [asam139](https://github.com/asam139) 
 - **Storage**
-    - Property wrapper to use the user's defaults.
+    - Property wrapper to use the user's defaults. [#3](https://github.com/asam139/Steps/pull/3) by [asam139](https://github.com/asam139) 
     
 ## [v0.3.0](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.3.0)
 
