@@ -10,24 +10,24 @@ import Foundation
 
 extension Result {
     /// Returns whether the instance is `.success`.
-    var isSuccess: Bool {
+    public var isSuccess: Bool {
         guard case .success = self else { return false }
         return true
     }
 
     /// Returns whether the instance is `.failure`.
-    var isFailure: Bool {
+    public var isFailure: Bool {
         !isSuccess
     }
 
     /// Returns the associated value if the result is a success, `nil` otherwise.
-    var success: Success? {
+    public var success: Success? {
         guard case let .success(value) = self else { return nil }
         return value
     }
 
     /// Returns the associated error value if the result is a failure, `nil` otherwise.
-    var failure: Failure? {
+    public var failure: Failure? {
         guard case let .failure(error) = self else { return nil }
         return error
     }
@@ -37,7 +37,7 @@ extension Result {
     /// - Parameters:
     ///   - value: A value.
     ///   - error: An `Error`.
-    init(value: Success, error: Failure?) {
+    public init(value: Success, error: Failure?) {
         if let error = error {
             self = .failure(error)
         } else {
@@ -58,7 +58,7 @@ extension Result {
     ///
     /// - returns: A `Result` containing the result of the given closure. If this instance is a failure, returns the
     ///            same failure.
-    func tryMap<NewSuccess>(_ transform: (Success) throws -> NewSuccess) -> Result<NewSuccess, Error> {
+    public func tryMap<NewSuccess>(_ transform: (Success) throws -> NewSuccess) -> Result<NewSuccess, Error> {
         switch self {
         case let .success(value):
             do {
@@ -84,7 +84,7 @@ extension Result {
     ///
     /// - Returns: A `Result` instance containing the result of the transform. If this instance is a success, returns
     ///            the same success.
-    func tryMapError<NewFailure: Error>(_ transform: (Failure) throws -> NewFailure) -> Result<Success, Error> {
+    public func tryMapError<NewFailure: Error>(_ transform: (Failure) throws -> NewFailure) -> Result<Success, Error> {
         switch self {
         case let .failure(error):
             do {
