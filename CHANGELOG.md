@@ -21,6 +21,8 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 ## [v0.3.2](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.3.2)
 
 ### Added
+- **Result**
+    - Result extensions to simplify access to success and failure values.
 - **UserDefaultEnum**
     - Property wrapper to use the user's defaults with enum type with string raw value.
 - **UserDefault**
