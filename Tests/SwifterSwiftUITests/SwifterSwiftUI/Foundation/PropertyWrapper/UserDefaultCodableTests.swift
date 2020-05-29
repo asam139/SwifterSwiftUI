@@ -1,5 +1,5 @@
 //
-//  StorageTests.swift
+//  UserDefaultCodableTests.swift
 //  SwifterSwiftUITests
 //
 //  Created by Saul Moreno Abril on 03/05/2020.
@@ -12,9 +12,9 @@ import SwiftUI
 private let nameKey = "nameKey"
 private let defaultName = "Root"
 
-final class StorageTests: XCTestCase {
+final class UserDefaultCodableTests: XCTestCase {
     private struct User {
-        @Storage(key: nameKey, defaultValue: defaultName) var name: String?
+        @UserDefaultCodable(key: nameKey, defaultValue: defaultName) var name: String
     }
     private var user: User!
 
