@@ -32,10 +32,56 @@ public func ifLet<T, ThenOut: View>(_ value: T?, then: (T) -> ThenOut) -> some V
 /// - Parameters:
 ///   - value: optional value to verify
 ///   - then: callback to create a view with the value is not nil
+///   - else: callback to create a view with the value is nil
 /// - Returns: The built view
 public func ifLet<T, ThenOut: View, ElseOut: View>(_ value: T?,
                                                    then: (T) -> ThenOut,
                                                    `else`: () -> ElseOut) -> some View {
     value.map { ViewBuilder.buildEither(first: then($0)) } ??
+        ViewBuilder.buildEither(second: `else`())
+}
+
+/// It is an utility that adds back a way to use the if let for collections checking if it is empty.
+///
+///    ifLet(myText, then: {
+///       Text($0)
+///    })
+///
+/// - Parameters:
+///   - value: optional value to verify
+///   - empty: condition to check if string is empty
+///   - then: callback to create a view with the value is not nil
+/// - Returns: The built view
+public func ifLetString<T, ThenOut: View>(
+    _ value: T?,
+    empty: Bool = false,
+    then: (T) -> ThenOut
+) -> some View where T : Collection {
+    let value = empty && value.isNilOrEmpty ? nil : value
+    return ViewBuilder.buildIf(value.map { then($0) })
+}
+
+/// It is an utility that adds back a way to use the if let with an else option
+///
+///    ifLet(myImage, then: {
+///       $0.resizable()
+///    }, else: {
+///       Text("Hello")
+///    })
+///
+/// - Parameters:
+///   - value: optional value to verify
+///   - empty: condition to check if string is empty
+///   - then: callback to create a view with the value is not nil
+///   - else: callback to create a view with the value is nil
+/// - Returns: The built view
+public func ifLetString<T, ThenOut: View, ElseOut: View>(
+    _ value: T?,
+    empty: Bool = false,
+    then: (T) -> ThenOut,
+    `else`: () -> ElseOut
+) -> some View where T : Collection {
+    let value = empty && value.isNilOrEmpty ? nil : value
+    return value.map { ViewBuilder.buildEither(first: then($0)) } ??
         ViewBuilder.buildEither(second: `else`())
 }
