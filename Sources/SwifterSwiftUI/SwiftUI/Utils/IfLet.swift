@@ -64,7 +64,7 @@ public func ifLet<T, ThenOut: View>(
 /// It is an utility that adds back a way to use the if let with an else option
 ///
 ///    ifLet(myText, empty: false, then: {
-///       $0.resizable()
+///       $0
 ///    }, else: {
 ///       Text("Hello")
 ///    })
