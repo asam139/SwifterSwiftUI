@@ -21,7 +21,9 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 ## [v0.4.2](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.4.2)
 
 - **Utils**:
-- `ifLet(value:, empty:, then:)`, `ifLet(value:, empty:, then:, else:)`.  [#5](https://github.com/asam139/Steps/pull/5) by [asam139](https://github.com/asam139)
+    - `ifLet(value:, empty:, then:)`, `ifLet(value:, empty:, then:, else:)`.  [#5](https://github.com/asam139/Steps/pull/5) by [asam139](https://github.com/asam139)
+- **Optional**:
+    - `isNilOrEmpty`.  [#5](https://github.com/asam139/Steps/pull/5) by [asam139](https://github.com/asam139)
 
 ## [v0.4.1](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.4.1)
 

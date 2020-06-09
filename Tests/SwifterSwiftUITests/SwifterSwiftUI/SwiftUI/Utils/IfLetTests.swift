@@ -50,4 +50,68 @@ final class IfLetTests: XCTestCase {
         })
         XCTAssertNoThrow(try view.inspect().text())
     }
+
+    func testIfLetThenForCollections() {
+        var optionalString: String?
+
+        // Test nil value
+        var view = ifLet(optionalString, empty: false, then: { value in
+            return Text(value)
+        })
+        XCTAssertThrowsError(try view.inspect().text())
+
+        // Test empty value
+        optionalString = ""
+        view = ifLet(optionalString, empty: false, then: { value in
+            return Text(value)
+        })
+        XCTAssertThrowsError(try view.inspect().text())
+        view = ifLet(optionalString, empty: true, then: { value in
+            return Text(value)
+        })
+        XCTAssertNoThrow(try view.inspect().text())
+
+        // Test filled value
+        optionalString = "hello"
+        view = ifLet(optionalString, then: { value in
+            return Text(value)
+        })
+        XCTAssertNoThrow(try view.inspect().text())
+    }
+
+    func testIfLetThenElseForCollections() {
+        var optionalString: String?
+
+        // Test nil value
+        var view = ifLet(optionalString, empty: false, then: { value in
+            return Text(value)
+        }, else: {
+            return EmptyView()
+        })
+        XCTAssertNoThrow(try view.inspect().emptyView())
+
+        // Test empty value
+        optionalString = ""
+        view = ifLet(optionalString, empty: false, then: { value in
+            return Text(value)
+        }, else: {
+            return EmptyView()
+        })
+        XCTAssertNoThrow(try view.inspect().emptyView())
+        view = ifLet(optionalString, empty: true, then: { value in
+            return Text(value)
+        }, else: {
+            return EmptyView()
+        })
+        XCTAssertNoThrow(try view.inspect().text())
+
+        // Test filled value
+        optionalString = "hello"
+        view = ifLet(optionalString, then: { value in
+            return Text(value)
+        }, else: {
+            return EmptyView()
+        })
+        XCTAssertNoThrow(try view.inspect().text())
+    }
 }

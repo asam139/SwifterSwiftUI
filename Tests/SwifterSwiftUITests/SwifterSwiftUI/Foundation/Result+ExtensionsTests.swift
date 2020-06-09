@@ -1,5 +1,5 @@
 //
-//  Result+Extensions.swift
+//  Result+ExtensionsTests.swift
 //  SwifterSwiftUITests
 //
 //  Created by Saul Moreno Abril on 29/05/2020.

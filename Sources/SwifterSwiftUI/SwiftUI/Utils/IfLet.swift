@@ -57,7 +57,7 @@ public func ifLet<T, ThenOut: View>(
     empty: Bool = false,
     then: (T) -> ThenOut
 ) -> some View where T : Collection {
-    let value = empty && value.isNilOrEmpty ? nil : value
+    let value = !empty && value.isNilOrEmpty ? nil : value
     return ViewBuilder.buildIf(value.map { then($0) })
 }
 
@@ -81,7 +81,7 @@ public func ifLet<T, ThenOut: View, ElseOut: View>(
     then: (T) -> ThenOut,
     `else`: () -> ElseOut
 ) -> some View where T : Collection {
-    let value = empty && value.isNilOrEmpty ? nil : value
+    let value = !empty && value.isNilOrEmpty ? nil : value
     return value.map { ViewBuilder.buildEither(first: then($0)) } ??
         ViewBuilder.buildEither(second: `else`())
 }
