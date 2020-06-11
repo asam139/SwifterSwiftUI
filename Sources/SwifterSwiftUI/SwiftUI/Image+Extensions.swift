@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-extension Image {
+#if canImport(UIKit)
+@available(iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+public extension Image {
     /// Create a image with default one
     ///
     ///    let image = Image("photo", defaultImage: "empty-photo")
@@ -16,25 +18,14 @@ extension Image {
     ///   - name: Image name
     ///   - defaultImage: Default image name
     /// - Returns: A new image
-    public init(_ name: String, defaultImage: String) {
-        #if canImport(UIKit)
+    @inlinable init(_ name: String, defaultImage: String) {
         if let img = UIImage(named: name) {
             self.init(uiImage: img)
         } else {
             self.init(defaultImage)
         }
-        #else
-        if let img = NSImage(named: name) {
-            self.init(nsImage: img)
-        } else {
-            self.init(defaultImage)
-        }
-        #endif
     }
-}
 
-#if canImport(UIKit)
-extension Image {
     /// Create a image with default one
     ///
     ///    let image = Image("photo", defaultSystemImage: "bandage.fill")
@@ -44,11 +35,32 @@ extension Image {
     ///   - defaultSystemImage: Default  system image name
     /// - Returns: A new image
     @available(OSX 10.15, *)
-    public init(_ name: String, defaultSystemImage: String) {
+    @inlinable init(_ name: String, defaultSystemImage: String) {
         if let img = UIImage(named: name) {
             self.init(uiImage: img)
         } else {
             self.init(systemName: defaultSystemImage)
+        }
+    }
+}
+#endif
+
+#if canImport(AppKit)
+@available(OSX 10.15, *)
+public extension Image {
+    /// Create a image with default one
+    ///
+    ///    let image = Image("photo", defaultImage: "empty-photo")
+    ///
+    /// - Parameters:
+    ///   - name: Image name
+    ///   - defaultImage: Default image name
+    /// - Returns: A new image
+    @inlinable init(_ name: String, defaultImage: String) {
+        if let img = NSImage(named: name) {
+            self.init(nsImage: img)
+        } else {
+            self.init(defaultImage)
         }
     }
 }
