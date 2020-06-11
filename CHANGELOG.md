@@ -21,7 +21,7 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 ## [v0.5.0](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.5.0)
 
 - **Mutable Protocol**:
-    - Adds a helper function to mutate a properties and help implement _Builder_ patter. Very useful to create methods to modify SwiftUI views. .  [#6](https://github.com/asam139/Steps/pull/6) by [asam139](https://github.com/asam139)
+    - Adds a helper function to mutate a properties and help implement builder pattern. Very useful to create methods to modify SwiftUI views. [#6](https://github.com/asam139/Steps/pull/6) by [asam139](https://github.com/asam139)
 
 ## [v0.4.2](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.4.2)
 
