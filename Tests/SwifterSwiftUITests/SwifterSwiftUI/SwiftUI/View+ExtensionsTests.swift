@@ -16,16 +16,14 @@ final class ViewExtensionsTests: XCTestCase {
         XCTAssertNoThrow(try anyView.inspect().navigationView())
     }
 
-    static var allTests = [
-        ("testEraseToAnyView", testEraseToAnyView),
-        ("testIfThen", testIfThen),
-        ("testIfThenElse", testIfThenElse),
-        ("testConditionalModifier", testConditionalModifier),
-        ("testConditionalModifierOr", testConditionalModifierOr),
-        ("testAnimateOnAppear", testAnimateOnAppear),
-        ("testAnimateOnDisappear", testAnimateOnDisappear),
-        ("testBindPublisherToState", testBindPublisherToState)
-    ]
+    func testFrameWithSize() {
+        let text = Text("").frame(size: CGSize(width: 100, height: 100))
+        XCTAssertNoThrow({
+            let fixedFrame = try text.inspect().text().fixedFrame()
+            XCTAssertEqual(fixedFrame.width, 100)
+            XCTAssertEqual(fixedFrame.height, 100)
+        })
+    }
 }
 
 // MARK: Building
