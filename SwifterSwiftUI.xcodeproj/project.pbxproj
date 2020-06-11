@@ -35,6 +35,8 @@
 		9C75D082245F4923009BB447 /* UserDefaultCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D081245F4923009BB447 /* UserDefaultCodableTests.swift */; };
 		9C75D087245F5359009BB447 /* PublishedOnMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D086245F5359009BB447 /* PublishedOnMain.swift */; };
 		9C75D08C246077B0009BB447 /* PublishedOnMainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D08B246077B0009BB447 /* PublishedOnMainTests.swift */; };
+		9CBD86672492B7DA00022EDC /* Mutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD86662492B7DA00022EDC /* Mutable.swift */; };
+		9CBD866A2492B8D900022EDC /* MutableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD86682492B86B00022EDC /* MutableTests.swift */; };
 		9CE0F49F248111D600BBA716 /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0F49E248111D600BBA716 /* Result+Extensions.swift */; };
 		9CE0F4A12481128000BBA716 /* Result+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0F4A02481128000BBA716 /* Result+ExtensionsTests.swift */; };
 		9CF24C08248E9FE100CC17D3 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF24C07248E9FE100CC17D3 /* Optional+Extensions.swift */; };
@@ -158,6 +160,8 @@
 		9C75D081245F4923009BB447 /* UserDefaultCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultCodableTests.swift; sourceTree = "<group>"; };
 		9C75D086245F5359009BB447 /* PublishedOnMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedOnMain.swift; sourceTree = "<group>"; };
 		9C75D08B246077B0009BB447 /* PublishedOnMainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedOnMainTests.swift; sourceTree = "<group>"; };
+		9CBD86662492B7DA00022EDC /* Mutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mutable.swift; sourceTree = "<group>"; };
+		9CBD86682492B86B00022EDC /* MutableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutableTests.swift; sourceTree = "<group>"; };
 		9CE0F49E248111D600BBA716 /* Result+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+Extensions.swift"; sourceTree = "<group>"; };
 		9CE0F4A02481128000BBA716 /* Result+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		9CF24C07248E9FE100CC17D3 /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
@@ -342,6 +346,7 @@
 				9C75D07D245F447B009BB447 /* PropertyWrapper */,
 				9CE0F49E248111D600BBA716 /* Result+Extensions.swift */,
 				9CF24C07248E9FE100CC17D3 /* Optional+Extensions.swift */,
+				9CBD86662492B7DA00022EDC /* Mutable.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				9C75D083245F52F3009BB447 /* PropertyWrapper */,
 				9CE0F4A02481128000BBA716 /* Result+ExtensionsTests.swift */,
 				9CF24C0B248FEB7000CC17D3 /* Optional+ExtensionsTests.swift */,
+				9CBD86682492B86B00022EDC /* MutableTests.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -741,6 +747,7 @@
 				9C75D087245F5359009BB447 /* PublishedOnMain.swift in Sources */,
 				OBJ_117 /* LinearGradient+Extensions.swift in Sources */,
 				OBJ_118 /* IfLet.swift in Sources */,
+				9CBD86672492B7DA00022EDC /* Mutable.swift in Sources */,
 				9C75D070245C7DE6009BB447 /* Publisher+Extensions.swift in Sources */,
 				9C75D074245D8304009BB447 /* Subscribers+Extensions.swift in Sources */,
 				OBJ_119 /* View+Extensions.swift in Sources */,
@@ -766,6 +773,7 @@
 				9C75D082245F4923009BB447 /* UserDefaultCodableTests.swift in Sources */,
 				OBJ_139 /* LinearGradient+ExtensionsTests.swift in Sources */,
 				9C75D076245D83DD009BB447 /* Subscribers+ExtensionsTests.swift in Sources */,
+				9CBD866A2492B8D900022EDC /* MutableTests.swift in Sources */,
 				9C75D07B245D96CD009BB447 /* SubscribedView.swift in Sources */,
 				9C75D078245D843B009BB447 /* BaseTypes.swift in Sources */,
 				9CE0F4A12481128000BBA716 /* Result+ExtensionsTests.swift in Sources */,
