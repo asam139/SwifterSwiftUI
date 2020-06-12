@@ -13,25 +13,44 @@ public extension View {
 
     /// Type casting to AnyView
     ///
-    ///    myView.eraseToAnyView()
+    ///     myView.eraseToAnyView()
     ///
-    /// - Returns: View as AnyView
+    /// - Returns: A view as AnyView
     @inlinable func eraseToAnyView() -> AnyView {
         AnyView(self)
     }
 
     /// Encapsulate view in navigation view
     ///
-    ///    myView.embedInNavigation()
+    ///     myView.embedInNavigation()
     ///
-    /// - Returns: view encapsulate in navigation view
+    /// - Returns: A view encapsulate in navigation view
     @available(watchOS, unavailable)
     @inlinable func embedInNavigation() -> some View {
         NavigationView { self }
     }
 
+    /// Positions the view within an invisible frame with the specified size.
+    ///
+    ///     myView.frame(size: CGSize(width: 100, height: 100))
+    ///
+    /// - Returns: A view with fixed dimensions of width and height
     @inlinable func frame(size: CGSize) -> some View {
         frame(width: size.width, height: size.height)
+    }
+
+    /// Calls a block each time that view is reloaded
+    ///
+    ///     content.onReload(perform: {
+    ///         print("onReload")
+    ///     })
+    ///
+    /// - Returns: The same view but calling the block asynchronously when is reloaded
+    @inlinable func onReload(perform: @escaping () -> Void) -> some View {
+        DispatchQueue.main.async {
+            perform()
+        }
+        return self
     }
 }
 

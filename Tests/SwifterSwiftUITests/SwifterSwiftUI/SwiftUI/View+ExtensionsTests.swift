@@ -24,6 +24,14 @@ final class ViewExtensionsTests: XCTestCase {
             XCTAssertEqual(fixedFrame.height, 100)
         })
     }
+
+    func testOnReload() {
+        let expectation = XCTestExpectation()
+        _ = Text("").onReload {
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 10.0)
+    }
 }
 
 // MARK: Building
