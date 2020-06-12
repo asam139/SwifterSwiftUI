@@ -18,7 +18,7 @@ public extension Color {
     /// - Parameters:
     ///   - hex: Hex color string
     /// - Returns: New color from the hex value
-     @inlinable init?(hex: String) {
+    @inlinable init?(hex: String) {
         let hexColor: String
         if hex.hasPrefix("#") {
             let start = hex.index(hex.startIndex, offsetBy: 1)
