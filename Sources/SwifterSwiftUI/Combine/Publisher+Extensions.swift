@@ -8,7 +8,8 @@
 import Foundation
 import Combine
 
-extension Publisher {
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+public extension Publisher {
     /// Attaches a subscriber with closure-based behavior only for the completion
     ///
     /// Example:
@@ -19,7 +20,9 @@ extension Publisher {
     /// ```
     /// - parameter receiveCompletion: The closure for completion.
     /// - Returns: A subscriber that performs the provided closure upon receiving completion.
-    public func sink(receiveCompletion: @escaping ((Subscribers.Completion<Self.Failure>) -> Void)) -> AnyCancellable {
+    @inlinable func sink(
+        receiveCompletion: @escaping ((Subscribers.Completion<Self.Failure>) -> Void)
+    ) -> AnyCancellable {
         return sink(receiveCompletion: receiveCompletion, receiveValue: { _ in })
     }
 
@@ -37,7 +40,7 @@ extension Publisher {
     /// ```
     /// - parameter result: The closure to execute on completion receiving a result.
     /// - Returns: A subscriber that performs the provided closure upon receiving values or completion returning a result.
-    public func sinkToResult(_ result: @escaping (Result<Output, Failure>) -> Void) -> AnyCancellable {
+    @inlinable func sinkToResult(_ result: @escaping (Result<Output, Failure>) -> Void) -> AnyCancellable {
         return sink(receiveCompletion: { completion in
             switch completion {
             case let .failure(error):
@@ -60,7 +63,7 @@ extension Publisher {
     ///
     /// - parameter replace: The closure to replace the error.
     /// - Returns: A new publisher without error.
-    public func replaceError(
+    @inlinable func replaceError(
         _ replace: @escaping (Failure) -> Self.Output
     ) -> Publishers.Catch<Self, Just<Self.Output>> {
         return `catch` { error in
@@ -73,7 +76,7 @@ extension Publisher {
     /// The following example shows as using it.
     ///
     /// - Returns: A new publisher which ignores any error.
-    public func ignoreError() -> Publishers.Catch<Self, Empty<Self.Output, Self.Failure>> {
+    @inlinable func ignoreError() -> Publishers.Catch<Self, Empty<Self.Output, Self.Failure>> {
         return `catch` { _ in
             Empty()
         }

@@ -8,26 +8,27 @@
 
 import Foundation
 
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 extension Result {
     /// Returns whether the instance is `.success`.
-    public var isSuccess: Bool {
+    @inlinable var isSuccess: Bool {
         guard case .success = self else { return false }
         return true
     }
 
     /// Returns whether the instance is `.failure`.
-    public var isFailure: Bool {
+    @inlinable var isFailure: Bool {
         !isSuccess
     }
 
     /// Returns the associated value if the result is a success, `nil` otherwise.
-    public var success: Success? {
+    @inlinable var success: Success? {
         guard case let .success(value) = self else { return nil }
         return value
     }
 
     /// Returns the associated error value if the result is a failure, `nil` otherwise.
-    public var failure: Failure? {
+    @inlinable var failure: Failure? {
         guard case let .failure(error) = self else { return nil }
         return error
     }
@@ -37,7 +38,7 @@ extension Result {
     /// - Parameters:
     ///   - value: A value.
     ///   - error: An `Error`.
-    public init(value: Success, error: Failure?) {
+    @inlinable init(value: Success, error: Failure?) {
         if let error = error {
             self = .failure(error)
         } else {
@@ -58,7 +59,7 @@ extension Result {
     ///
     /// - returns: A `Result` containing the result of the given closure. If this instance is a failure, returns the
     ///            same failure.
-    public func tryMap<NewSuccess>(_ transform: (Success) throws -> NewSuccess) -> Result<NewSuccess, Error> {
+    @inlinable func tryMap<NewSuccess>(_ transform: (Success) throws -> NewSuccess) -> Result<NewSuccess, Error> {
         switch self {
         case let .success(value):
             do {
@@ -84,7 +85,9 @@ extension Result {
     ///
     /// - Returns: A `Result` instance containing the result of the transform. If this instance is a success, returns
     ///            the same success.
-    public func tryMapError<NewFailure: Error>(_ transform: (Failure) throws -> NewFailure) -> Result<Success, Error> {
+    @inlinable func tryMapError<NewFailure: Error>(
+        _ transform: (Failure) throws -> NewFailure
+    ) -> Result<Success, Error> {
         switch self {
         case let .failure(error):
             do {

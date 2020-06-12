@@ -5,8 +5,6 @@
 //  Created by Saul Moreno Abril on 09/06/2020.
 //
 
-import Foundation
-
 import XCTest
 import SwiftUI
 import ViewInspector

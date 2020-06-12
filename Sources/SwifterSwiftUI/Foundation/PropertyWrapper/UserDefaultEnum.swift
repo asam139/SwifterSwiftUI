@@ -19,8 +19,8 @@ import Foundation
 /// ```
 /// Adding the attribute @UserDefaultEnum the property works reading and writing from user's defaults
 ///
-@propertyWrapper
-public struct UserDefaultEnum<T: RawRepresentable> where T.RawValue == String {
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@propertyWrapper public struct UserDefaultEnum<T: RawRepresentable> where T.RawValue == String {
     private let key: String
     private let defaultValue: T
 

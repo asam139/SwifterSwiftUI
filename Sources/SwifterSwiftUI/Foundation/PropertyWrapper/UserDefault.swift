@@ -15,6 +15,7 @@ import Foundation
 /// ```
 /// Adding the attribute @UserDefault the property works reading and writing from user's defaults
 ///
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 @propertyWrapper public struct UserDefault<T> {
     private let key: String
     private let defaultValue: T

@@ -8,31 +8,55 @@
 import SwiftUI
 import Combine
 
-extension View {
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+public extension View {
 
     /// Type casting to AnyView
     ///
-    ///    myView.eraseToAnyView()
+    ///     myView.eraseToAnyView()
     ///
-    /// - Returns: View as AnyView
-    public func eraseToAnyView() -> AnyView {
+    /// - Returns: A view as AnyView
+    @inlinable func eraseToAnyView() -> AnyView {
         AnyView(self)
     }
 
     /// Encapsulate view in navigation view
     ///
-    ///    myView.embedInNavigation()
+    ///     myView.embedInNavigation()
     ///
-    /// - Returns: view encapsulate in navigation view
-    @available(iOS 13.0, OSX 10.15, tvOS 13.0, *)
+    /// - Returns: A view encapsulate in navigation view
     @available(watchOS, unavailable)
-    func embedInNavigation() -> some View {
+    @inlinable func embedInNavigation() -> some View {
         NavigationView { self }
+    }
+
+    /// Positions the view within an invisible frame with the specified size.
+    ///
+    ///     myView.frame(size: CGSize(width: 100, height: 100))
+    ///
+    /// - Returns: A view with fixed dimensions of width and height
+    @inlinable func frame(size: CGSize) -> some View {
+        frame(width: size.width, height: size.height)
+    }
+
+    /// Calls a block each time that view is reloaded
+    ///
+    ///     content.onReload(perform: {
+    ///         print("onReload")
+    ///     })
+    ///
+    /// - Returns: The same view but calling the block asynchronously when is reloaded
+    @inlinable func onReload(perform: @escaping () -> Void) -> some View {
+        DispatchQueue.main.async {
+            perform()
+        }
+        return self
     }
 }
 
 // MARK: Building
-extension View {
+
+public extension View {
 
     /// Apply changes to the view if the condition is true
     ///
@@ -45,7 +69,7 @@ extension View {
     ///   - condition: an boolean to control the condition
     ///   - then: callback to apply the changes when the condition is true
     /// - Returns: some View
-    public func `if`<Content: View>(
+    @inlinable func `if`<Content: View>(
         _ conditional: Bool,
         then: (Self) -> Content
     ) -> TupleView<(Self?, Content?)> {
@@ -69,7 +93,7 @@ extension View {
     ///   - then: callback to apply the changes when the condition is true
     ///   - else: callback to apply the changes when the condition is false
     /// - Returns: some View
-    public func `if`<A: View, B: View>(
+    @inlinable func `if`<A: View, B: View>(
         _ conditional: Bool,
         then: (Self) -> A,
         `else`: (Self) -> B
@@ -82,7 +106,7 @@ extension View {
 }
 
 // MARK: Modifiers
-extension View {
+public extension View {
 
     /// Set one modifier conditionally.
     ///
@@ -92,7 +116,7 @@ extension View {
     ///   - condition: an boolean to control the condition
     ///   - modifier: modifier to apply
     /// - Returns: some View
-    public func conditionalModifier<M: ViewModifier>(
+    @inlinable func conditionalModifier<M: ViewModifier>(
         _ condition: Bool,
         _ modifier: M
     ) -> TupleView<(Self?, ModifiedContent<Self, M>?)> {
@@ -111,7 +135,7 @@ extension View {
     ///   - trueModifier: modifier to apply when the condition is true
     ///   - falseModifier: modifier to apply when the condition is false
     /// - Returns: some View
-    public func conditionalModifier<M: ViewModifier>(
+    @inlinable func conditionalModifier<M: ViewModifier>(
         _ condition: Bool,
         _ trueModifier: M,
         _ falseModifier: M
@@ -124,7 +148,7 @@ extension View {
 }
 
 // MARK: Animations
-extension View {
+public extension View {
 
     /// Animate an action with an animation on appear.
     ///
@@ -134,8 +158,8 @@ extension View {
     ///   - animation: animation to be applied
     ///   - action: action to be animated
     /// - Returns: some View
-    public func animateOnAppear(using animation: Animation = .easeInOut,
-                                _ action: @escaping () -> Void) -> some View {
+    @inlinable func animateOnAppear(using animation: Animation = .easeInOut,
+                                    action: @escaping () -> Void) -> some View {
         return onAppear {
             withAnimation(animation) {
                 action()
@@ -151,8 +175,8 @@ extension View {
     ///   - animation: animation to be applied
     ///   - action: action to be animated
     /// - Returns: some View
-    public func animateOnDisappear(using animation: Animation = .easeInOut,
-                                   _ action: @escaping () -> Void) -> some View {
+    @inlinable func animateOnDisappear(using animation: Animation = .easeInOut,
+                                       action: @escaping () -> Void) -> some View {
         return onDisappear {
             withAnimation(animation) {
                 action()
@@ -163,7 +187,7 @@ extension View {
 
 // MARK: Combine
 
-extension View {
+public extension View {
     /// Bind publisher to state
     ///
     /// The following example uses this method to implement an async image view.
@@ -195,7 +219,7 @@ extension View {
     ///   - publisher: publisher to observe when a value is received
     ///   - state: state to assign the new value
     /// - Returns: some View
-    public func bind<P: Publisher, Value>(
+    @inlinable func bind<P: Publisher, Value>(
         _ publisher: P,
         to state: Binding<Value>
     ) -> some View where P.Failure == Never, P.Output == Value {

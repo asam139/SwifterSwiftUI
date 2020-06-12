@@ -23,6 +23,7 @@ import Combine
 /// ```
 /// Adding the attribute @PublishedOnMain the property can be assigned directly to UI components.
 ///
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 @propertyWrapper public class PublishedOnMain<Value> {
     @Published var value: Value
 

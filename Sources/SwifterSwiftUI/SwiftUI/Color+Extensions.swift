@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-extension Color {
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+public extension Color {
     /// Create a color from hex string
     /// It supports hex string of rgb and rgba with the # character as optional
     /// Examples: #AABBCC, AABBCC, #AABBCCFF or AABBCCFF.
@@ -17,7 +18,7 @@ extension Color {
     /// - Parameters:
     ///   - hex: Hex color string
     /// - Returns: New color from the hex value
-    public init?(hex: String) {
+     @inlinable init?(hex: String) {
         let hexColor: String
         if hex.hasPrefix("#") {
             let start = hex.index(hex.startIndex, offsetBy: 1)

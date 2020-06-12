@@ -16,6 +16,7 @@ import Foundation
 /// Adding the attribute @UserDefaultCodable the property works reading and writing from user's defaults
 /// with any codable type
 ///
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 @propertyWrapper public struct UserDefaultCodable<T: Codable> {
     private let key: String
     private let defaultValue: T

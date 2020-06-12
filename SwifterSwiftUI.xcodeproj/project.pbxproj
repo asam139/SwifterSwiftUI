@@ -35,6 +35,13 @@
 		9C75D082245F4923009BB447 /* UserDefaultCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D081245F4923009BB447 /* UserDefaultCodableTests.swift */; };
 		9C75D087245F5359009BB447 /* PublishedOnMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D086245F5359009BB447 /* PublishedOnMain.swift */; };
 		9C75D08C246077B0009BB447 /* PublishedOnMainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75D08B246077B0009BB447 /* PublishedOnMainTests.swift */; };
+		9CBD86672492B7DA00022EDC /* Mutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD86662492B7DA00022EDC /* Mutable.swift */; };
+		9CBD866A2492B8D900022EDC /* MutableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD86682492B86B00022EDC /* MutableTests.swift */; };
+		9CBD866D2493758700022EDC /* SizeViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD866C2493758700022EDC /* SizeViewModifier.swift */; };
+		9CBD866F249377A000022EDC /* View+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD866E249377A000022EDC /* View+Modifiers.swift */; };
+		9CBD867524937C2800022EDC /* View+ModifiersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD867324937B3300022EDC /* View+ModifiersTests.swift */; };
+		9CBD867624937C2D00022EDC /* SizeViewModifier+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD867124937B1A00022EDC /* SizeViewModifier+Tests.swift */; };
+		9CBD867924937F9A00022EDC /* SizeTrackableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD867724937F7C00022EDC /* SizeTrackableView.swift */; };
 		9CE0F49F248111D600BBA716 /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0F49E248111D600BBA716 /* Result+Extensions.swift */; };
 		9CE0F4A12481128000BBA716 /* Result+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0F4A02481128000BBA716 /* Result+ExtensionsTests.swift */; };
 		9CF24C08248E9FE100CC17D3 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF24C07248E9FE100CC17D3 /* Optional+Extensions.swift */; };
@@ -158,6 +165,13 @@
 		9C75D081245F4923009BB447 /* UserDefaultCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultCodableTests.swift; sourceTree = "<group>"; };
 		9C75D086245F5359009BB447 /* PublishedOnMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedOnMain.swift; sourceTree = "<group>"; };
 		9C75D08B246077B0009BB447 /* PublishedOnMainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedOnMainTests.swift; sourceTree = "<group>"; };
+		9CBD86662492B7DA00022EDC /* Mutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mutable.swift; sourceTree = "<group>"; };
+		9CBD86682492B86B00022EDC /* MutableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutableTests.swift; sourceTree = "<group>"; };
+		9CBD866C2493758700022EDC /* SizeViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeViewModifier.swift; sourceTree = "<group>"; };
+		9CBD866E249377A000022EDC /* View+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Modifiers.swift"; sourceTree = "<group>"; };
+		9CBD867124937B1A00022EDC /* SizeViewModifier+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SizeViewModifier+Tests.swift"; sourceTree = "<group>"; };
+		9CBD867324937B3300022EDC /* View+ModifiersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ModifiersTests.swift"; sourceTree = "<group>"; };
+		9CBD867724937F7C00022EDC /* SizeTrackableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeTrackableView.swift; sourceTree = "<group>"; };
 		9CE0F49E248111D600BBA716 /* Result+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+Extensions.swift"; sourceTree = "<group>"; };
 		9CE0F4A02481128000BBA716 /* Result+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		9CF24C07248E9FE100CC17D3 /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
@@ -285,11 +299,13 @@
 		9C75D06B245C7B64009BB447 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				9CBD866B2493757800022EDC /* Modifiers */,
+				OBJ_12 /* Utils */,
 				OBJ_9 /* Color+Extensions.swift */,
 				OBJ_10 /* Image+Extensions.swift */,
 				OBJ_11 /* LinearGradient+Extensions.swift */,
-				OBJ_12 /* Utils */,
 				OBJ_14 /* View+Extensions.swift */,
+				9CBD866E249377A000022EDC /* View+Modifiers.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -298,11 +314,13 @@
 			isa = PBXGroup;
 			children = (
 				9C75D079245D96B0009BB447 /* Helpers */,
+				9CBD867024937AF100022EDC /* Modifiers */,
+				OBJ_21 /* Utils */,
 				OBJ_18 /* Color+ExtensionsTests.swift */,
 				OBJ_19 /* Image+ExtensionsTests.swift */,
 				OBJ_20 /* LinearGradient+ExtensionsTests.swift */,
-				OBJ_21 /* Utils */,
 				OBJ_23 /* View+ExtensionsTests.swift */,
+				9CBD867324937B3300022EDC /* View+ModifiersTests.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -332,6 +350,7 @@
 			children = (
 				9C75D077245D843B009BB447 /* BaseTypes.swift */,
 				9C75D07A245D96CD009BB447 /* SubscribedView.swift */,
+				9CBD867724937F7C00022EDC /* SizeTrackableView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -342,6 +361,7 @@
 				9C75D07D245F447B009BB447 /* PropertyWrapper */,
 				9CE0F49E248111D600BBA716 /* Result+Extensions.swift */,
 				9CF24C07248E9FE100CC17D3 /* Optional+Extensions.swift */,
+				9CBD86662492B7DA00022EDC /* Mutable.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -362,6 +382,7 @@
 				9C75D083245F52F3009BB447 /* PropertyWrapper */,
 				9CE0F4A02481128000BBA716 /* Result+ExtensionsTests.swift */,
 				9CF24C0B248FEB7000CC17D3 /* Optional+ExtensionsTests.swift */,
+				9CBD86682492B86B00022EDC /* MutableTests.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -390,6 +411,22 @@
 				9C75D08B246077B0009BB447 /* PublishedOnMainTests.swift */,
 			);
 			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
+		9CBD866B2493757800022EDC /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				9CBD866C2493758700022EDC /* SizeViewModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		9CBD867024937AF100022EDC /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				9CBD867124937B1A00022EDC /* SizeViewModifier+Tests.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		OBJ_12 /* Utils */ = {
@@ -738,9 +775,12 @@
 				OBJ_116 /* Image+Extensions.swift in Sources */,
 				9C4FBE7C246B28490020886F /* UserDefault.swift in Sources */,
 				9C75D07F245F448C009BB447 /* UserDefaultCodable.swift in Sources */,
+				9CBD866F249377A000022EDC /* View+Modifiers.swift in Sources */,
 				9C75D087245F5359009BB447 /* PublishedOnMain.swift in Sources */,
 				OBJ_117 /* LinearGradient+Extensions.swift in Sources */,
 				OBJ_118 /* IfLet.swift in Sources */,
+				9CBD866D2493758700022EDC /* SizeViewModifier.swift in Sources */,
+				9CBD86672492B7DA00022EDC /* Mutable.swift in Sources */,
 				9C75D070245C7DE6009BB447 /* Publisher+Extensions.swift in Sources */,
 				9C75D074245D8304009BB447 /* Subscribers+Extensions.swift in Sources */,
 				OBJ_119 /* View+Extensions.swift in Sources */,
@@ -766,10 +806,14 @@
 				9C75D082245F4923009BB447 /* UserDefaultCodableTests.swift in Sources */,
 				OBJ_139 /* LinearGradient+ExtensionsTests.swift in Sources */,
 				9C75D076245D83DD009BB447 /* Subscribers+ExtensionsTests.swift in Sources */,
+				9CBD866A2492B8D900022EDC /* MutableTests.swift in Sources */,
 				9C75D07B245D96CD009BB447 /* SubscribedView.swift in Sources */,
+				9CBD867924937F9A00022EDC /* SizeTrackableView.swift in Sources */,
 				9C75D078245D843B009BB447 /* BaseTypes.swift in Sources */,
 				9CE0F4A12481128000BBA716 /* Result+ExtensionsTests.swift in Sources */,
+				9CBD867524937C2800022EDC /* View+ModifiersTests.swift in Sources */,
 				OBJ_140 /* IfLetTests.swift in Sources */,
+				9CBD867624937C2D00022EDC /* SizeViewModifier+Tests.swift in Sources */,
 				OBJ_141 /* View+ExtensionsTests.swift in Sources */,
 				OBJ_142 /* XCTestManifests.swift in Sources */,
 				9CF24C0D248FF2C000CC17D3 /* Optional+ExtensionsTests.swift in Sources */,

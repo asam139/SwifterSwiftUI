@@ -17,7 +17,8 @@ import SwiftUI
 ///   - value: optional value to verify
 ///   - then: callback to create a view with the value is not nil
 /// - Returns: The built view
-public func ifLet<T, ThenOut: View>(_ value: T?, then: (T) -> ThenOut) -> some View {
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@inlinable public func ifLet<T, ThenOut: View>(_ value: T?, then: (T) -> ThenOut) -> some View {
     ViewBuilder.buildIf(value.map { then($0) })
 }
 
@@ -34,9 +35,11 @@ public func ifLet<T, ThenOut: View>(_ value: T?, then: (T) -> ThenOut) -> some V
 ///   - then: callback to create a view with the value is not nil
 ///   - else: callback to create a view with the value is nil
 /// - Returns: The built view
-public func ifLet<T, ThenOut: View, ElseOut: View>(_ value: T?,
-                                                   then: (T) -> ThenOut,
-                                                   `else`: () -> ElseOut) -> some View {
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@inlinable public func ifLet<T, ThenOut: View, ElseOut: View>(
+    _ value: T?,
+    then: (T) -> ThenOut,
+    `else`: () -> ElseOut) -> some View {
     value.map { ViewBuilder.buildEither(first: then($0)) } ??
         ViewBuilder.buildEither(second: `else`())
 }
@@ -52,7 +55,8 @@ public func ifLet<T, ThenOut: View, ElseOut: View>(_ value: T?,
 ///   - empty: condition to check if string is valid when is empty.
 ///   - then: callback to create a view with the value is not nil
 /// - Returns: The built view
-public func ifLet<T, ThenOut: View>(
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@inlinable public func ifLet<T, ThenOut: View>(
     _ value: T?,
     empty: Bool = false,
     then: (T) -> ThenOut
@@ -75,7 +79,8 @@ public func ifLet<T, ThenOut: View>(
 ///   - then: callback to create a view with the value is not nil
 ///   - else: callback to create a view with the value is nil
 /// - Returns: The built view
-public func ifLet<T, ThenOut: View, ElseOut: View>(
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@inlinable public func ifLet<T, ThenOut: View, ElseOut: View>(
     _ value: T?,
     empty: Bool = false,
     then: (T) -> ThenOut,
