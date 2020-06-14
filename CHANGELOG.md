@@ -18,8 +18,14 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 
 ---
 
+## [v0.5.1](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.5.1)
+
+### Fixed
+- Change some extensions to public
+
 ## [v0.5.0](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.5.0)
 
+### Added
 - **SizeViewModifier**:
     -  This modifier wraps a view into a `GeometryReader` and tracks the available space. [#6](https://github.com/asam139/Steps/pull/6) by [asam139](https://github.com/asam139)
 
@@ -31,6 +37,7 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
     
 ## [v0.4.2](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.4.2)
 
+### Added
 - **Utils**:
     - `ifLet(value:, empty:, then:)`, `ifLet(value:, empty:, then:, else:)`.  [#5](https://github.com/asam139/Steps/pull/5) by [asam139](https://github.com/asam139)
 - **Optional**:

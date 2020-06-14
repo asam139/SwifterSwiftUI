@@ -9,7 +9,7 @@
 import Foundation
 
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-extension Result {
+public extension Result {
     /// Returns whether the instance is `.success`.
     @inlinable var isSuccess: Bool {
         guard case .success = self else { return false }
