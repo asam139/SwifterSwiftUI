@@ -10,12 +10,13 @@ import Combine
 import ViewInspector
 @testable import SwifterSwiftUI
 
-public struct SubscribedView: View, Inspectable {
+
+struct SubscribedView: View, Inspectable {
     @State var index: Int
     private let source: AnyPublisher<Int, Never>
     private let animation: Animation?
 
-    internal let inspection = Inspection<Self>()
+    let inspection = Inspection<Self>()
 
     init(
         source: AnyPublisher<Int, Never>,
@@ -27,9 +28,9 @@ public struct SubscribedView: View, Inspectable {
         self._index = State(initialValue:placeholder)
     }
 
-    public var body: some View {
+    var body: some View {
         return Text("\(index)")
             .bind(source, to: $index.animation(animation))
-            .onReceive(inspection.notice) { self.inspection.visit(self, $0) }
+            .onReceive(inspection.notice) { inspection.visit(self, $0) }
     }
 }

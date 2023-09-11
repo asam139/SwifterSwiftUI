@@ -7,12 +7,23 @@
 
 import SwiftUI
 
+public extension Image {
+    /// Sets the mode by which SwiftUI resizes an image to fit its space and scales to fit its frame:
+    ///
+    ///     let image = Image(systemName: "bandage.fill").fit()
+    ///
+    /// - Returns: An image, with the new resizing behavior set and that constrains its view’s dimensions to the fit aspect ratio
+    @inlinable func fit() -> some View {
+        resizable().aspectRatio(contentMode: .fit)
+    }
+}
+
 #if canImport(UIKit)
 @available(iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 public extension Image {
     /// Create a image with default one
     ///
-    ///    let image = Image("photo", defaultImage: "empty-photo")
+    ///     let image = Image("photo", defaultImage: "empty-photo")
     ///
     /// - Parameters:
     ///   - name: Image name
@@ -28,7 +39,7 @@ public extension Image {
 
     /// Create a image with default one
     ///
-    ///    let image = Image("photo", defaultSystemImage: "bandage.fill")
+    ///     let image = Image("photo", defaultSystemImage: "bandage.fill")
     ///
     /// - Parameters:
     ///   - name: Image name
@@ -50,7 +61,7 @@ public extension Image {
 public extension Image {
     /// Create a image with default one
     ///
-    ///    let image = Image("photo", defaultImage: "empty-photo")
+    ///     let image = Image("photo", defaultImage: "empty-photo")
     ///
     /// - Parameters:
     ///   - name: Image name

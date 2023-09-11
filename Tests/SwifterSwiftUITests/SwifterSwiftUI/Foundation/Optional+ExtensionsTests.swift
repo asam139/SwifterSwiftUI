@@ -7,7 +7,6 @@
 
 import XCTest
 import SwiftUI
-import ViewInspector
 @testable import SwifterSwiftUI
 
 final class OptionalTests: XCTestCase {
