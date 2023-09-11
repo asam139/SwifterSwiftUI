@@ -14,11 +14,11 @@ import ViewInspector
 final class ViewModifiersTests: XCTestCase {
     // MARK: General
     func testSizeTrackable() {
-        let view = SizeTrackableView()
-        let exp = view.inspection.inspect(after: 0.1) { (view) in
+        let sut = SizeTrackableView()
+        let exp = sut.inspection.inspect(after: 0.1) { (view) in
             XCTAssertNotEqual(try view.actualView().size, CGSize.zero)
         }
-        ViewHosting.host(view: view)
+        ViewHosting.host(view: sut)
         wait(for: [exp], timeout: 0.1)
     }
 }

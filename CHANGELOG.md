@@ -18,6 +18,16 @@ The changelog for **SwifterSwiftUI**. Also see the [releases](https://github.com
 
 ---
 
+## [v0.5.2](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.5.2)
+
+### Added
+- **View**
+    - `ifLet(, transform:)`. [#12](https://github.com/asam139/Steps/pull/12) by [asam139](https://github.com/asam139)
+- **Binding**
+    - `animated`. [#12](https://github.com/asam139/Steps/pull/12) by [asam139](https://github.com/asam139)
+- **Image**:
+    - `fit`. [#12](https://github.com/asam139/Steps/pull/12) by [asam139](https://github.com/asam139)
+
 ## [v0.5.1](https://github.com/asam139/SwifterSwiftUI/releases/tag/0.5.1)
 
 ### Fixed

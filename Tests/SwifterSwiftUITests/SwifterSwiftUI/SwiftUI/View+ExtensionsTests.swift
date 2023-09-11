@@ -62,6 +62,16 @@ extension ViewExtensionsTests {
         XCTAssertNotNil(secondView.value.1)
         XCTAssertEqual(try secondView.value.1.inspect().emptyView().zIndex(), secondIndex)
     }
+
+    func testIfLet() {
+        let optionalNilValue: Double? = nil
+        let firstView = EmptyView().ifLet(optionalNilValue, transform: { value, view in view.zIndex(value) })
+        XCTAssertNil(try? firstView.inspect().emptyView().zIndex())
+
+        let optionalNotNilValue: Double? = 1.0
+        let secondView = EmptyView().ifLet(optionalNotNilValue, transform: { value, view in view.zIndex(value) })
+        XCTAssertEqual(try? secondView.inspect().emptyView().zIndex(), optionalNotNilValue)
+    }
 }
 
 // MARK: Modifiers

@@ -13,12 +13,12 @@ import ViewInspector
 struct SizeTrackableView: View, Inspectable {
     @State var size: CGSize = .zero
 
-    internal let inspection = Inspection<Self>()
+    let inspection = Inspection<Self>()
 
     var body: some View {
         Text("Hello")
             .sizeTrackable($size)
-            .onReceive(inspection.notice) { self.inspection.visit(self, $0) }
+            .onReceive(inspection.notice) { inspection.visit(self, $0) }
     }
 }
 

@@ -103,6 +103,28 @@ public extension View {
         }
         return TupleView((nil, `else`(self)))
     }
+
+    /// Apply some changes to the view in place of the condition
+    ///
+    ///     myView.ifLet(viewModel.myColor) { color, view in
+    ///         view.background(color)
+    ///     }
+    ///
+    /// - Parameters:
+    ///   - value: an value to check if exists
+    ///   - transform: callback to apply the changes when the variable exists
+    /// - Returns: some View
+    @ViewBuilder
+    func ifLet<Value, Content: View>(
+        _ value: Value?,
+        transform: (Value, Self) -> Content
+    ) -> some View {
+        if let value {
+            transform(value, self)
+        } else {
+            self
+        }
+    }
 }
 
 // MARK: Modifiers
