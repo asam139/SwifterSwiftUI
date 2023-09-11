@@ -22,31 +22,7 @@ jobs:
       run: swift build
     - name: Bundle Install
       run: bundle install
-    - name: Test iOS
+    - name: Tests
       run: |
-        xcodebuild clean build test -project $PROJECT -scheme $SCHEME -destination "$DESTINATION" -derivedDataPath $DERIVED_PATH | XCPRETTY_JSON_FILE_OUTPUT="xcodebuild-ios.json" xcpretty -f `xcpretty-json-formatter`
-        bash <(curl -s https://codecov.io/bash) -cF ios -J 'SwifterSwiftUI' -D $DERIVED_PATH
-      env:
-          SCHEME: SwifterSwiftUI-Package
-          DESTINATION: platform=iOS Simulator,name=iPhone 11
-    - name: Test macOS
-      run: |
-        xcodebuild clean build test -project $PROJECT -scheme $SCHEME -destination "$DESTINATION" -derivedDataPath $DERIVED_PATH | XCPRETTY_JSON_FILE_OUTPUT="xcodebuild-macos.json" xcpretty -f `xcpretty-json-formatter`
-        bash <(curl -s https://codecov.io/bash) -cF macos -J 'SwifterSwiftUI' -D $DERIVED_PATH
-      env:
-          SCHEME: SwifterSwiftUI-Package
-          DESTINATION: platform=OS X
-    - name: Test TVOS
-      run: |
-        xcodebuild clean build test -project $PROJECT -scheme $SCHEME -destination "$DESTINATION" -derivedDataPath $DERIVED_PATH | XCPRETTY_JSON_FILE_OUTPUT="xcodebuild-tvos.json" xcpretty -f `xcpretty-json-formatter`
-        bash <(curl -s https://codecov.io/bash) -cF tvos -J 'SwifterSwiftUI' -D $DERIVED_PATH
-      env:
-          SCHEME: SwifterSwiftUI-Package
-          DESTINATION: platform=tvOS Simulator,name=Apple TV 4K (at 1080p)
-    - name: Build WatchOS
-      run: xcodebuild clean build -project $PROJECT -scheme $SCHEME -destination "$DESTINATION" -derivedDataPath $DERIVED_PATH
-      env:
-          DEVELOPER_DIR: ${{ matrix.xcode }}
-          SCHEME: SwifterSwiftUI-Package
-          DESTINATION: name=Apple Watch Series 5 - 40mm
+        swift test --enable-code-coverage | XCPRETTY_JSON_FILE_OUTPUT="xcodebuild-ios.json" xcpretty -f `xcpretty-json-formatter`
 
