@@ -25,7 +25,10 @@ public extension View {
     ///     myView.embedInNavigation()
     ///
     /// - Returns: A view encapsulate in navigation view
-    @available(watchOS, unavailable)
+    @available(iOS, introduced: 13.0, deprecated: 100000.0, message: "use NavigationStack or NavigationSplitView instead")
+    @available(macOS, introduced: 10.15, deprecated: 100000.0, message: "use NavigationStack or NavigationSplitView instead")
+    @available(tvOS, introduced: 13.0, deprecated: 100000.0, message: "use NavigationStack or NavigationSplitView instead")
+    @available(watchOS, introduced: 7.0, deprecated: 100000.0, message: "use NavigationStack or NavigationSplitView instead")
     @inlinable func embedInNavigation() -> some View {
         NavigationView { self }
     }

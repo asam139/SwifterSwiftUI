@@ -39,13 +39,13 @@ public extension Color {
         }
 
         let r, g, b, a: Double
-        if count == 6 { //rgb
+        if count == 6 { // rgb
             r = Double((hexNumber & 0x00ff0000) >> 16)
             g = Double((hexNumber & 0x0000ff00) >> 8)
             b = Double(hexNumber & 0x000000ff)
             a = 255
 
-        } else { //rgba
+        } else { // rgba
             r = Double((hexNumber & 0xff000000) >> 24)
             g = Double((hexNumber & 0x00ff0000) >> 16)
             b = Double((hexNumber & 0x0000ff00) >> 8)

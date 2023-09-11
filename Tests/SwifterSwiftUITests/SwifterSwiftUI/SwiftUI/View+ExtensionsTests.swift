@@ -82,7 +82,7 @@ extension ViewExtensionsTests {
 
         // Test true condition
         let firstExp = XCTestExpectation()
-        modifier.onAppear = { body in
+        modifier.onAppear = { _ in
             ViewHosting.expel()
             firstExp.fulfill()
         }
@@ -95,7 +95,7 @@ extension ViewExtensionsTests {
         // Test false condition
         let secondExp = XCTestExpectation(description: #function)
         secondExp.isInverted = true
-        modifier.onAppear = { body in
+        modifier.onAppear = { _ in
             ViewHosting.expel()
             secondExp.fulfill()
         }
@@ -113,7 +113,7 @@ extension ViewExtensionsTests {
 
         // Test true condition
         let firstExp = XCTestExpectation(description: #function)
-        thenModifier.onAppear = { body in
+        thenModifier.onAppear = { _ in
             ViewHosting.expel()
             firstExp.fulfill()
         }
@@ -126,7 +126,7 @@ extension ViewExtensionsTests {
         // Test false condition
         let secondExp = XCTestExpectation(description: #function)
         thenModifier.onAppear = nil
-        elseModifier.onAppear = { body in
+        elseModifier.onAppear = { _ in
             ViewHosting.expel()
             secondExp.fulfill()
         }

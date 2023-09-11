@@ -10,7 +10,6 @@ import Combine
 import ViewInspector
 @testable import SwifterSwiftUI
 
-
 struct SubscribedView: View, Inspectable {
     @State var index: Int
     private let source: AnyPublisher<Int, Never>
