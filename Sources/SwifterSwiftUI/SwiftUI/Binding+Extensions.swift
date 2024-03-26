@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension Binding {
+public extension Binding {
 
     /// Create a binding animating the setter.
     ///
