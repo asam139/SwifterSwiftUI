@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwifterSwiftUI'
-  s.version          = '0.5.2'
+  s.version          = '0.5.3'
   s.summary          = 'SwifterSwiftUI is a collection of native SwiftUI extensions, with handy methods, syntactic sugar, and performance improvements'
   s.description      = <<-DESC
 SwifterSwiftUI is a collection of native SwiftUI extensions, with handy methods, syntactic sugar, and performance improvements for wide range of SwiftUI classes –over 500 in 1– for iOS, macOS, tvOS and watchOS.
